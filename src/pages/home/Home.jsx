@@ -7,7 +7,7 @@ import img1 from '../../assets/img/Nsakcet.jpg'
 import img2 from '../../assets/img/ieeeCarousel1.JPG'
 import img3 from '../../assets/img/IEEE_SB_grp.webp'
 import mission from '../../assets/img/mission.png'
-import vission from '../../assets/img/vission.png'
+import vision from '../../assets/img/vission.png'
 import Seminar from '../../assets/img/Seminar.png'
 import Quizes from '../../assets/img/Quizes.png'
 import Competition from '../../assets/img/Competition.png'
@@ -46,8 +46,8 @@ const Home = () => {
                 <p className="font-400">To promote students empowerment, develop professional skills, organise diverse events and work towards IEEE's mission.</p>
               </div>
               <div className="col-md-4 feature-box text-center mb-50 col-sm-6 animation-move-top">
-                <img src={vission} alt="idea" width={60} />
-                <h4 className="mt-0 font-600">Vission</h4>
+                <img src={vision} alt="idea" width={60} />
+                <h4 className="mt-0 font-600">Vision</h4>
                 <p className="font-400">We envision offering a relevant platform to learn and seek industrial experience, personal development, social welfare and help explore various engineering fields.</p>
               </div>
               <div className="col-md-4 feature-box text-center mb-50 col-sm-6 animation-move-top">
