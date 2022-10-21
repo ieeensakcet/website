@@ -1,0 +1,9 @@
+.home{
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
+}
+
+.img1{
+    background-image: url(../../assets//img/ieee.jpg) center center / cover scroll no-repeat;
+}
