@@ -2,6 +2,7 @@ import React from 'react'
 import './navBar.css'
 import SBlogo from '../../assets/img/SB-logo.png'
 import { Link } from "react-router-dom";
+
 import '../../styles/css/icofonts.min.css'
 const navBar = () => {
   return (
@@ -38,11 +39,11 @@ const navBar = () => {
               </li>
                 <li className="dropdown"><a href="#" className="dropdown-toggle" data-toggle="dropdown">Chapters</a>
                   <ul className="dropdown-menu">
-                    <li><a href="blog-grid.html">Computer Society</a></li>
-                  <li><a href="blog-classNameic.html">Robotics and Automation Society</a></li>
-                  <li><a href="blog-fullwidth.html">Women in Engineering</a></li>
-                  <li><a href="blog-masonry.html">Circuits and Systems</a></li>
-                  <li><a href="blog-standard.html">Signal Processing Society</a></li>
+                  <li><Link to={"/cs"} >Computer Society</Link></li>
+                  <li><Link to={"/ras"}>Robotics and Automation Society</Link></li>
+                  <li><Link to="/wie">Women in Engineering</Link></li>
+                  <li><Link to={"/cas"} >Circuits and Systems</Link></li>
+                  <li><Link to={"sps"} >Signal Processing Society</Link></li>
                   </ul>
                 </li>
 
