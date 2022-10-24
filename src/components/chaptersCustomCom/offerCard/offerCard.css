@@ -1,0 +1,95 @@
+.feature-box-square-cs {
+    background-color: #fff;
+    padding: 30px;
+    -webkit-box-shadow: -1px 0px 43px 0px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: -1px 0px 43px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: -1px 0px 43px 0px rgba(0, 0, 0, 0.14);
+}
+.feature-box-square-cs:hover {
+    background: -webkit-linear-gradient(left, rgb(255, 163, 0) 0%, rgba(255, 88, 88, 0.8) 100%);
+}
+
+.feature-box-square-cs:hover i,
+.feature-box-square-cs:hover h4,
+.feature-box-square-cs:hover p {
+    color: #fff !important;
+}
+
+
+
+.feature-box-square-wie {
+    background-color: #fff;
+    padding: 30px;
+    -webkit-box-shadow: -1px 0px 43px 0px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: -1px 0px 43px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: -1px 0px 43px 0px rgba(0, 0, 0, 0.14);
+}
+.feature-box-square-wie:hover {
+    background: -webkit-linear-gradient(left, rgb(255, 163, 0) 0%, rgba(255, 88, 88, 0.8) 100%);
+}
+
+.feature-box-square-wie:hover i,
+.feature-box-square-wie:hover h4,
+.feature-box-square-wie:hover p {
+    color: #fff !important;
+}
+
+
+
+.feature-box-square-cas {
+    background-color: #fff;
+    padding: 30px;
+    -webkit-box-shadow: -1px 0px 43px 0px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: -1px 0px 43px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: -1px 0px 43px 0px rgba(0, 0, 0, 0.14);
+}
+.feature-box-square-cas:hover {
+    background: -webkit-linear-gradient(left, rgb(255, 163, 0) 0%, rgba(255, 88, 88, 0.8) 100%);
+}
+
+.feature-box-square-cas:hover i,
+.feature-box-square-cas:hover h4,
+.feature-box-square-cas:hover p {
+    color: #fff !important;
+}
+
+
+
+.feature-box-square-ras {
+    background-color: #fff;
+    padding: 30px;
+    -webkit-box-shadow: -1px 0px 43px 0px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: -1px 0px 43px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: -1px 0px 43px 0px rgba(0, 0, 0, 0.14);
+}
+.feature-box-square-ras:hover {
+    background: -webkit-linear-gradient(left, rgb(255, 163, 0) 0%, rgba(255, 88, 88, 0.8) 100%);
+}
+
+.feature-box-square-ras:hover i,
+.feature-box-square-ras:hover h4,
+.feature-box-square-ras:hover p {
+    color: #fff !important;
+}
+
+
+
+.feature-box-square-sps {
+    background-color: #fff;
+    padding: 30px;
+    -webkit-box-shadow: -1px 0px 43px 0px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: -1px 0px 43px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: -1px 0px 43px 0px rgba(0, 0, 0, 0.14);
+}
+.feature-box-square-sps:hover {
+    background: -webkit-linear-gradient(left, rgb(255, 163, 0) 0%, rgba(255, 88, 88, 0.8) 100%);
+}
+
+.feature-box-square-sps:hover i,
+.feature-box-square-sps:hover h4,
+.feature-box-square-sps:hover p {
+    color: #fff !important;
+}
+
+
+
