@@ -16,9 +16,9 @@ const navBar = () => {
             </ul>
           </div>
 
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i class="tr-icon ion-android-menu"></i> </button>
-            <div class="logo"> <a href="index.html"> <img class="logo logo-display" src={SBlogo} alt="" /> <img class="logo logo-scrolled" src={SBlogo} alt="" /> </a> </div>
+          <div className="navbar-header">
+            <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i className="tr-icon ion-android-menu"></i> </button>
+            <div className="logo"> <a href="index.html"> <img className="logo logo-display" src={SBlogo} alt="" /> <img className="logo logo-scrolled" src={SBlogo} alt="" /> </a> </div>
           </div>
 
             <div className="collapse navbar-collapse" id="navbar-menu">
