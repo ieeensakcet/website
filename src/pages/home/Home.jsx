@@ -18,15 +18,6 @@ import { getDocs, collection } from 'firebase/firestore'
 import { db } from '../../utils/firebase/firebase'
 
 const Home = () => {
-  const [userData , setData ] = useState([])
-
-  useEffect(() => {
-    const getData = async () => {
-      const data = await getDocs(collection(db, "positionsInfo"))
-      setData(data.docs.map(doc => ({...doc.data(), id: doc.id})))
-    }
-    getData();
-  }, [])
   return (
     <div>
       <Loader/>
