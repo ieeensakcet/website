@@ -1,18 +1,16 @@
 import React from 'react'
+import './offerCard.css'
 
-const offerCard = () => {
+const OfferCard = ({ data, customStyle}) => {
   return (
-    <div>
-          <div class="col-md-4 col-sm-6">
-              <div class="feature-box text-left mb-50 feature-box-square center-feature">
-                  <img src={cardIcon} alt="" width={iconWidth}/>
-                  <h4 class="mt-0 font-600">{title}</h4>
-                  <p class="font-400 mt-20">{description}</p>
-              </div>
-          </div>    
-
+    <div className="col-md-6 col-sm-6">
+      <div className={customStyle}>
+        <i className="icon-tools-2 font-40px default-color"></i>
+        <h4 className="mt-0 font-600">{data.title}</h4>
+        <p className="font-400 mt-20">{data.description}</p>
+      </div>
     </div>
   )
 }
 
-export default offerCard
+export default OfferCard

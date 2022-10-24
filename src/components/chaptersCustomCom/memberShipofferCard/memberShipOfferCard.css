@@ -1,0 +1,5 @@
+.CS-gradient-color {
+    background: -webkit-linear-gradient(top left, #242121, #2130A7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
