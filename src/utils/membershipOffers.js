@@ -1,6 +1,3 @@
-
-
-// https://www.computer.org/membership/join
 export const csOffers = [
     {
         icon:'',
@@ -15,7 +12,7 @@ export const csOffers = [
     {
         icon:'',
         title:'Professional Education Courses',
-        description:'Upskill your professional learning. Browse the e-catalog of online courses.'
+        description:'Upskill your professional learning. Browse the e-catalog of online courses and find out required sources.'
     },
     {
         icon:'',
