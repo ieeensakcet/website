@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Home.css'
 import Loader from "../../components/loader/Loader"
 import Carousel from '../../components/Carousel/Carousel'
@@ -9,18 +9,24 @@ import img2 from '../../assets/img/ieeeCarousel1.JPG'
 import img3 from '../../assets/img/IEEE_SB_grp.webp'
 import mission from '../../assets/img/mission.png'
 import vision from '../../assets/img/vission.png'
-import Seminar from '../../assets/img/Seminar.png'
-import Quizes from '../../assets/img/Quizes.png'
-import Competition from '../../assets/img/Competition.png'
-import Workshop from '../../assets/img/Workshop.png'
-import CS from '../../assets/img/CS-logo.png'
-import WIE from '../../assets/img/WIE-logo.png'
-import RAS from '../../assets/img/RAS-logo.png'
-import CAS from '../../assets/img/CAS-logo.jpg'
-import SPS from '../../assets/img/SPS-logo.jpg'
-
+import CS from '../../assets/img/logos/CS-logo.png'
+import WIE from '../../assets/img/logos/WIE-logo.png'
+import RAS from '../../assets/img/logos/RAS-logo.png'
+import CAS from '../../assets/img/logos/CAS-logo.png'
+import SPS from '../../assets/img/logos/SPS-logo.png'
+import { getDocs, collection } from 'firebase/firestore'
+import { db } from '../../utils/firebase/firebase'
 
 const Home = () => {
+  const [userData , setData ] = useState([])
+
+  useEffect(() => {
+    const getData = async () => {
+      const data = await getDocs(collection(db, "positionsInfo"))
+      setData(data.docs.map(doc => ({...doc.data(), id: doc.id})))
+    }
+    getData();
+  }, [])
   return (
     <div>
       <Loader/>
@@ -64,15 +70,15 @@ const Home = () => {
           </div>
         </section>
 
-        <section class="white-bg">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-8 section-heading">
-                <h5 class="default-color mt-0 text-uppercase">Our Chapters</h5>
-                <h2 class="mt-0 font-700">Ten Countries Around <span class="gradient-color play-font font-italic">The World</span> Achieve Best Results.</h2>
+        <section className="white-bg">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-8 section-heading">
+                <h5 className="default-color mt-0 text-uppercase">Our Chapters</h5>
+                <h2 className="mt-0 font-700">Ten Countries Around <span className="gradient-color play-font font-italic">The World</span> Achieve Best Results.</h2>
               </div>
             </div>
-            <div class="row mt-100">
+            <div className="row mt-100">
               <ChaptersCustom Image={CS} />
               <ChaptersCustom Image={WIE} />
               <ChaptersCustom Image={RAS} />
