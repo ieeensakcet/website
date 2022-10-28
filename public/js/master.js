@@ -711,7 +711,7 @@
 		lifeLike:true,
 		startDelete:false,
 		loop:true,
-    strings: ['thinking', 'color', 'photography', 'art', 'typography']
+    strings: ['Prolific Team', 'Clever Team', 'Creative Team', 'Talented Team', 'Beautiful Team']
   });
 
 	$('.type-it-2').typeIt({

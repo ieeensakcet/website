@@ -83,7 +83,7 @@ export const wieOffers = [
     {
         icon:'',
         title:'IEEE Member Directory',
-        description:'discover, connect and collaborate with your peers.'
+        description:'It provides you the resources to discover, connect and collaborate with your peers.'
     },
     {
         icon:'',
