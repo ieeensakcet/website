@@ -4,6 +4,7 @@ import { doc, getDocs, collection } from 'firebase/firestore'
 import Team from '../../components/chaptersCustomCom/team'
 import Loader from '../../components/loader/Loader'
 
+
 const OurTeam = () => {
 
   const [userData, setData] = useState([[]])
@@ -84,7 +85,9 @@ const OurTeam = () => {
                 </div>
                 <div className="row mt-50">
                   {
-                    userData[3].positions.map((item, index) => {
+                        userData[3].positions.sort((a, b) => {
+                          return a.order - b.order
+                    }).map((item, index) => {
                       return (
                         <Team item={item} key={index} />
                       )

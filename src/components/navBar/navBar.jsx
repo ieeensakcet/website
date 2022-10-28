@@ -7,21 +7,23 @@ import '../../styles/css/icofonts.min.css'
 const navBar = () => {
   return (
     <div >
-      <nav className="navbar navbar-default navbar-fixed navbar-transparent white bootsnav on no-full no-border">
-        <div className="container-fluid">
-          <div className="attr-nav hidden-xs sm-display-none">
-            <ul className="social-media-dark social-top">
-              <li><a href="#" className="icofont icofont-social-facebook"></a></li>
-              <li><a href="#" className="icofont icofont-social-twitter"></a></li>
-            </ul>
-          </div>
+      <nav className="navbar navbar-default navbar-fixed navbar-transparent dark bootsnav on no-full no-border">
+        <div className="attr-nav hidden-xs sm-display-none">
+          <ul className="social-media-dark social-top">
+            <li><a href="#" className="icofont icofont-social-facebook"></a></li>
+            <li><a href="#" className="icofont icofont-social-twitter"></a></li>
+          </ul>
+        </div>
+        <div className="navbar-header">
+          <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i className="tr-icon ion-android-menu"></i> </button>
+          <div className="logo" > <a href="index.html"> <img className="logo logo-display" src={SBlogo} alt="" /> <img className="logo logo-scrolled" src={SBlogo} alt="" /> </a> </div>
+        </div>
+        <div className="container-fluid" style={{
+          width: "100%",
+        }}>
 
-          <div className="navbar-header">
-            <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i className="tr-icon ion-android-menu"></i> </button>
-            <div className="logo"> <a href="index.html"> <img className="logo logo-display" src={SBlogo} alt="" /> <img className="logo logo-scrolled" src={SBlogo} alt="" /> </a> </div>
-          </div>
 
-            <div className="collapse navbar-collapse" id="navbar-menu">
+            <div className="collapse navbar-collapse" id="navbar-menu" >
               <ul className="nav navbar-nav navbar-center" data-in="fadeIn" data-out="fadeOut">
                 <li>
                   <Link to="/">Home</Link>
@@ -51,7 +53,7 @@ const navBar = () => {
                   <Link to="/team">Team</Link>
                 </li>
                 <li>
-                  <Link to="/team">Join us</Link>
+                  <Link to="/joinUs">Join us</Link>
                 </li>
                 
               </ul>

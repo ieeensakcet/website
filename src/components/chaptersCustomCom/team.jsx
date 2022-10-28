@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Team = ({item}) => {
+const Team = ({ item }) => {
     return (
         <div className="col-md-4 col-sm-4 col-xs-12 team-member-container">
             <div classNamey="team-member">
                 <div className="team-thumb">
-                    <img src={item.imgUrl} alt="" style={{
+                    <img src={item.imgUrl !== "" ? item.imgUrl :`https://avatars.dicebear.com/api/avataaars/${Math.random()}.svg`} alt="" style={{
                         width: "100%",
                         height: "370px"
                     }} />
