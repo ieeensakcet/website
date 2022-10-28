@@ -1,11 +1,12 @@
 import React,{useState, useEffect} from 'react'
-import Nsakcet from "../../../assets/img/Nsakcet.jpg"
+import CASgrp from "../../../assets/img/GroupPhotos/CAS-Group.JPG"
 import CasLogo from "../../../assets/img/logos/CAS-logo.png"
 import { casOffers } from "../../../utils/membershipOffers";
 import LandingScreen from '../../../components/chaptersCustomCom/LandingScreen/landingScreen';
 import MemberShipOfferCard from '../../../components/chaptersCustomCom/memberShipofferCard/MemberShipofferCard';
 import { doc, getDoc, collection } from 'firebase/firestore'
 import { db } from '../../../utils/firebase/firebase'
+import Team from '../../../components/chaptersCustomCom/team';
 
 const CAS = () => {
     const [userData, setData] = useState([])
@@ -29,7 +30,7 @@ const CAS = () => {
     return (
         <div className='wrapper' >
 
-            <LandingScreen chaptersGroupPhoto={Nsakcet} chapterName={"IEEE Circuits and Systems Society"} chapterLogo={CasLogo} Description={desc} themeColor="#74bb5c" />
+            <LandingScreen chaptersGroupPhoto={CASgrp} chapterName={"IEEE Circuits and Systems Society"} chapterLogo={CasLogo} Description={desc} themeColor="#74bb5c" />
             <MemberShipOfferCard data={casOffers} society={"CAS"} style={"feature-box text-left mb-50 feature-box-square-cs center-feature"} />
 
             {/* <!--== Our Team Start ==--> */}
@@ -47,22 +48,7 @@ const CAS = () => {
                         {
                             userData.map((item, index) => {
                                 return (
-                                    <div className="col-md-4 col-sm-4 col-xs-12 team-member-container" key={Math.random()}>
-                                        <div className="team-member">
-                                            <div className="team-thumb">
-                                                <img src={item.imgUrl} alt="" />
-                                                <ul className="member-icons">
-                                                    <li className="social-icon"><a href="#" className="icofont icofont-social-facebook" tabindex="0"></a></li>
-                                                    <li className="social-icon"><a href="#" className="icofont icofont-social-twitter" tabindex="0"></a></li>
-                                                    <li className="social-icon"><a href="#" className="icofont icofont-social-behance" tabindex="0"></a></li>
-                                                </ul>
-                                            </div>
-                                            <div className="member-info mt-10 mb-10">
-                                                <h3>{item.name}</h3>
-                                                <h5>{item.designation}</h5>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <Team item={item} key={index} />
                                 )
                             })
 
