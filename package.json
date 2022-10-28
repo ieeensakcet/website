@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@dicebear/avatars": "^4.10.5",
+    "@dicebear/avatars-identicon-sprites": "^4.10.5",
+    "@dicebear/avatars-male-sprites": "^4.10.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -36,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0"
   }
 }

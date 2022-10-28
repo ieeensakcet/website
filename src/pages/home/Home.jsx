@@ -9,14 +9,12 @@ import img2 from '../../assets/img/ieeeCarousel1.JPG'
 import img3 from '../../assets/img/IEEE_SB_grp.webp'
 import mission from '../../assets/img/mission.png'
 import vision from '../../assets/img/vission.png'
+import values from '../../assets/img/values.png'
 import CS from '../../assets/img/logos/CS-logo.png'
 import WIE from '../../assets/img/logos/WIE-logo.png'
 import RAS from '../../assets/img/logos/RAS-logo.png'
 import CAS from '../../assets/img/logos/CAS-logo.png'
 import SPS from '../../assets/img/logos/SPS-logo.png'
-import { getDocs, collection } from 'firebase/firestore'
-import { db } from '../../utils/firebase/firebase'
-
 const Home = () => {
   return (
     <div>
@@ -53,7 +51,7 @@ const Home = () => {
                 <p className="font-400">We envision offering a relevant platform to learn and seek industrial experience, personal development, social welfare and help explore various engineering fields.</p>
               </div>
               <div className="col-md-4 feature-box text-center mb-50 col-sm-6 animation-move-top">
-                <i className="icon-pictures font-40px gradient-color"></i>
+                <img src={values} alt="idea" width={60} />
                 <h4 className="mt-0 font-600">Digital Solutions</h4>
                 <p className="font-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
               </div>
