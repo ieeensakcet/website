@@ -17,7 +17,7 @@ import CAS from '../../assets/img/logos/CAS-logo.png'
 import SPS from '../../assets/img/logos/SPS-logo.png'
 const Home = () => {
   return (
-    <div>
+    <div >
       <Loader/>
       {/* <NavBar /> */}
     <div className="wrapper">
@@ -34,7 +34,7 @@ const Home = () => {
         <section className="white-bg">
           <div className="container">
             <div className="row">
-              <div className="col-sm-8 section-heading">
+              <div className="col-sm-8 section-heading hii">
                 <h5 className="default-color mt-0 text-uppercase">Who We Are </h5>
                 <h2 className="mt-0 font-700"><span className="gradient-color">"</span> IEEE Student Branch of NSAKCET <span className="gradient-color">is a student community that strives to inform, learn, entertain, and inspire action through the events and experiences we create.</span><span className="gradient-color">"</span> </h2>
               </div>
