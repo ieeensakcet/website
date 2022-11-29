@@ -12,12 +12,13 @@ const OurTeam = () => {
   useEffect(() => {
     const getData = async () => {
       const docRef = await getDocs(collection(db, "positionsInfo"));
-      setData(docRef.docs.map((doc) => ({...doc.data(), id:doc.id})))
+      setData(docRef.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
     }
     getData();
   }, [])
 
   console.log(userData)
+
 
   return (
     <div>
@@ -33,15 +34,21 @@ const OurTeam = () => {
                 </div>
               </div>
               </div>
-                <div id="" class="cbp-l-filters-alignCenter text-sm-center mb-100">
-                  <div id="#execom" class="cbp-filter-item">
-                    Execom
+                <div class="cbp-l-filters-alignCenter text-sm-center mb-100">
+                  <div class="cbp-filter-item">
+                  <a href="#execom" className='cbp-filter-item'>
+                    execom
+                  </a>
                   </div>
-                  <div id="#leadership" class="cbp-filter-item">
+                  <div class="cbp-filter-item">
+                  <a href="#leadership" className='cbp-filter-item'>
                     Leadership Team
+                  </a>
                   </div>
-                  <div href ="#publicity" class="cbp-filter-item">
+                  <div class="cbp-filter-item">
+                  <a href="#publicity" className='cbp-filter-item'>
                     Publicity Team
+                  </a>
                   </div>
                   <div class="cbp-filter-item" >
                     <a href="#tech" className='cbp-filter-item'>
@@ -64,7 +71,7 @@ const OurTeam = () => {
                   </div>
                 </div>
                 <div className="row mt-50">
-                  {
+                  { 
                     userData[2].positions.map((item, index) => {
                       return (
                         <Team item={item} key={index} />

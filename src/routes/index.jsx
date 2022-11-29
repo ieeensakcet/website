@@ -10,7 +10,9 @@ import RAS from '../pages/Chapters/RAS/ras'
 import WIE from '../pages/Chapters/WIE/wie'
 import SPS from '../pages/Chapters/SPS/sps'
 import Webinars from "../pages/webinars/webinars";
-
+import Seminars from "../pages/seminars/seminars";
+import Competitions from "../pages/competitions/competitions";
+import Workshops from "../pages/workshops/workshops";
 
 const index = () => {
   return (
@@ -26,6 +28,9 @@ const index = () => {
         <Route path="/ras" element={<RAS />} />
         <Route path="/sps" element={<SPS />} />
         <Route path="/webinars" element={<Webinars />} />
+        <Route path="/seminars" element={<Seminars />} />
+        <Route path="/competitions" element={<Competitions />} />
+        <Route path="/workshops" element={<Workshops />} />
       </Routes>
     </div>
   )
