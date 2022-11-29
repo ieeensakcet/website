@@ -31,7 +31,10 @@ const CAS = () => {
 
             <LandingScreen chaptersGroupPhoto={RASgrp} chapterName={"IEEE Robotics and Automation Society"} chapterLogo={rasLogo} Description={desc} themeColor="#88201f" />
             <MemberShipOfferCard data={rasOffers} society={"RAS"} style={"feature-box text-left mb-50 feature-box-square-cs center-feature"} />
-            <section className="white-bg">
+            <section className="white-bg"
+                style={{
+                    marginTop: "-100px",
+                }}>
                 <div className="container">
                     <div>
                         <div>

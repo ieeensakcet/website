@@ -1,8 +1,10 @@
 import React from 'react'
+import "./Carousel.css"
 
 const Carousel = ({image}) => {
     return (
-        <div className="slide">
+        <div>
+        <div className="slide sm-display-none">
             <div className="slide-img" style={{
                 backgroundImage: `url(${image})`,
                 backgroundSize: "cover",
@@ -19,6 +21,7 @@ const Carousel = ({image}) => {
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
   )

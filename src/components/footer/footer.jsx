@@ -34,7 +34,7 @@ const footer = () => {
                               <div className="widget widget-links">
                                   <h5 className="widget-title">Our Chapters</h5>
                                   <ul>
-                                      <li><a href="#">Coputer Society</a></li>
+                                      <li><a href="#">Computer Society</a></li>
                                       <li><a href="#"></a>Robotics and Automation Society</li>
                                       <li><a href="#">Women in Engineering</a></li>
                                       <li><a href="#">Circuits and Systems Society</a></li>

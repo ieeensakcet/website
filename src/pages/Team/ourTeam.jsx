@@ -21,15 +21,15 @@ const OurTeam = () => {
 
   return (
     <div>
-      <Loader />
-      
+      {
+        userData.length > 1 ? (
         <section class="white-bg">
           <div class="container">
             <div class="container">
               <div class="row">
                 <div class="col-sm-8 section-heading">
-                  <h5 class="default-color mt-0 text-uppercase">Strategic Digital Solutions</h5>
-                  <h2 class="mt-0 font-700">Our <span className="type-it default-color"></span></h2>
+                  <h5 class="default-color mt-0 text-uppercase">IEEE Student Branch</h5>
+                  <h2 class="mt-0 font-700">Our Team </h2>
                 </div>
               </div>
               </div>
@@ -49,9 +49,10 @@ const OurTeam = () => {
                     </a>
                   </div>
           </div>
-          {
-            userData.length > 1 ? (
-              <div>
+          
+              <div style={{
+                marginTop: "-100px",
+              }}>
               <section className="white-bg" id="execom">
               <div className="container">
                 <div >
@@ -73,7 +74,9 @@ const OurTeam = () => {
                 </div>
               </div>
             </section>
-              <section className="white-bg" id="leadership" >
+                <section className="white-bg" id="leadership" style={{
+                  marginTop: "-100px",
+                }}>
               <div className="container">
                 <div >
                   <div>
@@ -96,7 +99,9 @@ const OurTeam = () => {
                 </div>
               </div>
             </section>
-              <section className="white-bg" id='publicity'>
+                <section className="white-bg" id='publicity' style={{
+                  marginTop: "-100px",
+                }}>
               <div className="container">
                 <div >
                   <div>
@@ -117,7 +122,10 @@ const OurTeam = () => {
                 </div>
               </div>
             </section>
-            <section className="white-bg" id="tech">
+                <section className="white-bg" id="tech" style={{
+                  marginTop: "-100px",
+                  marginBottom:0
+                }}>
               <div className="container">
                 <div>
                   <div>
@@ -139,10 +147,11 @@ const OurTeam = () => {
               </div>
                 </section>
                 </div>
-              ) : <Loader/>
-            }
+              
           </div>
           </section>
+        ) : <Loader />
+      }
      </div> 
   )
 }
