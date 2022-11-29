@@ -94,6 +94,13 @@
         }
       }
     )
+    $(".toggleDropdown").click(function(e){
+        if($(".navbar-collapse").hasClass("in")==true){
+          $(".navbar-toggle")[0].click();
+           window.scrollTo(0, 0);
+        }
+      }
+    )
   })
 </script>
 </body>

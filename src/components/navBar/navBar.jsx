@@ -29,18 +29,18 @@ const NavBar = () => {
 
           <div className="collapse navbar-collapse" id="navbar-menu" >
             <ul className="nav navbar-nav navbar-center" data-in="fadeIn" data-out="fadeOut">
-              <li>
+              <li className="toggleDropdown">
                 <Link to="/">Home</Link>
               </li>
-              <li>
+              <li className="toggleDropdown">
                 <Link to="/aboutUs">About</Link>
               </li>
               <li className="dropdown"><a href="#" className="dropdown-toggle" data-toggle="dropdown">Events</a>
                 <ul className="dropdown-menu">
                   <li><Link to="/webinars">Webinars</Link></li>
-                  <li><a href="blog-classNameic.html">Quizes</a></li>
-                  <li><a href="blog-fullwidth.html">Competitions</a></li>
-                  <li><a href="blog-masonry.html">Workshop</a></li>
+                  <li><Link to="/seminars">Seminars</Link></li>
+                  <li><Link to="/workshops">Workshops</Link></li>
+                  <li><Link to="/competitions">Competitions</Link></li>
                 </ul>
               </li>
               <li className="dropdown"><a href="#" className="dropdown-toggle" data-toggle="dropdown">Chapters</a>
@@ -53,10 +53,10 @@ const NavBar = () => {
                 </ul>
               </li>
 
-              <li>
+              <li className="toggleDropdown">
                 <Link to="/team">Team</Link>
               </li>
-              <li>
+              <li className="toggleDropdown">
                 <Link to="/joinUs">Join us</Link>
               </li>
 
