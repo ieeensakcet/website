@@ -558,6 +558,7 @@
 	ul.cart-list{border-top: 0 !important;}
 	.img-box{margin-bottom:25px;}
 	.btn-mobilize .btn {margin: 10px auto !important;display: table;min-width: 160px;}
+	.sm-display-none {display: none !important;}
 }
 
 
@@ -590,6 +591,7 @@
 	.copy-right, .footer-copyright ul.social-media{text-align:center;}
 	.footer-copyright ul.social-media{float: none;}
 	.flex-direction-nav a:before{font-size:35px;}
+	.sm-display-none {display: none !important;}
 	h4{line-height:30px;}
 	.error-cover-bg p, .coming-cover-bg p{font-size: 18px;line-height: 32px;}
 	.countdown-container .countdown li, .countdown-container-white .countdown li {min-width: 70px;padding: 10px 10px;width: 30px;margin-right: 0px;}

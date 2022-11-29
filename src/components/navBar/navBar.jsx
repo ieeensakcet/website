@@ -1,28 +1,17 @@
-import React, { useState } from 'react'
-import './navBar.css'
+import React, { useRef, useEffect, useState } from "react";
+// import './navBar.css'
 import SBlogo from '../../assets/img/SB-logo.png'
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import '../../styles/css/icofonts.min.css'
-const NavBar = () => {
-  const [burger_class, setBurgerClass] = useState("burger-bar unclicked")
-  const [menu_class, setMenuClass] = useState("menu hidden")
-  const [isMenuClicked, setIsMenuClicked] = useState(false);
 
-  const updateMenu = () => {
-    if (!isMenuClicked) {
-      setBurgerClass("burger-bar clicked")
-      setMenuClass("menu visible")
-    }
-    else {
-      setBurgerClass("burger-bar unclicked")
-      setMenuClass("menu hidden")
-    }
-    setIsMenuClicked(!isMenuClicked)
-  }
+const NavBar = () => {
+  const location = useLocation()
   return (
     <div >
-      <nav className="navbar navbar-default navbar-fixed navbar-transparent dark bootsnav on no-full no-border">
+      <nav className={
+       `navbar navbar-default navbar-fixed bootsnav on no-full no-border` 
+      }>
         <div className="attr-nav hidden-xs sm-display-none">
           <ul className="social-media-dark social-top">
             <li><a href="#" className="icofont icofont-social-facebook"></a></li>

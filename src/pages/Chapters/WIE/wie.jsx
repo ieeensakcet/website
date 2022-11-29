@@ -33,7 +33,9 @@ const WIE = () => {
             <MemberShipOfferCard data={wieOffers} society={"WIE"} style={"feature-box text-left mb-50 feature-box-square-cs center-feature"} />
 
             {/* <!--== Our Team Start ==--> */}
-            <section className="white-bg">
+            <section className="white-bg" style={{
+                marginTop: "-100px",
+            }}>
                 <div className="container">
                     <div className="row">
                         {userData.map((item, index) => (

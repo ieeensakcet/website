@@ -7,3 +7,18 @@
 .img1{
     background-image: url(../../assets//img/ieee.jpg) center center / cover scroll no-repeat;
 }
+@media (min-width:991px) {
+    .xl-display {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+.row2{
+    margin-top: -50px;
+}
+}
+
+.about-us{
+    background-color: white;
+}

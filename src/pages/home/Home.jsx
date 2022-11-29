@@ -18,28 +18,66 @@ import SPS from '../../assets/img/logos/SPS-logo.png'
 const Home = () => {
   return (
     <div >
-      <Loader/>
+      {/* <Loader/> */}
       {/* <NavBar /> */}
     <div className="wrapper">
-      <section className="pt-0 pb-0">
+      <section className="pt-0 pb-0 sm-display-none">
         <div className="hero-half-slider slick">
             <Carousel image={img1} />
             <Carousel image={img2} />
             <Carousel image={img3} />
         </div>
         </section>
+        <div class="xl-display white-bg">
+          <div style={{
+            width: "100%",
+          }}>
+            <div class="row">
+              <div style={{
+                justifyContent: "center",
+                alignItems: "center",
+                alignContent: "center",
+              }}>
+                <img
+                  className='xl-display'
+                  src={img2}
+                  style={{
+                    backgroundSize: "contain",
+                    backgroundRepeat: "no-repeat",
+                    width: "100%",
+                  }}
+                />
+                <div style={{
+                  justifyContent: "center",
+                  textAlign: "center",
+                  padding: "20px",
+                  paddingTop: 0
+                }}>
+                  <div>
+                    <h5 className="gradient-color mt-30">IEEE STUDENT BRANCH.<br />of Nawab Shah Alam Khan College of Engineering and Technology</h5>
+                    <h5 className="grey-color mt-20">is a student community that strives to inform, learn, entertain, and inspire action through the events and experiences we create</h5>
+                    <p className="mt-20"><a className="btn btn-gradient color-1 btn-lg btn-square animation-move-top-sm">Read More</a> </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>  
 
         {/* about our community  */}
 
-        <section className="white-bg">
+        <section className="about-us">
           <div className="container">
-            <div className="row">
+            <div className="row sm-display-none" style={{
+              marginBottom:"50px"
+            }}>
               <div className="col-sm-8 section-heading hii">
                 <h5 className="default-color mt-0 text-uppercase">Who We Are </h5>
                 <h2 className="mt-0 font-700"><span className="gradient-color">"</span> IEEE Student Branch of NSAKCET <span className="gradient-color">is a student community that strives to inform, learn, entertain, and inspire action through the events and experiences we create.</span><span className="gradient-color">"</span> </h2>
               </div>
             </div>
-            <div className="row mt-50">
+            <div className="row row2 ">
               <div className="col-md-4 feature-box text-center mb-50 col-sm-6 animation-move-top">
                   <img src={mission} alt="idea" width={60} />
                 <h4 className="mt-0 font-600">Mission</h4>
@@ -52,14 +90,16 @@ const Home = () => {
               </div>
               <div className="col-md-4 feature-box text-center mb-50 col-sm-6 animation-move-top">
                 <img src={values} alt="idea" width={60} />
-                <h4 className="mt-0 font-600">Digital Solutions</h4>
+                <h4 className="mt-0 font-600">Value</h4>
                 <p className="font-400">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="white-bg">
+        <section className="white-bg" style={{
+          marginTop: "-150px",
+        }}>
           <div className="container">
             <div className="row">
               <div className="col-md-8 section-heading">
@@ -67,7 +107,7 @@ const Home = () => {
                 <h2 className="mt-0 font-700">Ten Countries Around <span className="gradient-color play-font font-italic">The World</span> Achieve Best Results.</h2>
               </div>
             </div>
-            <div className="row mt-100">
+            <div className="row mt-10">
               <ChaptersCustom Image={CS} />
               <ChaptersCustom Image={WIE} />
               <ChaptersCustom Image={RAS} />

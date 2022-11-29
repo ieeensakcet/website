@@ -655,6 +655,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked {
     }
 
     nav.navbar.bootsnav li.dropdown ul.dropdown-menu {
+        position: absolute;
         -moz-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.08);
         -webkit-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.08);
         -o-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.08);

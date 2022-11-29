@@ -1,13 +1,14 @@
 import React from 'react'
+import "./landingScreen.css"
 
 const landingScreen = ({ chaptersGroupPhoto, chapterName, chapterLogo, Description, themeColor }) => {
   return (
-      <div>
-          <section className="fixed-bg remove-padding" style={{
+      <div >
+          <section className="fixed-bg sm-display-none" style={{
               backgroundImage: `url(${chaptersGroupPhoto})`,
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
-              backgroundPosition: "center"
+              backgroundPosition: "center",
           }}>
               <div className="overlay-bg"></div>
               <div className="container-fluid view-height-100vh relative md-height-600px sm-height-700px xs-height-450px">
@@ -26,7 +27,8 @@ const landingScreen = ({ chaptersGroupPhoto, chapterName, chapterLogo, Descripti
                   </div>
               </div>
           </section>
-          <section class="white-bg pb-60">
+         
+          <section class="white-bg pb-60 sm-display-none">
               <div class="container">
                   <div class="row">
                       <div class="col-md-5">
@@ -37,6 +39,49 @@ const landingScreen = ({ chaptersGroupPhoto, chapterName, chapterLogo, Descripti
                       <div class="col-md-7">
                           <div class="design-studio-text">
                              {Description}
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+          </section> 
+          <section class="xl-display white-bg">
+              <div style={{
+                  width: "100%",
+                  marginTop: "-50px",
+              }}>
+                  <div class="row">
+                          <div style={{
+                              justifyContent: "center",
+                              alignItems: "center",
+                              alignContent:"center",
+                      }}>
+                          <img
+                              className='xl-display'
+                              src={chaptersGroupPhoto}
+                              style={{
+                                  backgroundSize: "contain",
+                                  backgroundRepeat: "no-repeat",
+                                  width: "100%",
+                              }}
+                          />
+                              <img src={chapterLogo} alt="img-01"
+                              style={{
+                                  display: "block",
+                                  justifyContent: "center",
+                                  width: "40%",
+                                  marginLeft: "auto",
+                                  marginRight: "auto",
+                                  marginTop: 0
+                               }}
+                              />
+                          <div style={{
+                              justifyContent: "center",
+                              textAlign: "center",
+                              padding: "20px",
+                              paddingTop:0
+                          }}>
+                              {Description}
                           </div>
                       </div>
                   </div>

@@ -4,7 +4,9 @@ import './memberShipOfferCard.css'
 
 const memberShipOfferCard = ({data, society, style}) => {
     return (
-        <section className="white-bg pb-60">
+        <section className="white-bg" style={{
+            marginTop: "-150px",
+        }}>
             <div className="container">
                 <div className="row">
                     <div className="col-sm section-heading">
