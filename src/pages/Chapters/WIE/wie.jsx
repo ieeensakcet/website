@@ -29,7 +29,7 @@ const WIE = () => {
     return (
         <div className='wrapper' >
 
-            <LandingScreen chaptersGroupPhoto={WIEgrp} chapterName={"IEEE Circuits and Systems Society"} chapterLogo={WieLogo} Description={desc} themeColor="#712e87" />
+            <LandingScreen chaptersGroupPhoto={WIEgrp} chapterName={"IEEE Women and Engineering Society"} chapterLogo={WieLogo} Description={desc} themeColor="#712e87" />
             <MemberShipOfferCard data={wieOffers} society={"WIE"} style={"feature-box text-left mb-50 feature-box-square-cs center-feature"} />
 
             {/* <!--== Our Team Start ==--> */}
