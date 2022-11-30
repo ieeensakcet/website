@@ -13,6 +13,7 @@ import Webinars from "../pages/webinars/webinars";
 import Seminars from "../pages/seminars/seminars";
 import Competitions from "../pages/competitions/competitions";
 import Workshops from "../pages/workshops/workshops";
+import JoinUs from "../pages/joinUs/joinUs";
 
 const index = () => {
   return (
@@ -31,6 +32,7 @@ const index = () => {
         <Route path="/seminars" element={<Seminars />} />
         <Route path="/competitions" element={<Competitions />} />
         <Route path="/workshops" element={<Workshops />} />
+        <Route path="/joinUs" element={<JoinUs />} />
       </Routes>
     </div>
   )
