@@ -1,14 +1,35 @@
 import React, { useState } from "react";
 import "./accordion.css";
 
-const Accordion = ({ heading, content }) => {
+const Accordion = ({Question, Answer, style}) => {
     const [isActive, setIsActive] = useState(false);
     return (
-        <div className="accordion-item" style={{}}>
-            <div className="accordion-toggle" onClick={() => setIsActive(!isActive)}>
-                <h3>{heading}</h3><h1>{isActive ? "-" : "+"}</h1>
+        <div className="panel" style={{
+            color: style === "1" ? "#fff" : "#000", 
+        }}>
+            <div className="panel-heading" onClick={() => setIsActive(!isActive)}>
+                <div style={{
+                   
+                    fontSize: "1.5rem",
+                    flexDirection: "row",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    width: "100%",
+                    cursor: "pointer",
+
+                }} >
+                    <p style={{
+                        color: style === "1" ? "#fff" : "#000", 
+                        fontWeight: "bold",
+                        fontFamily: "Montserrat",
+                    }}>{Question}</p>
+                    <span class="pull-right">{isActive ? <i class="ion-chevron-up"></i> : <i class="ion-chevron-down"></i>}</span>
+                </div>
             </div>
-            {isActive && <div className="accordion-content">{content}</div>}
+            {isActive && <div className="panel-collapse"> <div class="panel-body" style={{
+                color: "black"
+            }}> {Answer}</div></div>}
         </div>
     );
 };
