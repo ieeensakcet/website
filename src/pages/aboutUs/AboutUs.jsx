@@ -6,7 +6,7 @@ import Accordion from '../../components/Accordions/accordions'
 
 const AboutUs = () => {
 
-  const accordionData = [
+  const faqs = [
     {
       heading: "What is IEEE",
       content:
@@ -20,6 +20,8 @@ const AboutUs = () => {
       heading: "What are the payments options for IEEE membership?",
       content: "Online payment and payment through Bank."
     },
+  ];
+  const faqs2 = [
     {
       heading: "I am no longer a student, how can I change to an IEEE Professional Membership?",
       content: "  Once you finish your student membership, you can apply for professional membership the same way you did for student membership."
@@ -35,12 +37,8 @@ const AboutUs = () => {
   ];
   return (
     <div>
-      <div className="about-us" style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(2, 1fr)",
-        width: "100vw",
-        height: "100vh",
-        backgroundColor: "#212121"
+      <div className="aboutUs pt-40" style={{
+       
       }}>
         <img
           className='white-bg'
@@ -89,20 +87,19 @@ const AboutUs = () => {
         </div>
 
       </div>
-      <div className="about-us" style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(2, 1fr)",
-        width: "100vw",
-        height: "100vh",
-        backgroundColor: "#212121"
-      }}>
+      <div className="ourCommunity" >
+        <img
+          className='white-bg xl-display-none'
+          src='https://ik.imagekit.io/ieeensakcet/pyramid_gEz6JFkMv.svg' style={{
+            width: "100%",
+            height: "100%",
+          }} />
         <div style={
           {
             width: "100%",
             justifyContent: "center",
             alignItems: "center",
             display: "flex",
-
           }
         } >
           <div className="">
@@ -114,8 +111,7 @@ const AboutUs = () => {
               marginTop: "1rem",
               textAlign: "center"
             }}>
-              IEEE Student Branch of Nawab Shah Alam Khan College of Engineering
-              and Technology
+              Our Community
             </h2>
             <h5 style={{
               fontSize: "1.5rem",
@@ -137,7 +133,7 @@ const AboutUs = () => {
           </div>
         </div>
         <img
-          className='white-bg'
+          className='white-bg sm-display-none'
           src='https://ik.imagekit.io/ieeensakcet/pyramid_gEz6JFkMv.svg' style={{
             width: "100%",
             height: "100%",
@@ -211,114 +207,50 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      {/* <section class="grey-bg" style={{
-        height:"100vh"
-      }}>
-        <div class="container">
-          <div class="row">
+      <section class="grey-bg">
+          <h1 style={{
+            fontSize: "3rem",
+            fontWeight: "700",
+            color: "#000",
+            textAlign: "center"
+            
+          }} >FAQs</h1>
+        <div class="container mt-80">
+          <div class="row" style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+
+          }}>
             <div class="col-sm-6 col-md-5">
               <div class="panel-group accordion-style-03" id="accordion-style-3">
-                <div class="panel">
-                  <div class="panel-heading active-accordion"> <a data-toggle="collapse" data-parent="#accordion-style-3" href="#question9" aria-expanded="false" class="collapsed">
-                    <div class="panel-title">Innovative Services <span class="pull-right"><i class="ion-chevron-down"></i></span> </div>
-                  </a> </div>
-                  <div id="question9" class="panel-collapse collapse in" aria-expanded="false" role="tablist">
-                    <div class="panel-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt maiores placeat obcaecati, beatae. Facilis dolore ipsam facere perferendis deserunt 	commodi blanditiis nisi accusamus omnis, animi vel tenetur cumque, sed veritatis? </div>
-                  </div>
-                </div>
-                <div class="panel">
-                  <div class="panel-heading"> <a data-toggle="collapse" data-parent="#accordion-style-3" href="#question10" aria-expanded="false" class="collapsed">
-                    <div class="panel-title">Creatvie Design <span class="pull-right"><i class="ion-chevron-down"></i></span> </div>
-                  </a> </div>
-                  <div id="question10" class="panel-collapse collapse" aria-expanded="false" role="tablist">
-                    <div class="panel-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt maiores placeat obcaecati, beatae. Facilis dolore ipsam facere perferendis deserunt 	commodi blanditiis nisi accusamus omnis, animi vel tenetur cumque, sed veritatis? </div>
-                  </div>
-                </div>
-                <div class="panel">
-                  <div class="panel-heading"> <a data-toggle="collapse" data-parent="#accordion-style-3" href="#question11" aria-expanded="false" class="collapsed">
-                    <div class="panel-title">Digital Marketing <span class="pull-right"><i class="ion-chevron-down"></i></span> </div>
-                  </a> </div>
-                  <div id="question11" class="panel-collapse collapse" aria-expanded="false" role="tablist">
-                    <div class="panel-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt maiores placeat obcaecati, beatae. Facilis dolore ipsam facere perferendis deserunt 	commodi blanditiis nisi accusamus omnis, animi vel tenetur cumque, sed veritatis? </div>
-                  </div>
-                </div>
-                <div class="panel">
-                  <div class="panel-heading"> <a data-toggle="collapse" data-parent="#accordion-style-3" href="#question12" aria-expanded="false" class="collapsed">
-                    <div class="panel-title">Lifetime Support <span class="pull-right"><i class="ion-chevron-down"></i></span> </div>
-                  </a> </div>
-                  <div id="question12" class="panel-collapse collapse" aria-expanded="false" role="tablist">
-                    <div class="panel-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt maiores placeat obcaecati, beatae. Facilis dolore ipsam facere perferendis deserunt 	commodi blanditiis nisi accusamus omnis, animi vel tenetur cumque, sed veritatis? </div>
-                  </div>
-                </div>
+                {
+                  faqs.map((faq, index) => {
+                    return (
+                      <Accordion Question={faq.heading} Answer={faq.content} style = {"1"} />
+                    )
+                  }
+                  )
+                }
               </div>
             </div>
 
-            <div class="col-sm-6 col-md-6 xs-mb-30 col-md-offset-1">
+            <div class="col-sm-6 col-md-5">
               <div class="panel-group accordion-style-04" id="accordion-style-4">
-                <div class="panel">
-                  <div class="panel-heading active-accordion"> <a data-toggle="collapse" data-parent="#accordion-style-4" href="#question13" aria-expanded="false" class="collapsed">
-                    <div class="panel-title">Innovative Services <span class="pull-right"><i class="ion-chevron-down"></i></span> </div>
-                  </a> </div>
-                  <div id="question13" class="panel-collapse collapse in" aria-expanded="false" role="tablist">
-                    <div class="panel-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt maiores placeat obcaecati, beatae. Facilis dolore ipsam facere perferendis deserunt 	commodi blanditiis nisi accusamus omnis, animi vel tenetur cumque, sed veritatis? </div>
-                  </div>
-                </div>
-                <div class="panel">
-                  <div class="panel-heading"> <a data-toggle="collapse" data-parent="#accordion-style-4" href="#question14" aria-expanded="false" class="collapsed">
-                    <div class="panel-title">Creatvie Design <span class="pull-right"><i class="ion-chevron-down"></i></span> </div>
-                  </a> </div>
-                  <div id="question14" class="panel-collapse collapse" aria-expanded="false" role="tablist">
-                    <div class="panel-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt maiores placeat obcaecati, beatae. Facilis dolore ipsam facere perferendis deserunt 	commodi blanditiis nisi accusamus omnis, animi vel tenetur cumque, sed veritatis? </div>
-                  </div>
-                </div>
-                <div class="panel">
-                  <div class="panel-heading"> <a data-toggle="collapse" data-parent="#accordion-style-4" href="#question15" aria-expanded="false" class="collapsed">
-                    <div class="panel-title">Digital Marketing <span class="pull-right"><i class="ion-chevron-down"></i></span> </div>
-                  </a> </div>
-                  <div id="question15" class="panel-collapse collapse" aria-expanded="false" role="tablist">
-                    <div class="panel-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt maiores placeat obcaecati, beatae. Facilis dolore ipsam facere perferendis deserunt 	commodi blanditiis nisi accusamus omnis, animi vel tenetur cumque, sed veritatis? </div>
-                  </div>
-                </div>
-                <div class="panel">
-                  <div class="panel-heading"> <a data-toggle="collapse" data-parent="#accordion-style-4" href="#question16" aria-expanded="false" class="collapsed">
-                    <div class="panel-title">Lifetime Support <span class="pull-right"><i class="ion-chevron-down"></i></span> </div>
-                  </a> </div>
-                  <div id="question16" class="panel-collapse collapse" aria-expanded="false" role="tablist">
-                    <div class="panel-body"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt maiores placeat obcaecati, beatae. Facilis dolore ipsam facere perferendis deserunt 	commodi blanditiis nisi accusamus omnis, animi vel tenetur cumque, sed veritatis? </div>
-                  </div>
-                </div>
+                {
+                  faqs2.map((faq, index) => {
+                    return (
+                      <Accordion Question={faq.heading} Answer={faq.content} style ={"2"} />
+                    )
+                  }
+                  )
+                }
               </div>
             </div>
 
           </div>
         </div>
-      </section> */}
-      {/* <a href="javascript:" id="return-to-top"><i class="icofont icofont-arrow-up"></i></a> */}
-      <div style={{
-        height: "100vh",
-        width: "100%",
-        justifyContent: 'center',
-      }}>
-        <div className="about-us" style={{
-          display: 'grid',
-          backgroundColor: '#000000',
-          gridTemplateColumns: 'repeat(2fr, 2fr)',
-          gridTemplateRows: 'repeat(2fr, 2fr)',
-          color: 'white',
-          textAlign: 'center',
-          fontSize: '2rem',
-          fontWeight: 'bold',
-          textTransform: 'uppercase',
-          justifyContent: 'center',
-          alignSelf: 'center',
-        }}>
-          <ul className="accordion">
-            {accordionData.map(({ heading, content }) => (
-              <Accordion heading={heading} content={content} />
-            ))}
-          </ul>
-        </div>
-      </div>
+      </section>
     </div>
   )
 }
