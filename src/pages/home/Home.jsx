@@ -116,7 +116,20 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <Counter/>
+        <Counter />
+        <section class="gradient-bg-6">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12 centerize-col text-center">
+                <h5 class="font-40px font-700 white-color">Let’s talk about your next project</h5>
+                <h5 class="mb-30 font-30px white-color font-700">Marketing. Designer & Developer</h5>
+                <a class="btn btn-xl btn-light btn-circle" style={{
+                  borderRadius: "50px",
+                }} >Join Us</a>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   )
