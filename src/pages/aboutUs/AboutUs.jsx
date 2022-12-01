@@ -3,6 +3,7 @@ import "./AboutUs.css"
 import collegeLogo from "../../assets/img/logos/college_logo.png"
 import pattern from "../../assets/img/pattern-bg-dark.jpg"
 import Accordion from '../../components/Accordions/accordions'
+import Testimonials from '../../components/Testimonials/testimonials'
 
 const AboutUs = () => {
 
@@ -35,11 +36,31 @@ const AboutUs = () => {
       content: "Yes"
     },
   ];
+
+  const testimonials = [
+    {
+      name: "Syeda Kaunain Fatima",
+      Image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/kaunain.jpg",
+      position: "EX SB CHAIR",
+      views: "IEEE has given me the chance to improve my management skills. Being exposed to multitudinous scenarios, I learned valuable wisdom about effectively managing my time, developing new work processes, voicing opinions while being open to feedback and above all, networking with a relevant group of professionals. IEEE members are uniquely positioned to provide the innovative solutions needed in the technical industries going forward. In addition to the human networks that can be tapped for advice or assistance, there are many web resources with special access just for members."
+    },
+    {
+      name: "Hafsa Taruj",
+      Image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/hafsa_EFuQsDexX.jpeg",
+      position: "Ex DESIGN TEAM Lead",
+      views: "Our IEEE Student Branch provides networking opportunities among various entrepreneurs and students so that the members achieve problem-solving and leadership skills, this will help students to come up with new ideas and to determine what they are willing to achieve. The Student Branch teaches the students about the professional environment of the corporate world and also provides technical and fun activities to keep the students active and engaged throughout their campus life."
+    },
+    {
+      name: "Syeda Kaunain Fatima",
+      Image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/kounain.JPG",
+      position: "SB Secretary",
+      views: "Joining IEEE has provided me with professional exposure. It also exposed me to various new opportunities and gave me a chance to organize technical events, seminars, webinars and to network with people all over the world."
+      },
+  ]
+
   return (
     <div>
-      <div className="aboutUs pt-40" style={{
-       
-      }}>
+      <div className="aboutUs pt-40">
         <img
           className='white-bg'
           src={collegeLogo}
@@ -139,70 +160,31 @@ const AboutUs = () => {
             height: "100%",
           }} />
       </div>
-      <section style={{
-        backgroundImage: `url(${pattern})`
-      }}>
+      <section class="white-bg">
+        <h1 style={{
+          fontSize: "3rem",
+          fontWeight: "700",
+          color: "#000",
+          textAlign: "center",
+          textDecorationLine: "underline"
+        }} >Testimonials</h1>
         <div class="container">
           <div class="row">
-            <div class="testimonial-style-6">
-              <div class="col-xs-12">
-                <div class="testimonial-item text-center">
-                  <div class="testimonial-content white-color">
-                    <img class="img-responsive text-center" style={{
-                      width: "150px",
-                      height: "150px",
-                      borderRadius: "100%",
-                      margin: "auto"
+            <div class="slick testimonial">
+              {
+                testimonials.map((testimonial, index) => {
+                  return (
+                    <Testimonials
+                      Name={testimonial.name}
+                      Position={testimonial.position}
+                      Views={testimonial.views}
+                      Image={testimonial.Image}
+                      key = {Math.random()}
+                    />
+                  )
+                }
+                )}
 
-                    }}  src="https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/hafsa_EFuQsDexX.jpeg" alt="avatar-1" />
-                    <p class="mt-20 line-height-26 font-20px">“Our IEEE Student Branch provides networking opportunities among various entrepreneurs and students so that the members achieve problem-solving and leadership skills, this will help students to come up with new ideas and to determine what they are willing to achieve.The Student Branch teaches the students about the professional environment of the corporate world and also provides technical and fun activities to keep the students active and engaged throughout their campus life.”</p>
-                    <h5 class="font-700 mb-0 white-color">Hafsa Taruj</h5>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xs-12">
-                <div class="testimonial-item text-center">
-                  <div class="testimonial-content white-color">
-                    <img class="img-responsive text-center" style={{
-                      width: "150px",
-                      height: "150px",
-                      borderRadius: "100%",
-                      margin: "auto"
-
-                    }} src="https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/kaunain.jpg" alt="avatar-2" />
-                    <p class="mt-20 line-height-26 font-20px">“IEEE has given me the chance to improve my management skills.
-                      Being exposed to multitudinous scenarios, I learned valuable
-                      wisdom about effectively managing my time, developing new work
-                      processes, voicing opinions while being open to feedback and
-                      above all, networking with a relevant group of professionals.
-                      IEEE members are uniquely positioned to provide the innovative
-                      solutions needed in the technical industries going forward. In
-                      addition to the human networks that can be tapped for advice or
-                      assistance, there are many web resources with special access
-                      just for members.”</p>
-                    <h5 class="font-700 mb-0 white-color">Syeda Kounain Fatima</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="testimonial-item text-center">
-                  <div class="testimonial-content white-color">
-                    <img class="img-responsive" style={{
-                      width: "150px",
-                      height: "150px",
-                      borderRadius: "100%",
-                      margin: "auto"
-
-                    }} src="https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/kounain.JPG" alt="avatar-3" />
-                    <p class="mt-20 line-height-26 font-20px">“Joining IEEE has provided me with professional exposure. It
-                      also exposed me to various new opportunities and gave me a
-                      chance to organize technical events, seminars, webinars and to
-                      network with people all over the world.”</p>
-                    <h5 class="font-700 mb-0 white-color">Syeda Kaunain Fatima</h5>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -212,8 +194,8 @@ const AboutUs = () => {
             fontSize: "3rem",
             fontWeight: "700",
             color: "#000",
-            textAlign: "center"
-            
+          textAlign: "center",
+            textDecorationLine:"underline"
           }} >FAQs</h1>
         <div class="container mt-80">
           <div class="row" style={{
@@ -227,7 +209,7 @@ const AboutUs = () => {
                 {
                   faqs.map((faq, index) => {
                     return (
-                      <Accordion Question={faq.heading} Answer={faq.content} style = {"1"} />
+                      <Accordion Question={faq.heading} Answer={faq.content} style={"1"} key={Math.random} />
                     )
                   }
                   )
@@ -240,7 +222,7 @@ const AboutUs = () => {
                 {
                   faqs2.map((faq, index) => {
                     return (
-                      <Accordion Question={faq.heading} Answer={faq.content} style ={"2"} />
+                      <Accordion Question={faq.heading} Answer={faq.content} style ={"2"} key = {Math.random} />
                     )
                   }
                   )
