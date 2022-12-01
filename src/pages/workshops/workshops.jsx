@@ -6,29 +6,29 @@ import "./workshops.css"
 import Loader from '../../components/loader/Loader'
 
 const Workshops = () => {
-    const [webinarsData, setWebinarsData] = useState([])
+    const [workshopsData, setWorkshopsData] = useState([])
 
     useEffect(() => {
         const getData = async () => {
-            const csWebinars = (await getDocs(collection(db, "eventsInfo/csevents/workshops")))
-            const casWebinars = (await getDocs(collection(db, "eventsInfo/casevents/workshops")))
-            const rasWebinars = (await getDocs(collection(db, "eventsInfo/rasevents/workshops")))
-            const spsWebinars = (await getDocs(collection(db, "eventsInfo/spsevents/workshops")))
-            const wieWebinars = (await getDocs(collection(db, "eventsInfo/wievents/workshops")))
+            const csWorkshops = (await getDocs(collection(db, "eventsInfo/csevents/workshops")))
+            const casWorkshops = (await getDocs(collection(db, "eventsInfo/casevents/workshops")))
+            const rasWorkshops = (await getDocs(collection(db, "eventsInfo/rasevents/workshops")))
+            const spsWorkshops = (await getDocs(collection(db, "eventsInfo/spsevents/workshops")))
+            const wieWorkshops = (await getDocs(collection(db, "eventsInfo/wievents/workshops")))
 
 
-            csWebinars.docs.map((doc) => {
-                setWebinarsData((prev) => [...prev, doc.data()])
+            csWorkshops.docs.map((doc) => {
+                setWorkshopsData((prev) => [...prev, doc.data()])
             })
             // spsWebinars.docs.map((doc) => {
             //     setWebinarsData((prev) => [...prev, doc.data()])
             // })
-            rasWebinars.docs.map((doc) => {
-                setWebinarsData((prev) => [...prev, doc.data()])
+            rasWorkshops.docs.map((doc) => {
+                setWorkshopsData((prev) => [...prev, doc.data()])
             })
-            // wieWebinars.docs.map((doc) => {
-            //     setWebinarsData((prev) => [...prev, doc.data()])
-            // })
+            wieWorkshops.docs.map((doc) => {
+                setWorkshopsData((prev) => [...prev, doc.data()])
+            })
         }
         getData();
     }, [])
@@ -37,14 +37,14 @@ const Workshops = () => {
     return (
         <section class="white-bg">
             {
-                webinarsData.length > 0 ? (
+                workshopsData.length > 0 ? (
                     <div class="container">
                         <div className="row xl-display">
                             <div class="col-md-6 col-sm-2 col-xs-12 blog-style-01">
                                 {
 
 
-                                    webinarsData.map((webinar) => {
+                                    workshopsData.map((webinar) => {
                                         // console.log("webinar", webinar)
                                         return (
                                             <EventsCard
@@ -64,7 +64,7 @@ const Workshops = () => {
 
                         }}>
                             {
-                                webinarsData.map((webinar) => {
+                                workshopsData.map((webinar) => {
                                     // console.log("webinar", webinar)
                                     return (
                                         <EventsCard

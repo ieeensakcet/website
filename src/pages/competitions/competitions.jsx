@@ -6,22 +6,22 @@ import "./competitions.css"
 import Loader from '../../components/loader/Loader'
 
 const Competitions = () => {
-    const [webinarsData, setWebinarsData] = useState([])
+    const [competitionsData, setCompetitionsData] = useState([])
 
     useEffect(() => {
         const getData = async () => {
-            const csWebinars = (await getDocs(collection(db, "eventsInfo/csevents/competitions")))
-            const casWebinars = (await getDocs(collection(db, "eventsInfo/casevents/competitions")))
-            const rasWebinars = (await getDocs(collection(db, "eventsInfo/rasevents/competitions")))
-            const spsWebinars = (await getDocs(collection(db, "eventsInfo/spsevents/competitions")))
-            const wieWebinars = (await getDocs(collection(db, "eventsInfo/wievents/competitions")))
+            const csCompetitions = (await getDocs(collection(db, "eventsInfo/csevents/competitions")))
+            const casCompetitions = (await getDocs(collection(db, "eventsInfo/casevents/competitions")))
+            const rasCompetitions = (await getDocs(collection(db, "eventsInfo/rasevents/competitions")))
+            const spsCompetitions = (await getDocs(collection(db, "eventsInfo/spsevents/competitions")))
+            const wieCompetitions = (await getDocs(collection(db, "eventsInfo/wievents/competitions")))
 
 
-            csWebinars.docs.map((doc) => {
-                setWebinarsData((prev) => [...prev, doc.data()])
+            csCompetitions.docs.map((doc) => {
+                setCompetitionsData((prev) => [...prev, doc.data()])
             })
-            wieWebinars.docs.map((doc) => {
-                setWebinarsData((prev) => [...prev, doc.data()])
+            wieCompetitions.docs.map((doc) => {
+                setCompetitionsData((prev) => [...prev, doc.data()])
             })
         }
         getData();
@@ -31,14 +31,14 @@ const Competitions = () => {
     return (
         <section class="white-bg">
             {
-                webinarsData.length > 0 ? (
+                competitionsData.length > 0 ? (
                     <div class="container">
                         <div className="row xl-display">
                             <div class="col-md-6 col-sm-2 col-xs-12 blog-style-01">
                                 {
 
 
-                                    webinarsData.map((webinar) => {
+                                    competitionsData.map((webinar) => {
                                         // console.log("webinar", webinar)
                                         return (
                                             <EventsCard
@@ -58,7 +58,7 @@ const Competitions = () => {
 
                         }}>
                             {
-                                webinarsData.map((webinar) => {
+                                competitionsData.map((webinar) => {
                                     // console.log("webinar", webinar)
                                     return (
                                         <EventsCard

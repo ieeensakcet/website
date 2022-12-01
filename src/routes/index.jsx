@@ -1,7 +1,6 @@
 import React from "react";
 import { Routes, Route} from "react-router-dom";
 import AboutUs from '../pages/aboutUs/AboutUs'
-import Events from '../pages/Events/Events'
 import Home from '../pages/home/Home'
 import OurTeam from '../pages/Team/ourTeam'
 import CS from '../pages/Chapters/CS/cs'
@@ -21,7 +20,6 @@ const index = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aboutUs" element={<AboutUs />} />
-        <Route path="/events" element={<Events />} />
         <Route path="/team" element={<OurTeam />} />
         <Route path="/cs" element={<CS />} />
         <Route path="/cas" element={<CAS />} />
