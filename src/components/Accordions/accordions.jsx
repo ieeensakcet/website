@@ -22,7 +22,7 @@ const Accordion = ({Question, Answer, style}) => {
                     <p style={{
                         color: style === "1" ? "#fff" : "#000", 
                         fontWeight: "bold",
-                        fontFamily: "Montserrat",
+                        fontFamily: "inherit",
                     }}>{Question}</p>
                     <span class="pull-right">{isActive ? <i class="ion-chevron-up"></i> : <i class="ion-chevron-down"></i>}</span>
                 </div>
