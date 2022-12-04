@@ -1,3 +1,4 @@
+@import url(../../utils/colors.css);
 .home{
     background-color: red;
     width: 100vw;
@@ -21,4 +22,54 @@
 
 .about-us{
     background-color: white;
+}
+
+.joinUsBtn{
+    background-color: var(--color-primary);
+    color: white;
+}
+.joinUsBtn:hover{
+    background-color: var(--color-secondary);
+    color: white;
+}
+.primary-h5{
+    color: var(--primary-h5);
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+.italic-h5{
+    color: "#000000";
+    text-transform: uppercase;
+    font-size: 20px; 
+    font-weight: bold;   
+}
+.gradient-color1{
+    color: var(--color-primary);
+}
+
+.primary-desc{
+    color: var(--primary-desc);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+.gradient-bg-6 {
+    background: rgba(194, 20, 48, 255);
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, rgba(194, 20, 48, 255) 0%, rgba(255, 138, 101, 1) 100%);
+    /* FF3.6-15 */
+}
+
+@media (max-width: 991px) {
+    .margin-Top{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .margin-Top{
+        margin-top: -80px;
+    }
 }

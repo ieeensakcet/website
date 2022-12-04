@@ -1,0 +1,4 @@
+li:hover{
+    color: var(--color-secondary);
+    background-color: #000;
+}

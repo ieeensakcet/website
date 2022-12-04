@@ -23,6 +23,9 @@ const Seminars = () => {
             spsSeminars.docs.map((doc) => {
                 setSeminarsData((prev) => [...prev, doc.data()])
             })
+            // casSeminars.docs.map((doc) => {
+            //     setSeminarsData((prev) => [...prev, doc.data()])
+            // })
             casSeminars.docs.map((doc) => {
                 setSeminarsData((prev) => [...prev, doc.data()])
             })

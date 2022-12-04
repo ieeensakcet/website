@@ -1,0 +1,20 @@
+export const Primary = "#14649b";
+// export const a = {
+//     primary: '#14649b',
+//     secondary: '#c31434',
+//     accent: '#11679b',
+//     error: '#FF0000',
+//     warning: '#FF0000',
+//     info: '#FF0000',
+//     success: '#FF0000',
+//     grey: '#FF0000',
+//     dark: '#FF0000',
+//     light: '#FF0000',
+//     white: '#FFFFFF',
+//     black: '#000000',
+//     transparent: 'transparent',
+//     disabled: '#FF0000',
+//     placeholder: '#FF0000',
+//     backdrop: 'rgba(0, 0, 0, 0.5)',
+//     notification: '#FF0000',
+// };

@@ -1,5 +1,16 @@
+@import url("../../utils/colors.css");
 @media (min-width:991px) {
     .xl-display {
         display: none;
     }
+}
+.speakerDetails {
+    border-left: 6px solid var(--color-secondary);
+    margin-top: 10px;
+    height: 70px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }

@@ -7,6 +7,9 @@ import MemberShipOfferCard from '../../../components/chaptersCustomCom/memberShi
 import { doc, getDoc } from 'firebase/firestore'
 import { db } from '../../../utils/firebase/firebase'
 import Team from '../../../components/chaptersCustomCom/team';
+import "./cs.css"
+import MessageCom from '../../../components/chaptersCustomCom/advisorsMessageComponent/messageCom';
+
 const CS = () => {
     const [userData, setData] = useState([])
 
@@ -21,9 +24,14 @@ const CS = () => {
 
     const desc = (
         <div>
-         <h5 className="gradient-color mt-30">IEEE Computer Society .<br /> is a professional society of IEEE its purpose and scope is</h5>
-          <h5 className="grey-color mt-20">is a professional society of IEEE its purpose and scope is “To advance the theory, practice, and application of computer and information processing science and technology” and the “professional standing of its members.”</h5>
-            <p className="mt-50"><a className="btn btn-gradient color-1 btn-lg btn-square animation-move-top-sm">Read More</a> </p>
+            <h5 className="mt-30 font-italic italic-h5">IEEE Computer Society</h5>
+            <h5 className="grey-color mt-20" style={{
+                fontSize: "1.6rem",
+                lineHeight: "2.3rem"
+          }}>is a professional society of IEEE its purpose and scope is “To advance the theory, practice, and application of computer and information processing science and technology” and the “professional standing of its members.”</h5>
+            <p className="mt-50"><a className="btn btn-lg animation-move-top-sm btnColor" href='https://www.computer.org/' style={{
+                color:"#ffffff"
+            }}>Read More</a> </p>
         </div>
     )
   return (
@@ -40,8 +48,10 @@ const CS = () => {
                   <div>
                       <div>
                           <div className="col-md-12 col-sm-8 section-heading">
-                              <h5 className="gradient-color-2 mt-0 text-uppercase">Our Creative Team</h5>
-                              <h2 className="mt-0 font-700">The Strength of the Team is Each<br/> Individual Member. </h2>
+                              <h5 className="play-font font-italic italic-h5" style={{
+                                  color: "#000000",
+                                  fontSize: "30px",
+                              }}>Our Team</h5>
                           </div>
                       </div>
                   </div>
@@ -57,6 +67,12 @@ const CS = () => {
                   </div>
               </div>
           </section>
+          <MessageCom
+              Name={"Ms. Syeda Farhath Begum"}
+              userImage={"https://www.logolynx.com/images/logolynx/03/039b004617d1ef43cf1769aae45d6ea2.png"}
+              Message={"Joining IEEE is due to the fact that,you can have the smartest people in the world around you,but without collaboration the technology is not going to evolve. As a member of CS, I find the membership invaluable source of information and conduit for growth. I believe for lasting contribution to a discipline, you really need to have an organization like IEEE behind you."}
+              Designation={"CSE, Hod"}
+          />
     </div>
   )
 }

@@ -1,0 +1,128 @@
+.messageContainer{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary);
+    padding: 0 10px;
+}
+@media (max-width: 768px) {
+    .messageContainer{
+        height: 70vh;
+    }
+    .messageBox{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgBox{
+        width: 100%;
+        text-align: center;
+    }
+
+    .heading{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding-top: 20px;
+        color: #ffffff;
+    }
+
+    .message{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding-top: 20px;
+        color: #ffffff;
+    }
+
+    .message p{
+    color: #ffffff;
+    text-align: center;
+    padding: 0 10px;
+   }
+
+   .Name {
+       font-size: 18px;
+       font-weight: 600;
+       color: #ffffff;
+       padding-top: 10px;
+   }
+
+   .designation {
+       font-size: 14px;
+       font-weight: 400;
+       color: #ffffff;
+       padding: 10px;
+   }
+}
+
+@media (min-width: 1199px) {
+
+.messageBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.imgBox{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    padding: 35px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
+
+}
+
+.message{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    color: #ffffff;
+}
+
+.message p{
+    font-size: 19px;
+    color: #ffffff;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.advisorsImg{
+    border-radius: 50%;
+    width: 200px;
+}
+
+.Name{
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.designation{
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 10px;
+}
+}
