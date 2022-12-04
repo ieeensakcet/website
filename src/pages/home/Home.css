@@ -5,9 +5,6 @@
     height: 100vh;
 }
 
-.img1{
-    background-image: url(../../assets//img/ieee.jpg) center center / cover scroll no-repeat;
-}
 @media (min-width:991px) {
     .xl-display {
         display: none;

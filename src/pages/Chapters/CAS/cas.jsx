@@ -1,5 +1,4 @@
 import React,{useState, useEffect} from 'react'
-import CASgrp from "../../../assets/img/GroupPhotos/CAS-Group.JPG"
 import CasLogo from "../../../assets/img/logos/CAS-logo.png"
 import { casOffers } from "../../../utils/membershipOffers";
 import LandingScreen from '../../../components/chaptersCustomCom/LandingScreen/landingScreen';
@@ -35,7 +34,7 @@ const CAS = () => {
     return (
         <div className='wrapper' >
 
-            <LandingScreen chaptersGroupPhoto={CASgrp} chapterName={"IEEE Circuits and Systems Society"} chapterLogo={CasLogo} Description={desc} themeColor="#74bb5c" />
+            <LandingScreen chaptersGroupPhoto={"https://ik.imagekit.io/invincible/tr:w-1200,h-600/CAS-Group.JPG"} chapterName={"IEEE Circuits and Systems Society"} chapterLogo={CasLogo} Description={desc} themeColor="#74bb5c" />
             <MemberShipOfferCard data={casOffers} society={"CAS"} />
 
             {/* <!--== Our Team Start ==--> */}

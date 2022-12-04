@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import WIEgrp from "../../../assets/img/GroupPhotos/WIE-Group.JPG"
 import WieLogo from "../../../assets/img/logos/WIE-logo.png"
 import { wieOffers } from "../../../utils/membershipOffers";
 import LandingScreen from '../../../components/chaptersCustomCom/LandingScreen/landingScreen';
@@ -36,7 +35,7 @@ const WIE = () => {
     return (
         <div className='wrapper' >
 
-            <LandingScreen chaptersGroupPhoto={WIEgrp} chapterName={"IEEE Women and Engineering Society"} chapterLogo={WieLogo} Description={desc} themeColor="#712e87" />
+            <LandingScreen chaptersGroupPhoto={"https://ik.imagekit.io/invincible/tr:w-1200,h-600/WIE-Group.JPG"} chapterName={"IEEE Women and Engineering Society"} chapterLogo={WieLogo} Description={desc} themeColor="#712e87" />
             <MemberShipOfferCard data={wieOffers} society={"WIE"} style={"feature-box text-left mb-50 feature-box-square-cs center-feature"} />
 
             {/* <!--== Our Team Start ==--> */}
