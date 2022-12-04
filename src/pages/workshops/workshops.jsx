@@ -44,7 +44,10 @@ const Workshops = () => {
                                 {
 
 
-                                    workshopsData.map((webinar) => {
+                                    workshopsData.sort(((a, b) => {
+                                        return new Date(b.date) - new Date(a.date)
+                                    }
+                                    )).map((webinar) => {
                                         // console.log("webinar", webinar)
                                         return (
                                             <EventsCard

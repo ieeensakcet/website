@@ -26,13 +26,15 @@ const Seminars = () => {
             // casSeminars.docs.map((doc) => {
             //     setSeminarsData((prev) => [...prev, doc.data()])
             // })
-            casSeminars.docs.map((doc) => {
-                setSeminarsData((prev) => [...prev, doc.data()])
-            })
+            // casSeminars.docs.map((doc) => {
+            //     setSeminarsData((prev) => [...prev, doc.data()])
+            // })
             wieSeminars.docs.map((doc) => {
                 setSeminarsData((prev) => [...prev, doc.data()])
             })
+
         }
+
         getData();
     }, [])
     // console.log(webinarsData)
@@ -47,7 +49,10 @@ const Seminars = () => {
                                 {
 
 
-                                    seminarsData.map((webinar) => {
+                                    seminarsData.sort(((a, b) => {
+                                        return new Date(b.date) - new Date(a.date)
+                                    }
+                                    )).map((webinar) => {
                                         // console.log("webinar", webinar)
                                         return (
                                             <EventsCard
