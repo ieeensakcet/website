@@ -31,7 +31,7 @@ const counter = () => {
                             <img src={professionals} alt="idea" width={30} />
                             <h2 className='font-700' style={{
                                 color: "#c31434"
-                            }}><span className="counter font-700 white-color">5</span>+</h2>
+                            }}><span className="counter font-700 white-color">5</span></h2>
                             <h3 className="white-color">Professional Members</h3>
                         </div>
                     </div>
@@ -40,7 +40,7 @@ const counter = () => {
                             <img src={group} alt="idea" width={30} />
                             <h2 className='font-700' style={{
                                 color: "#c31434"
-                            }}><span className="counter font-700 white-color">5</span>+</h2>
+                            }}><span className="counter font-700 white-color">5</span></h2>
                             <h3 className="white-color">Chapters</h3>
                         </div>
                     </div>
