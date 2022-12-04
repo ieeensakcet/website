@@ -29,7 +29,12 @@ const Accordion = ({Question, Answer, styles}) => {
             </div>
             {isActive && <div className="panel-collapse"> <div class="panel-body" style={{
                 color: "black"
-            }}> {Answer}</div></div>}
+            }}><p style={{
+                    color:"#000",
+                    fontFamily: "inherit",
+                    fontSize: "1.2rem",
+
+            }}>{Answer}</p></div></div>}
         </div>
     );
 };
