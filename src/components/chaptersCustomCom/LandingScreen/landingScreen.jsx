@@ -28,7 +28,9 @@ const landingScreen = ({ chaptersGroupPhoto, chapterName, chapterLogo, Descripti
               </div>
           </section>
          
-          <section class="white-bg pb-60 sm-display-none">
+          <section class="white-bg pb-70 sm-display-none mt-0" style={{
+                paddingTop: "0px",
+          }}>
               <div class="container">
                   <div class="row">
                       <div class="col-md-5">

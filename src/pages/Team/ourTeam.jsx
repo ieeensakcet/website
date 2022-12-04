@@ -26,18 +26,21 @@ const OurTeam = () => {
         userData.length > 1 ? (
         <section class="white-bg">
           <div class="container">
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-8 section-heading">
-                  <h5 class="default-color mt-0 text-uppercase">IEEE Student Branch</h5>
-                  <h2 class="mt-0 font-700">Our Team </h2>
+              <div class="container">
+                <div>
+                <div>
+                  <div className="col-md-12 col-sm-8 section-heading">
+                    <h5 className="play-font font-italic italic-h5" style={{
+                      color: "#000000",
+                      fontSize: "30px",
+                    }}>IEEE Student Branch</h5>
+                  </div>
                 </div>
-              </div>
               </div>
                 <div class="cbp-l-filters-alignCenter text-sm-center mb-100">
                   <div class="cbp-filter-item">
                   <a href="#execom" className='cbp-filter-item'>
-                    execom
+                    Execom
                   </a>
                   </div>
                   <div class="cbp-filter-item">
@@ -55,8 +58,8 @@ const OurTeam = () => {
                     Tech Team
                     </a>
                   </div>
-          </div>
-          
+                </div>
+              </div>
               <div style={{
                 marginTop: "-100px",
               }}>
@@ -64,10 +67,14 @@ const OurTeam = () => {
               <div className="container">
                 <div >
                   <div>
-                    <div className="col-md-12 col-sm-8 section-heading">
-                      <h5 className="gradient-color-2 mt-0 text-uppercase">Execom</h5>
-                      <h2 className="mt-0 font-700">The Strength of the Team is Each<br /> Individual Member. </h2>
-                    </div>
+                        <div>
+                          <div className="col-md-12 col-sm-8 section-heading">
+                            <h5 className="font-italic italic-h5" style={{
+                              color: "#000000",
+                              fontSize: "20px",
+                            }}>Execom Team</h5>
+                          </div>
+                        </div>
                   </div>
                 </div>
                 <div className="row mt-50">
@@ -86,12 +93,14 @@ const OurTeam = () => {
                 }}>
               <div className="container">
                 <div >
-                  <div>
-                    <div className="col-md-12 col-sm-8 section-heading">
-                      <h5 className="gradient-color-2 mt-0 text-uppercase">Leadership Team</h5>
-                      <h2 className="mt-0 font-700">The Strength of the Team is Each<br /> Individual Member. </h2>
-                    </div>
-                  </div>
+                      <div>
+                        <div className="col-md-12 col-sm-8 section-heading">
+                          <h5 className="font-italic italic-h5" style={{
+                            color: "#000000",
+                            fontSize: "20px",
+                          }}>Leadership Team</h5>
+                        </div>
+                      </div>
                 </div>
                 <div className="row mt-50">
                   {
@@ -111,12 +120,14 @@ const OurTeam = () => {
                 }}>
               <div className="container">
                 <div >
-                  <div>
-                    <div className="col-md-12 col-sm-8 section-heading">
-                      <h5 className="gradient-color-2 mt-0 text-uppercase">Publicity Team</h5>
-                      <h2 className="mt-0 font-700">The Strength of the Team is Each<br /> Individual Member. </h2>
-                    </div>
-                  </div>
+                      <div>
+                        <div className="col-md-12 col-sm-8 section-heading">
+                          <h5 className="font-italic italic-h5" style={{
+                            color: "#000000",
+                            fontSize: "20px",
+                          }}>Publicity Team</h5>
+                        </div>
+                      </div>
                 </div>
                 <div className="row mt-50">
                   {
@@ -134,14 +145,14 @@ const OurTeam = () => {
                   marginBottom:0
                 }}>
               <div className="container">
-                <div>
-                  <div>
-                    <div className="col-md-12 col-sm-8 section-heading">
-                      <h5 className="gradient-color-2 mt-0 text-uppercase">Tech Team</h5>
-                      <h2 className="mt-0 font-700">The Strength of the Team is Each<br /> Individual Member. </h2>
+                    <div>
+                      <div className="col-md-12 col-sm-8 section-heading">
+                        <h5 className="font-italic italic-h5" style={{
+                          color: "#000000",
+                          fontSize: "20px",
+                        }}>Tech Team</h5>
+                      </div>
                     </div>
-                  </div>
-                </div>
                 <div className="row mt-50">
                   {
                     userData[7].positions.map((item, index) => {

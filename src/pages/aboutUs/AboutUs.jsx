@@ -24,7 +24,7 @@ const AboutUs = () => {
   ];
   const faqs2 = [
     {
-      heading: "I am no longer a student, how can I change to an IEEE Professional Membership?",
+      heading: "I am no longer a student, how can I change my Membership?",
       content: "  Once you finish your student membership, you can apply for professional membership the same way you did for student membership."
     },
     {
@@ -47,7 +47,7 @@ const AboutUs = () => {
     {
       name: "Hafsa Taruj",
       Image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/hafsa_EFuQsDexX.jpeg",
-      position: "Ex DESIGN TEAM Lead",
+      position: "Ex Design Lead",
       views: "Our IEEE Student Branch provides networking opportunities among various entrepreneurs and students so that the members achieve problem-solving and leadership skills, this will help students to come up with new ideas and to determine what they are willing to achieve. The Student Branch teaches the students about the professional environment of the corporate world and also provides technical and fun activities to keep the students active and engaged throughout their campus life."
     },
     {
@@ -93,9 +93,10 @@ const AboutUs = () => {
               fontSize: "1.5rem",
               fontWeight: "400",
               color: "#fff",
-              lineHeight: "1.2",
-              padding: "3rem",
-              textAlign: "center"
+              lineHeight: "1.3",
+              padding: "4rem",
+              textAlign: "center",
+              fontFamily: "Poppins"
           }}>
             is a student community that strives to inform, learn, entertain, and
             inspire action through the events and experiences we create. We
@@ -138,9 +139,10 @@ const AboutUs = () => {
               fontSize: "1.5rem",
               fontWeight: "400",
               color: "#fff",
-              lineHeight: "1.2",
-              padding: "3rem",
-              textAlign: "center"
+              lineHeight: "1.3",
+              padding: "4rem",
+              textAlign: "center",
+              fontFamily: "Poppins"
             }}>
               IEEE has its community around the globe, with more than 420,000 IEEE
               members. The world map has been divided into 10 regions and we come

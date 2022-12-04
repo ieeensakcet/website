@@ -7,7 +7,7 @@
     font-weight: bold;
 }
 
-.btnColor{
+.btnColor {
     background-color: var(--color-secondary);
     color: "#ffffff";
 }

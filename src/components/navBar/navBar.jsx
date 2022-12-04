@@ -14,8 +14,9 @@ const NavBar = () => {
       }>
         <div className="attr-nav hidden-xs sm-display-none">
           <ul className="social-media-dark social-top">
-            <li><a href="#" className="icofont icofont-social-facebook"></a></li>
-            <li><a href="#" className="icofont icofont-social-twitter"></a></li>
+            <li><a href="https://twitter.com/ieeensakcet" className="icofont icofont-social-twitter"></a></li>
+            <li><a href="https://www.instagram.com/ieeensakcet/" className="icofont icofont-social-instagram"></a></li>
+            <li><a href="https://www.linkedin.com/company/ieeensakcet/" className="icofont icofont-social-linkedin"></a></li>
           </ul>
         </div>
         <div className="navbar-header">

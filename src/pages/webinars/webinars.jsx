@@ -20,6 +20,12 @@ const Webinars = () => {
             csWebinars.docs.map((doc) => {
                 setWebinarsData((prev) => [...prev, doc.data()])
             })
+            wieWebinars.docs.map((doc) => {
+                setWebinarsData((prev) => [...prev, doc.data()])
+            })
+            rasWebinars.docs.map((doc) => {
+                setWebinarsData((prev) => [...prev, doc.data()])
+            })
         }
         getData();
     }, [])

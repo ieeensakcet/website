@@ -1,0 +1,40 @@
+@import url("../../../utils/colors.css");
+
+.mainBG {
+    background: linear-gradient(120deg, rgba(255, 177, 141, 1) 0%, rgba(173, 181, 200, 1) 100%)
+}
+
+.mainIMG {
+    background: linear-gradient(90deg, rgba(255, 17, 95, 1) 0%, rgba(288, 96, 45, 1) 100%)
+}
+
+.service-box-style-01 .feature-box-square:hover {
+    background: -webkit-linear-gradient(left, rgb(255, 163, 0) 0%, rgba(255, 88, 88, 0.8) 100%);
+    background: -moz-linear-gradient(left, rgba(248, 87, 166, 0.8) 0%, rgba(255, 88, 88, 0.8) 100%);
+    background: -ms-linear-gradient(left, rgba(248, 87, 166, 0.8) 0%, rgba(255, 88, 88, 0.8) 100%);
+    background: -o-linear-gradient(left, rgba(248, 87, 166, 0.8) 0%, rgba(255, 88, 88, 0.8) 100%);
+    background: linear-gradient(left, rgba(248, 87, 166, 0.8) 0%, rgba(255, 88, 88, 0.8) 100%);
+}
+
+.service-box-style-01 .feature-box-square:hover i,
+.service-box-style-01 .feature-box-square:hover h1,
+.service-box-style-01 .feature-box-square:hover h2,
+.service-box-style-01 .feature-box-square:hover h3,
+.service-box-style-01 .feature-box-square:hover h4,
+.service-box-style-01 .feature-box-square:hover h5,
+.service-box-style-01 .feature-box-square:hover h6,
+.service-box-style-01 .feature-box-square:hover p {
+    color: #fff !important;
+}
+
+.italic-h5 {
+    color: "#000000";
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btnColor {
+    background-color: var(--color-secondary);
+    color: "#ffffff";
+}

@@ -7,7 +7,7 @@ import MemberShipOfferCard from '../../../components/chaptersCustomCom/memberShi
 import { doc, getDoc, collection } from 'firebase/firestore'
 import { db } from '../../../utils/firebase/firebase'
 import Team from '../../../components/chaptersCustomCom/team';
-
+import MessageCom from '../../../components/chaptersCustomCom/advisorsMessageComponent/messageCom';
 const CAS = () => {
     const [userData, setData] = useState([])
 
@@ -22,25 +22,32 @@ const CAS = () => {
 
     const desc = (
         <div>
-            <h5 className="gradient-color mt-30">IEEE Circuits and Systems Society .<br /> is the leading organization that promotes the advancement of</h5>
-            <h5 className="grey-color mt-20">the theory, analysis, design, tools, and implementation of circuits and systems. The field spans their theoretical foundations, applications, and architectures, as well as circuits and systems implementation of algorithms for signal and information processing.</h5>
-            <p className="mt-50"><a className="btn btn-gradient color-1 btn-lg btn-square animation-move-top-sm">Read More</a> </p>
+            <h5 className="mt-30 font-italic italic-h5">IEEE Circuits and Systems Society</h5>
+            <h5 className="grey-color mt-20" style={{
+                fontSize: "1.6rem",
+                lineHeight: "2.3rem"
+            }}>is the leading organization that promotes the advancement of the theory, analysis, design, tools, and implementation of circuits and systems. The field spans their theoretical foundations, applications, and architectures for signal and information processing.</h5>
+            <p className="mt-50"><a className="btn btn-lg animation-move-top-sm btnColor" href="https://ieee-cas.org/">Read More</a> </p>
         </div>
     )
     return (
         <div className='wrapper' >
 
             <LandingScreen chaptersGroupPhoto={CASgrp} chapterName={"IEEE Circuits and Systems Society"} chapterLogo={CasLogo} Description={desc} themeColor="#74bb5c" />
-            <MemberShipOfferCard data={casOffers} society={"CAS"} style={"feature-box text-left mb-50 feature-box-square-cs center-feature"} />
+            <MemberShipOfferCard data={casOffers} society={"CAS"} />
 
             {/* <!--== Our Team Start ==--> */}
-            <section className="white-bg">
+            <section className="white-bg" style={{
+                marginTop: "-100px",
+            }} >
                 <div className="container">
                     <div>
                         <div>
                             <div className="col-md-12 col-sm-8 section-heading">
-                                <h5 className="gradient-color-2 mt-0 text-uppercase">Our Creative Team</h5>
-                                <h2 className="mt-0 font-700">The Strength of the Team is Each<br /> Individual Member. </h2>
+                                <h5 className="play-font font-italic italic-h5" style={{
+                                    color: "#000000",
+                                    fontSize: "30px",
+                                }}>Our Team</h5>
                             </div>
                         </div>
                     </div>
@@ -56,6 +63,12 @@ const CAS = () => {
                     </div>
                 </div>
             </section>
+            <MessageCom
+                Name={"Ms. Rahmath Unissa"}
+                userImage={"https://ik.imagekit.io/ieeensakcet/profiles/Executive_Committee/tr:w-370,h-370/Rahmath_mam_20221203_BxJ7tVAzH.jpg"}
+                Message={"Joining IEEE is due to the fact that,you can have the smartest people in the world around you,but without collaboration the technology is not going to evolve. As a member of CAS, I find the membership invaluable source of information and conduit for growth. I believe for lasting contribution to a discipline, you really need to have an organization like IEEE behind you."}
+                Designation={"CAS & SPS Advisor"}
+            />
         </div>
     )
 }

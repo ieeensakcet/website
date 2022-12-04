@@ -13,8 +13,12 @@ function Testimonials({Name, Position, Views,Image}) {
                         height: "150px",
                         borderRadius: "50%",
                     }} alt="avatar-1" />
-                    <h5 class="font-700 mb-0 white-color">{Name}</h5>
-                    <span class="gradient-color font-14px">{Position}</span>
+                    <h5 class="font-700 mb-0 white-color font-16px" style={{
+                        paddingTop: "15px"
+                    }}>{Name}</h5>
+                    <span class="font-8px" style={{
+                        color:"#f0f0f0"
+                    }}>{Position}</span>
                     <p class="mt-20 views"
                     >{Views} </p>
                 </div>
