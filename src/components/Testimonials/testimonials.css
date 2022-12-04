@@ -13,3 +13,10 @@
         text-align: start;
     }
 }
+
+.overflow{
+    overflow-wrap: break-word;
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+        -ms-hyphens: auto;
+}

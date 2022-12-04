@@ -3,7 +3,7 @@ import "./testimonials.css"
 
 function Testimonials({Name, Position, Views,Image}) {
     return (
-        <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="col-md-4 col-sm-6 col-xs-12 overflow">
             <div class="testimonial-item">
                 <div class="testimonial-content" style={{
                     height: "70vh"
