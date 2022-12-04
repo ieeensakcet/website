@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './Home.css'
-import Loader from "../../components/loader/Loader"
+// import Loader from "../../components/loader/Loader"
 import Carousel from '../../components/Carousel/Carousel'
 import ChaptersCustom from '../../components/chaptersCutomContainer/chaptersCustom'
 import Counter from '../../components/counter/counter'
@@ -42,7 +42,7 @@ const Home = () => {
     <div className="wrapper">
       <section className="pt-0 pb-0 sm-display-none">
         <div className="hero-half-slider slick">
-            <Carousel image={img1} />
+            <Carousel image={"https://ik.imagekit.io/invincible/tr:w-1000,h-500/ieeeCarousel1.JPG"} />
             <Carousel image={img2} />
             <Carousel image={img3} />
         </div>
@@ -65,6 +65,7 @@ const Home = () => {
                     backgroundRepeat: "no-repeat",
                     width: "100%",
                   }}
+                  alt="SB"
                 />
                 <div style={{
                 }}>
@@ -100,7 +101,60 @@ const Home = () => {
             </div>
           </div>
         </section>
+        <section class="white-bg"
+          style={{
+            marginTop: "-160px",
+          }}>
+          <div class="tr-collection-type-1">
+             
+            <div class="container">
+              <div class="row">
+                <div className="col-md-8 section-heading">
+                  <h5 className="mt-0 text-uppercase primary-h5 font-italic play-font">EVENTS</h5>
+                </div>
+                <div class="col-md-12 col-sm-6 col-xs-12 banner-left">
+                  <div class="row">
+                    <div class="col-xs-12 col-md-6 col-sm-6 shop-banner">
+                      <div class="tr-collection">
+                        <a href="#.">
+                          <img src={"https://ik.imagekit.io/invincible/tr:w-500,h-300/Seminar_1.jpg"} alt="torner-shop-banner" />
+                          <span class="tr-collection-btn">Seminars</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-sm-6 shop-banner">
+                      <div class="tr-collection">
+                        <a href="#.">
+                          <img src={"https://ik.imagekit.io/invincible/tr:w-500,h-300/Webinar3.jpg"} alt="torner-shop-banner" />
+                          <span class="tr-collection-btn">Webinars</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-sm-6 shop-banner">
+                      <div class="tr-collection">
+                        <a href="#.">
+                          <img src={"https://ik.imagekit.io/invincible/tr:w-500,h-300/Workshop2.jpg"} alt="torner-shop-banner" />
+                          <span class="tr-collection-btn">Workshops</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-sm-6 shop-banner">
+                      <div class="tr-collection">
+                        <a href="#.">
+                          <img src={"https://ik.imagekit.io/invincible/tr:w-500,h-300/Workshop1.jpg"} alt="torner-shop-banner" />
+                          <span class="tr-collection-btn">Competitions</span>
+                        </a>
+                      </div>
+                    </div>
 
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </section>
         <section className="white-bg" style={{
           marginTop: "-150px",
         }}>
@@ -133,7 +187,6 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <Counter/>
       </div>
     </div>
   )

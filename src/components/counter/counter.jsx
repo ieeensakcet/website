@@ -1,8 +1,8 @@
 import React from 'react'
-import community from '../../assets/img/icons/community.png'
-import events from '../../assets/img/icons/events.png'
-import group from '../../assets/img/icons/group.png'
-import professionals from '../../assets/img/icons/professionals.png'
+import community from '../../assets/img/icons/studentMember.svg'
+import events from '../../assets/img/icons/events.svg'
+import group from '../../assets/img/icons/chapters.svg'
+import professionals from '../../assets/img/icons/professional.svg'
 const counter = () => {
     return (
         <section className="dark-bg pt-80 pb-80">

@@ -49,7 +49,7 @@ const footer = () => {
                               </div>
                           </div>
                           <div className="col-sm-6 col-md-3">
-                              <div className="widget widget-text">
+                              <div className="widget widget-links">
                                   <h5 className="widget-title">Reach Us At</h5>
                                   <p><a href="https://twitter.com/ieeensakcet" className="icofont icofont-social-twitter">  Twitter</a></p>
                                   <p><a href="https://www.instagram.com/ieeensakcet/" className="icofont icofont-social-instagram">  Instagram</a></p>

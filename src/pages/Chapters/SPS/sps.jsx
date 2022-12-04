@@ -1,5 +1,4 @@
 import React,{useEffect, useState} from 'react'
-import SPSgrp from "../../../assets/img/GroupPhotos/SPS-Group.JPG"
 import SpsLogo from "../../../assets/img/logos/SPS-logo.png"
 import { spsOffers } from "../../../utils/membershipOffers";
 import LandingScreen from '../../../components/chaptersCustomCom/LandingScreen/landingScreen';
@@ -35,7 +34,7 @@ const SPS = () => {
     return (
         <div className='wrapper' >
 
-            <LandingScreen chaptersGroupPhoto={SPSgrp} chapterName={"IEEE Signal Processing Society"} chapterLogo={SpsLogo} Description={desc} themeColor="#76bf17" />
+            <LandingScreen chaptersGroupPhoto={"https://ik.imagekit.io/invincible/tr:w-1200,h-600/SPS-Group.JPG"} chapterName={"IEEE Signal Processing Society"} chapterLogo={SpsLogo} Description={desc} themeColor="#76bf17" />
             <MemberShipOfferCard data={spsOffers} society={"SPS"} style={"feature-box text-left mb-50 feature-box-square-cs center-feature"} />
 
             {/* <!--== Our Team Start ==--> */}
