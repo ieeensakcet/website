@@ -39,22 +39,30 @@ const OurTeam = () => {
               </div>
                 <div class="cbp-l-filters-alignCenter text-sm-center mb-100">
                   <div class="cbp-filter-item">
-                  <a href="#execom" className='cbp-filter-item'>
+                    <a href="#execom" className='cbp-filter-item' style={{
+                      color: "#14649b",
+                  }}>
                     Execom
                   </a>
                   </div>
                   <div class="cbp-filter-item">
-                  <a href="#leadership" className='cbp-filter-item'>
+                    <a href="#leadership" className='cbp-filter-item' style={{
+                      color: "#14649b",
+                    }}>
                     Leadership Team
                   </a>
                   </div>
                   <div class="cbp-filter-item">
-                  <a href="#publicity" className='cbp-filter-item'>
+                    <a href="#publicity" className='cbp-filter-item' style={{
+                      color: "#14649b",
+                    }}>
                     Publicity Team
                   </a>
                   </div>
                   <div class="cbp-filter-item" >
-                    <a href="#tech" className='cbp-filter-item'>
+                    <a href="#tech" className='cbp-filter-item' style={{
+                      color: "#14649b",
+                    }}>
                     Tech Team
                     </a>
                   </div>

@@ -1,0 +1,10 @@
+@media (min-width: 1199px) {
+    .greyLayer{
+            -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+        }
+    .greyLayer:hover{
+            -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+    }
+}
