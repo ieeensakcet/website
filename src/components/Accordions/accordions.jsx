@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./accordion.css";
 
-const Accordion = ({Question, Answer, style}) => {
+const Accordion = ({Question, Answer, styles}) => {
     const [isActive, setIsActive] = useState(false);
     return (
         <div className="panel" style={{
-            color: style === "1" ? "#fff" : "#000", 
+            color: styles === "1" ? "#fff" : "#000", 
         }}>
             <div className="panel-heading" onClick={() => setIsActive(!isActive)}>
                 <div style={{
@@ -20,7 +20,7 @@ const Accordion = ({Question, Answer, style}) => {
 
                 }} >
                     <p style={{
-                        color: style === "1" ? "#fff" : "#000", 
+                        color: styles === "1" ? "#fff" : "#000", 
                         fontWeight: "bold",
                         fontFamily: "inherit",
                     }}>{Question}</p>

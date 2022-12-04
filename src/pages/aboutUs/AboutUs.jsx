@@ -1,7 +1,6 @@
 import React from 'react'
 import "./AboutUs.css"
 import collegeLogo from "../../assets/img/logos/college_logo.png"
-import pattern from "../../assets/img/pattern-bg-dark.jpg"
 import Accordion from '../../components/Accordions/accordions'
 import Testimonials from '../../components/Testimonials/testimonials'
 
@@ -59,15 +58,15 @@ const AboutUs = () => {
   ]
 
   return (
-    <div>
-      <div className="aboutUs pt-40">
+    <div className='pt-60' >
+      <div className="aboutUs">
         <img
           className='white-bg'
           src={collegeLogo}
           style={{
             width: "100%",
             height: "100%",
-          }} />
+          }} alt="hierarchy" />
         <div style={
           {
             width: "100%",
@@ -77,14 +76,21 @@ const AboutUs = () => {
 
           }
         } >
-        <div className="mt-60">
+          <div className="mt-60" style={{
+            width: "100%",
+            height:"60vh",
+            justifyContent: "center",
+            alignItems: "center",
+        }}>
           <h2 style={{
-              fontSize: "3rem",
+              fontSize: "2.5rem",
               fontWeight: "700",
               color: "#fff",
               lineHeight: "1.2",
               marginTop: "1rem",
-              textAlign: "center"
+              textAlign: "center",
+              padding: "10px",
+              paddingTop:"30px"
           }}>
             IEEE Student Branch of Nawab Shah Alam Khan College of Engineering
             and Technology
@@ -95,13 +101,14 @@ const AboutUs = () => {
               color: "#fff",
               lineHeight: "1.3",
               padding: "4rem",
-              textAlign: "center",
-              fontFamily: "Poppins"
+              fontFamily: "Poppins",
+              paddingBottom: "30px",
+              textAlign: "left",
           }}>
             is a student community that strives to inform, learn, entertain, and
             inspire action through the events and experiences we create. We
             promote student empowerment, develop professional skills, and foster
-            technological innovations and build networks. ​ Our community
+            technological innovations and build networks. Our community
             consists of amateurs to experts, who understand the potential of
             volunteering and how priceless volunteers are!
           </h5>
@@ -115,7 +122,7 @@ const AboutUs = () => {
           src='https://ik.imagekit.io/ieeensakcet/pyramid_gEz6JFkMv.svg' style={{
             width: "100%",
             height: "100%",
-          }} />
+          }} alt="hierarchy" />
         <div style={
           {
             width: "100%",
@@ -126,7 +133,7 @@ const AboutUs = () => {
         } >
           <div className="">
             <h2 style={{
-              fontSize: "3rem",
+              fontSize: "2.5rem",
               fontWeight: "700",
               color: "#fff",
               lineHeight: "1.2",
@@ -141,7 +148,7 @@ const AboutUs = () => {
               color: "#fff",
               lineHeight: "1.3",
               padding: "4rem",
-              textAlign: "center",
+              textAlign: "left",
               fontFamily: "Poppins"
             }}>
               IEEE has its community around the globe, with more than 420,000 IEEE
@@ -155,12 +162,15 @@ const AboutUs = () => {
             </h5>
           </div>
         </div>
+        <div>
+
         <img
           className='white-bg sm-display-none'
           src='https://ik.imagekit.io/ieeensakcet/pyramid_gEz6JFkMv.svg' style={{
-            width: "100%",
+            width: "50vw",
             height: "100%",
-          }} />
+          }}  alt="hierarchy" />
+          </div>
       </div>
       <section class="white-bg">
         <h1 style={{
@@ -211,7 +221,7 @@ const AboutUs = () => {
                 {
                   faqs.map((faq, index) => {
                     return (
-                      <Accordion Question={faq.heading} Answer={faq.content} style={"1"} key={Math.random} />
+                      <Accordion Question={faq.heading} Answer={faq.content} styles={"1"} key={Math.random} />
                     )
                   }
                   )
@@ -224,7 +234,7 @@ const AboutUs = () => {
                 {
                   faqs2.map((faq, index) => {
                     return (
-                      <Accordion Question={faq.heading} Answer={faq.content} style ={"2"} key = {Math.random} />
+                      <Accordion Question={faq.heading} Answer={faq.content} styles ={"2"} key = {Math.random} />
                     )
                   }
                   )

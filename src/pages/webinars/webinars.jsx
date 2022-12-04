@@ -41,7 +41,10 @@ const Webinars = () => {
                                 {
                     
                        
-                                    webinarsData.map((webinar) => {
+                                    webinarsData.sort(((a, b) => {
+                                        return new Date(b.date) - new Date(a.date)
+                                    }
+                                    )).map((webinar) => {
                                         // console.log("webinar", webinar)
                                         return (
                                             <EventsCard
