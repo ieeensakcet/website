@@ -6,7 +6,7 @@ function Testimonials({Name, Position, Views,Image}) {
         <div class="col-md-4 col-sm-6 col-xs-12 overflow">
             <div class="testimonial-item">
                 <div class="testimonial-content" style={{
-                    height: "70vh"
+                    height: "80vh"
                 }}>
                     <img class="img-responsive text-center" src={Image} style={{
                         width: "150px",
