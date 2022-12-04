@@ -116,7 +116,7 @@ const Home = () => {
                   <div class="row">
                     <div class="col-xs-12 col-md-6 col-sm-6 shop-banner">
                       <div class="tr-collection">
-                        <a href="#.">
+                        <a href="/seminars">
                           <img src={"https://ik.imagekit.io/invincible/tr:w-500,h-300/Seminar_1.jpg"} alt="torner-shop-banner" />
                           <span class="tr-collection-btn">Seminars</span>
                         </a>
@@ -124,7 +124,7 @@ const Home = () => {
                     </div>
                     <div class="col-xs-12 col-md-6 col-sm-6 shop-banner">
                       <div class="tr-collection">
-                        <a href="#.">
+                        <a href="/webinars">
                           <img src={"https://ik.imagekit.io/invincible/tr:w-500,h-300/Webinar3.jpg"} alt="torner-shop-banner" />
                           <span class="tr-collection-btn">Webinars</span>
                         </a>
@@ -132,7 +132,7 @@ const Home = () => {
                     </div>
                     <div class="col-xs-12 col-md-6 col-sm-6 shop-banner">
                       <div class="tr-collection">
-                        <a href="#.">
+                        <a href="/workshops">
                           <img src={"https://ik.imagekit.io/invincible/tr:w-500,h-300/Workshop2.jpg"} alt="torner-shop-banner" />
                           <span class="tr-collection-btn">Workshops</span>
                         </a>
@@ -140,7 +140,7 @@ const Home = () => {
                     </div>
                     <div class="col-xs-12 col-md-6 col-sm-6 shop-banner">
                       <div class="tr-collection">
-                        <a href="#.">
+                        <a href="/competitions">
                           <img src={"https://ik.imagekit.io/invincible/tr:w-500,h-300/Workshop1.jpg"} alt="torner-shop-banner" />
                           <span class="tr-collection-btn">Competitions</span>
                         </a>
