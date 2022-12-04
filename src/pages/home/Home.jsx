@@ -133,6 +133,7 @@ const Home = () => {
             </div>
           </div>
         </section>
+        <Counter/>
       </div>
     </div>
   )

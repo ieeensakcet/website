@@ -26,6 +26,9 @@ const Seminars = () => {
             // casSeminars.docs.map((doc) => {
             //     setSeminarsData((prev) => [...prev, doc.data()])
             // })
+            casSeminars.docs.map((doc) => {
+                setSeminarsData((prev) => [...prev, doc.data()])
+            })
             wieSeminars.docs.map((doc) => {
                 setSeminarsData((prev) => [...prev, doc.data()])
             })
