@@ -4,12 +4,12 @@ import './Home.css'
 import Carousel from '../../components/Carousel/Carousel'
 import ChaptersCustom from '../../components/chaptersCutomContainer/chaptersCustom'
 import Counter from '../../components/counter/counter'
-import img1 from '../../assets/img/Nsakcet.jpg'
-import img2 from '../../assets/img/ieeeCarousel1.JPG'
-import img3 from '../../assets/img/IEEE_SB_grp.webp'
 import mission from '../../assets/img/icons/mission.svg'
 import vision from '../../assets/img/icons/vision.svg'
 import values from '../../assets/img/icons/medal.svg'
+import community from '../../assets/img/icons/community.svg'
+import leadership from '../../assets/img/icons/Leadership.svg'
+import networking from '../../assets/img/icons/networking.svg'
 import CS from '../../assets/img/logos/CS-logo.png'
 import WIE from '../../assets/img/logos/WIE-logo.png'
 import RAS from '../../assets/img/logos/RAS-logo.png'
@@ -21,17 +21,26 @@ const Home = () => {
     {
       title: "Mission",
       description: "To promote students empowerment, develop professional skills, organise diverse events and work towards IEEE's mission.",
-      img: mission
+      img: mission,
+      title2: "Community",
+      description2: "Cultivate a sense of community among members and with the broader technology community.",
+      img2: community,
     },
     {
       title: "Vision",
       description: "The vision of our club is to provide a platform to bring together everyone to sh3re knowledge, promote innovation, and advance technology.",
-      img: vision
+      img: vision,
+      title2: "Leadership",
+      description2: "Develop and empower leaders who can drive the advancement of technology.",
+      img2: leadership,
     },
     {
       title: "Innovation",
       description: "We believe in innovation and creativity. We encourage our members to think out of the box and come up with new ideas.",
-      img: values
+      img: values,
+      title2: "Networking",
+      description2: "Facilitate the exchange of information, build relationships, and provide resources for members",
+      img2: networking,
     }
   ]
 
@@ -41,10 +50,11 @@ const Home = () => {
       {/* <NavBar /> */}
     <div className="wrapper">
       <section className="pt-0 pb-0 sm-display-none">
-        <div className="hero-half-slider slick">
-            <Carousel image={"https://ik.imagekit.io/invincible/tr:w-1000,h-500/ieeeCarousel1.JPG"} />
-            <Carousel image={img2} />
-            <Carousel image={img3} />
+          <div className="hero-half-slider slick">
+            
+            <Carousel image={"https://ik.imagekit.io/invincible/tr:w-1000,h-500/college_PcjkZfseo"} />
+            <Carousel image={"https://ik.imagekit.io/invincible/tr:w-1000,h-500/ieee_group_photo_ut6ryLhep"} />
+            <Carousel image={"https://ik.imagekit.io/invincible/tr:w-1000,h-500/IEEE_SB_grp.webp"} />
         </div>
         </section>
         <div class="xl-display white-bg">
@@ -59,7 +69,7 @@ const Home = () => {
               }}>
                 <img
                   className='xl-display mb-20'
-                  src={img2}
+                  src={"https://ik.imagekit.io/invincible/tr:w-1000,h-500/ieee_group_photo_ut6ryLhep"}
                   style={{
                     backgroundSize: "contain",
                     backgroundRepeat: "no-repeat",

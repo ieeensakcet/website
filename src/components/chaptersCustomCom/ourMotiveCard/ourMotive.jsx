@@ -14,7 +14,7 @@ function ourMotive({Data}) {
                                 <i class="icofont font-40px white-color">
                                     <img src={Data.img} style={{
                                         width: "50px",
-                                    }} />
+                                    }} alt="motive"/>
                                 </i>
                             </div>
                             <h5 class="pt-20 primary-h5">{Data.title}</h5>
@@ -26,14 +26,14 @@ function ourMotive({Data}) {
                         <div class="content-wrap white-color">
                             <div class="icon-wrap white-bg">
                                 <i class="icofont font-40px gradient-color-4">
-                                    <img src={Data.img} style={{
+                                    <img src={Data.img2} style={{
                                         width: "50px",
-                                    }} />
+                                    }} alt="motive"/>
                                 </i>
                             </div>
-                            <h4 class="pt-20 primary-h5">{Data.title}</h4>
+                            <h4 class="pt-20 primary-h5">{Data.title2}</h4>
                             <hr class="center_line white-bg" />
-                            <p class="mt-20 p-desc">{Data.description}</p>
+                            <p class="mt-20 p-desc">{Data.description2}</p>
                         </div>
                     </div>
                 </div>
