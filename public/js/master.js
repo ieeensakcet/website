@@ -828,112 +828,112 @@
 
   /* ===== CONTACT FORM ===== */
 
-	$(function () {
+	// $(function () {
 
-    $('#contact-form').validator();
+    // $('#contact-form').validator();
 
-    $('#contact-form').on('submit', function (e) {
+    // $('#contact-form').on('submit', function (e) {
 
-        if (!e.isDefaultPrevented()) {
-            var url = "assets/php/contact.php";
-            $.ajax({
-                type: "POST",
-                url: url,
-                data: $(this).serialize(),
-                success: function (data)
-                {
-                    var messageAlert = data.class;
-                    var messageText = data.message;
+    //     if (!e.isDefaultPrevented()) {
+    //         var url = "assets/php/contact.php";
+    //         $.ajax({
+    //             type: "POST",
+    //             url: url,
+    //             data: $(this).serialize(),
+    //             success: function (data)
+    //             {
+    //                 var messageAlert = data.class;
+    //                 var messageText = data.message;
 
-                    var alertBox = '<div class="' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-                    if (messageAlert && messageText) {
-                        $('#contact-form').find('.messages').html(alertBox);
-                        $('#contact-form')[0].reset();
-                    }
-                }
-            });
-            return false;
-        }
-    	});
+    //                 var alertBox = '<div class="' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+    //                 if (messageAlert && messageText) {
+    //                     $('#contact-form').find('.messages').html(alertBox);
+    //                     $('#contact-form')[0].reset();
+    //                 }
+    //             }
+    //         });
+    //         return false;
+    //     }
+    // 	});
 
-			$('#contact-form-02').validator();
+	// 		$('#contact-form-02').validator();
 
-	    $('#contact-form-02').on('submit', function (e) {
+	//     $('#contact-form-02').on('submit', function (e) {
 
-	        if (!e.isDefaultPrevented()) {
-	            var url = "assets/php/contact.php";
-	            $.ajax({
-	                type: "POST",
-	                url: url,
-	                data: $(this).serialize(),
-	                success: function (data)
-	                {
-	                    var messageAlert = data.class;
-	                    var messageText = data.message;
+	//         if (!e.isDefaultPrevented()) {
+	//             var url = "assets/php/";
+	//             $.ajax({
+	//                 type: "POST",
+	//                 url: url,
+	//                 data: $(this).serialize(),
+	//                 success: function (data)
+	//                 {
+	//                     var messageAlert = data.class;
+	//                     var messageText = data.message;
 
-	                    var alertBox = '<div class="' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-	                    if (messageAlert && messageText) {
-	                        $('#contact-form-02').find('.messages').html(alertBox);
-	                        $('#contact-form-02')[0].reset();
-	                    }
-	                }
-	            });
-	            return false;
-	        }
-	    	});
+	//                     var alertBox = '<div class="' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+	//                     if (messageAlert && messageText) {
+	//                         $('#contact-form-02').find('.messages').html(alertBox);
+	//                         $('#contact-form-02')[0].reset();
+	//                     }
+	//                 }
+	//             });
+	//             return false;
+	//         }
+	//     	});
 
-				$('#contact-form-03').validator();
+	// 			$('#contact-form-03').validator();
 
-		    $('#contact-form-03').on('submit', function (e) {
+	// 	    $('#contact-form-03').on('submit', function (e) {
 
-		        if (!e.isDefaultPrevented()) {
-		            var url = "assets/php/contact.php";
-		            $.ajax({
-		                type: "POST",
-		                url: url,
-		                data: $(this).serialize(),
-		                success: function (data)
-		                {
-		                    var messageAlert = data.class;
-		                    var messageText = data.message;
+	// 	        if (!e.isDefaultPrevented()) {
+	// 	            var url = "assets/php/contact.php";
+	// 	            $.ajax({
+	// 	                type: "POST",
+	// 	                url: url,
+	// 	                data: $(this).serialize(),
+	// 	                success: function (data)
+	// 	                {
+	// 	                    var messageAlert = data.class;
+	// 	                    var messageText = data.message;
 
-		                    var alertBox = '<div class="' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-		                    if (messageAlert && messageText) {
-		                        $('#contact-form-03').find('.messages').html(alertBox);
-		                        $('#contact-form-03')[0].reset();
-		                    }
-		                }
-		            });
-		            return false;
-		        }
-		    	});
+	// 	                    var alertBox = '<div class="' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+	// 	                    if (messageAlert && messageText) {
+	// 	                        $('#contact-form-03').find('.messages').html(alertBox);
+	// 	                        $('#contact-form-03')[0].reset();
+	// 	                    }
+	// 	                }
+	// 	            });
+	// 	            return false;
+	// 	        }
+	// 	    	});
 
-					$('#contact-form-04').validator();
+	// 				$('#contact-form-04').validator();
 
-			    $('#contact-form-04').on('submit', function (e) {
+	// 		    $('#contact-form-04').on('submit', function (e) {
 
-			        if (!e.isDefaultPrevented()) {
-			            var url = "assets/php/contact.php";
-			            $.ajax({
-			                type: "POST",
-			                url: url,
-			                data: $(this).serialize(),
-			                success: function (data)
-			                {
-			                    var messageAlert = data.class;
-			                    var messageText = data.message;
+	// 		        if (!e.isDefaultPrevented()) {
+	// 		            var url = "assets/php/contact.php";
+	// 		            $.ajax({
+	// 		                type: "POST",
+	// 		                url: url,
+	// 		                data: $(this).serialize(),
+	// 		                success: function (data)
+	// 		                {
+	// 		                    var messageAlert = data.class;
+	// 		                    var messageText = data.message;
 
-			                    var alertBox = '<div class="' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-			                    if (messageAlert && messageText) {
-			                        $('#contact-form-04').find('.messages').html(alertBox);
-			                        $('#contact-form-04')[0].reset();
-			                    }
-			                }
-			            });
-			            return false;
-			        }
-			    	});
-	});
+	// 		                    var alertBox = '<div class="' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+	// 		                    if (messageAlert && messageText) {
+	// 		                        $('#contact-form-04').find('.messages').html(alertBox);
+	// 		                        $('#contact-form-04')[0].reset();
+	// 		                    }
+	// 		                }
+	// 		            });
+	// 		            return false;
+	// 		        }
+	// 		    	});
+	// });
 
 	var revapi347,
 	tpj=jQuery;
