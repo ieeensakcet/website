@@ -60,7 +60,9 @@
        font-size: 14px;
        font-weight: 400;
        color: #ffffff;
-       padding: 10px;
+       padding-top:- 30px;
+       padding-left: 10px;
+       padding-right:10px;
        padding-bottom: 20px
    }
 }
@@ -85,6 +87,7 @@
 }
 .heading{
     padding: 35px;
+    padding-bottom: 0px;
     font-size: 30px;
     font-weight: 600;
     color: #ffffff;
@@ -125,6 +128,5 @@
     font-size: 20px;
     font-weight: 400;
     color: #ffffff;
-    padding: 10px;
 }
 }

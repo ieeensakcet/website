@@ -5,7 +5,7 @@ const Carousel = ({image}) => {
     return (
         <div>
         <div className="slide sm-display-none">
-            <div className="slide-img" style={{
+                <div className="fixed-bg slide-img" style={{
                 backgroundImage: `url(${image})`,
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",

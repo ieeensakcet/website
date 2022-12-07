@@ -3,7 +3,6 @@ import "./AboutUs.css"
 import collegeLogo from "../../assets/img/logos/college_logo.png"
 import Accordion from '../../components/Accordions/accordions'
 import Testimonials from '../../components/Testimonials/testimonials'
-
 const AboutUs = () => {
 
   const faqs = [
@@ -50,7 +49,7 @@ const AboutUs = () => {
       views: "Our IEEE Student Branch provides networking opportunities among various entrepreneurs and students so that the members achieve problem-solving and leadership skills, this will help students to come up with new ideas and to determine what they are willing to achieve. The Student Branch teaches the students about the professional environment of the corporate world and also provides technical and fun activities to keep the students active and engaged throughout their campus life."
     },
     {
-      name: "Syeda Kaunain Fatima",
+      name: "Syeda Kaunain alvi",
       Image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/kounain.JPG",
       position: "SB Secretary",
       views: "Joining IEEE has provided me with professional exposure. It also exposed me to various new opportunities and gave me a chance to organize technical events, seminars, webinars and to network with people all over the world."
@@ -58,8 +57,8 @@ const AboutUs = () => {
   ]
 
   return (
-    <div className='pt-60' >
-      <div className="aboutUs">
+    <div className='aboutUscontainer' >
+      <div className="aboutUs" id="about">
         <img
           className='white-bg'
           src={collegeLogo}
@@ -167,18 +166,56 @@ const AboutUs = () => {
         <img
           className='white-bg sm-display-none'
           src='https://ik.imagekit.io/ieeensakcet/pyramid_gEz6JFkMv.svg' style={{
-            width: "50vw",
+            width: "100%",
             height: "100%",
           }}  alt="hierarchy" />
           </div>
       </div>
+      <section className='white-bg' style={{
+        margin: 0
+      }} >
+        <div>
+          <h5 className="mt-0 text-uppercase primary-h5 font-italic play-font text-center pb-20" style={{
+            fontSize: "2.5rem"
+          }}>Teams We Have</h5>
+        </div>
+        <div class="container">
+          <div class="col-md-12 feature-box  text-left col-sm-12 feature-box-square teamsCard">
+            <div class="cardContainer">
+              <h4 class="mt-0 font-600 teamsHeading">Executive Committee (ExCom)</h4>
+              <p class="font-400 teamsDetails">Comprises of faculty advisors and core student members who hold officer positions and maintain the workflow.</p>
+            </div>
+          </div>
+          <div class="col-md-12 feature-box  text-left col-sm-12 feature-box-square teamsCard">
+            <div class="cardContainer">
+              <h4 class="mt-0 font-600 teamsHeading">LeaderShip Team</h4>
+              <p class="font-400 teamsDetails">It acts as the HR of an organization and oversees the complete function of the Student Branch.</p>
+            </div>
+          </div>
+          <div class="col-md-12 feature-box  text-left col-sm-12 feature-box-square teamsCard">
+            <div class="cardContainer">
+              <h4 class="mt-0 font-600 teamsHeading">Publicity Team</h4>
+              <p class="font-400 teamsDetails">This team is responsible for managing social media, promotion of events and providing support to the existing societies. It is internally divided into 2 teams:<br></br>
+                1. Content Team - Responsible for generating content and deciding what goes up on our social media accounts and posters.<br></br>
+                2. Design Team - Responsible for designing the posters, flyers and social media posts</p>
+            </div>
+          </div>
+          <div class="col-md-12 feature-box  text-left col-sm-12 feature-box-square teamsCard">
+            <div class="cardContainer">
+              <h4 class=" font-600 teamsHeading">Tech Team</h4>
+              <p class="font-400 teamsDetails">This team is responsible for managing the website and other technical aspects of the Student Branch.</p>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="white-bg">
         <h1 style={{
           fontSize: "3rem",
           fontWeight: "700",
           color: "#000",
           textAlign: "center",
-          textDecorationLine: "underline"
+          textDecorationLine: "underline",
+          marginTop: "-60px"
         }} >Testimonials</h1>
         <div class="container">
           <div class="row">
@@ -245,6 +282,7 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
+        <a href="javascript:" id="return-to-top"><i class="icofont icofont-arrow-up"></i></a>
     </div>
   )
 }

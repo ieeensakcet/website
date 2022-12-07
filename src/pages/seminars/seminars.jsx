@@ -86,6 +86,7 @@ const Seminars = () => {
                     </div>
                 ) : <Loader />
             }
+            <a href="javascript:" id="return-to-top"><i class="icofont icofont-arrow-up"></i></a>
         </section>
     )
 }
