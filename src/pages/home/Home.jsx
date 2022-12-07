@@ -52,9 +52,9 @@ const Home = () => {
       <section className="pt-0 pb-0 sm-display-none">
           <div className="hero-half-slider slick">
             
-            <Carousel image={"https://ik.imagekit.io/invincible/tr:w-1000,h-500/college_PcjkZfseo"} />
-            <Carousel image={"https://ik.imagekit.io/invincible/tr:w-1000,h-500/ieee_group_photo_ut6ryLhep"} />
-            <Carousel image={"https://ik.imagekit.io/invincible/tr:w-1000,h-500/IEEE_SB_grp.webp"} />
+            <Carousel image={"https://ik.imagekit.io/ieeensakcet/tr:w-1000,h-500/college_MwQgGT9RO.webp"} />
+            <Carousel image={"https://ik.imagekit.io/ieeensakcet/tr:w-1000,h-500/ieeeCarousel1_2fpv07wqk.JPG"} />
+            <Carousel image={"https://ik.imagekit.io/ieeensakcet/tr:w-1000,h-500/IEEE_SB_grp_km0hszYpp.webp"} />
         </div>
         </section>
         <div class="xl-display white-bg">
@@ -69,7 +69,7 @@ const Home = () => {
               }}>
                 <img
                   className='xl-display mb-20'
-                  src={"https://ik.imagekit.io/invincible/tr:w-1000,h-500/ieee_group_photo_ut6ryLhep"}
+                  src={"https://ik.imagekit.io/ieeensakcet/tr:w-1000,h-500/ieeeCarousel1_2fpv07wqk.JPG"}
                   style={{
                     backgroundSize: "contain",
                     backgroundRepeat: "no-repeat",
