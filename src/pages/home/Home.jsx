@@ -68,7 +68,7 @@ const Home = () => {
                 alignContent: "center",
               }}>
                 <img
-                  className='xl-display mb-20'
+                  className='xl-display mb-20 mt-20'
                   src={"https://ik.imagekit.io/invincible/tr:w-1000,h-500/ieee_group_photo_ut6ryLhep"}
                   style={{
                     backgroundSize: "contain",
