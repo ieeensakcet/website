@@ -68,7 +68,7 @@ const CAS = () => {
                 Name={"Ms. Rahmath Unissa"}
                 userImage={"https://ik.imagekit.io/ieeensakcet/profiles/Executive_Committee/tr:w-370,h-370/Rahmath_mam_20221203_BxJ7tVAzH.jpg"}
                 Message={"Joining IEEE is due to the fact that,you can have the smartest people in the world around you,but without collaboration the technology is not going to evolve. As a member of CAS, I find the membership invaluable source of information and conduit for growth. I believe for lasting contribution to a discipline, you really need to have an organization like IEEE behind you."}
-                Designation={"CAS & SPS Advisor"}
+                Designation={"CASS & SPS Advisor"}
             />
             <a href="javascript:" id="return-to-top"><i class="icofont icofont-arrow-up"></i></a>
         </div>
