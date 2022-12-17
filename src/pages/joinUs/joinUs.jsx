@@ -128,7 +128,7 @@ function JoinUs() {
                                     <div class="col-md-6 col-sm-6">
                                         <div class="form-group">
                                             <label class="sr-only" for="Date of Birth">Date of Birth</label>
-                                            <input type="date" name="Date of Birth" class="md-input" id="subject-2" placeholder="Date of Birth" required />
+                                            <input type="date" name="Date of Birth" class="md-input" id="subject-2" placeholder="Date of Birth *"required />
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-sm-6">
@@ -223,7 +223,16 @@ function JoinUs() {
                                     </div>
                                     <div class="col-md-12 col-sm-12">
                                         <div class="form-group">
-                                            <label class="sr-only" for="Why do you feel this Team fits you the best and how can you volunteer for it?">Why do you feel this Team fits you the best and how can you volunteer for it?</label>
+                                            <label style={{
+                                                color: "black",
+                                                fontSize: "1.50rem",
+                                                fontWeight: "20",
+                                                fontFamily: "Poppins",
+                                                paddingTop: "1.8rem",
+                                                paddingBottom: "1.0rem",
+                                                paddingLeft: "2.5rem",
+
+                                            }} for="Why do you feel this Team fits you the best and how can you volunteer for it?">Why do you feel this Team fits you the best and how can you volunteer for it?</label>
                                             <textarea name="Why do you feel this Team fits you the best and how can you volunteer for it?" class="md-textarea" id="message" rows="7" placeholder="Answer" required data-error="Please, Leave us a message"></textarea>
                                             <div class="help-block with-errors"></div>
                                         </div>

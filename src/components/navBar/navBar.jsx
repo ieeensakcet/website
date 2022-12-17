@@ -48,6 +48,9 @@ const NavBar = () => {
               <li className="toggleDropdown">
                 <Link to="/aboutUs">About</Link>
               </li>
+              <li className="toggleDropdown">
+                <Link to="/galleria">Galleria</Link>
+              </li>
               <li className="dropdown"><a href="#" className="dropdown-toggle" data-toggle="dropdown">Events</a>
                 <ul className="dropdown-menu">
                   <li><Link to="/webinars">Webinars</Link></li>

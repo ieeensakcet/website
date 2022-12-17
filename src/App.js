@@ -1,14 +1,15 @@
 import React from 'react'
 import Routes from './routes'
+import { BrowserRouter } from "react-router-dom";
 import NavBar from './components/navBar/navBar'
 import Footer from './components/footer/footer'
 const App = () => {
   return (
-    <div>
-    <NavBar />
-    <Routes/>
-    <Footer/>
-    </div>
+    <BrowserRouter>
+      <NavBar />
+      <Routes/>
+      <Footer/>
+    </BrowserRouter>  
   )
 }
 
