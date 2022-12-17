@@ -17,3 +17,8 @@
     border: 1px solid #000;
     color: #fff;
 }
+
+input[type="date"]:not(.has-value):before {
+    color: #000;
+    content: attr(placeholder);
+}

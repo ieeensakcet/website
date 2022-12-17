@@ -1,10 +1,10 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import "./AboutUs.css"
 import collegeLogo from "../../assets/img/logos/college_logo.png"
 import Accordion from '../../components/Accordions/accordions'
 import Testimonials from '../../components/Testimonials/testimonials'
-const AboutUs = () => {
 
+const AboutUs = () => {
   const faqs = [
     {
       heading: "What is IEEE",
@@ -55,9 +55,8 @@ const AboutUs = () => {
       views: "Joining IEEE has provided me with professional exposure. It also exposed me to various new opportunities and gave me a chance to organize technical events, seminars, webinars and to network with people all over the world."
       },
   ]
-
   return (
-    <div className='aboutUscontainer' >
+    <div className='aboutUscontainer white-bg pt-40' >
       <div className="aboutUs" id="about">
         <img
           className='white-bg'
@@ -65,7 +64,8 @@ const AboutUs = () => {
           style={{
             width: "100%",
             height: "100%",
-          }} alt="hierarchy" />
+          }} alt="hierarchy"
+           />
         <div style={
           {
             width: "100%",
@@ -171,9 +171,74 @@ const AboutUs = () => {
           }}  alt="hierarchy" />
           </div>
       </div>
-      <section className='white-bg' style={{
-        margin: 0
-      }} >
+
+        <div className="aboutUs" id="about">
+          <img
+            className='white-bg'
+          src="https://ik.imagekit.io/invincible/50232fa1-d509-447b-a829-62a6f8da620e.jfif"
+            style={{
+              width: "100%",
+              height: "100%",
+            }} alt="hierarchy"
+          />
+          <div style={
+            {
+              width: "100%",
+              justifyContent: "center",
+              alignItems: "center",
+              display: "flex",
+
+            }
+          } >
+            <div className="mt-100" style={{
+              width: "100%",
+              height: "100vh",
+              justifyContent: "center",
+            alignItems: "center",
+              marginTop:"300px"
+            }}>
+              <h2 className='mt-60' style={{
+                fontSize: "2.5rem",
+                fontWeight: "700",
+                color: "#fff",
+                lineHeight: "1.2",
+                textAlign: "center",
+            }}>
+              Our Achievements
+              </h2>
+              <h5 style={{
+                fontSize: "1.5rem",
+                fontWeight: "400",
+                color: "#fff",
+                lineHeight: "1.3",
+                padding: "4rem",
+                fontFamily: "Poppins",
+                paddingBottom: "30px",
+                textAlign: "left",
+              }}>
+                is a student community that strives to inform, learn, entertain, and
+                inspire action through the events and experiences we create.
+            </h5>
+            <h5 style={{
+              fontSize: "1.5rem",
+              fontWeight: "400",
+              color: "#fff",
+              lineHeight: "1.3",
+              padding: "4rem",
+              fontFamily: "Poppins",
+              paddingBottom: "30px",
+              textAlign: "left",
+              lineHeight:"3.2rem"
+            }}>
+              <li>Exemplary Student Branch Award'21</li>
+              <li>IEEE Regional Exemplary Student Branch Award 2022</li>
+              <li>IEEE India Council Outstanding Emerging Student Branch Award</li>
+            </h5>
+            </div>
+          </div>
+        </div>
+
+      <section className='white-bg'>
         <div>
           <h5 className="mt-0 text-uppercase primary-h5 font-italic play-font text-center pb-20" style={{
             fontSize: "2.5rem"
@@ -288,3 +353,62 @@ const AboutUs = () => {
 }
 
 export default AboutUs
+
+
+// const data = [
+//   {
+//     date: 'April 20th, 2020',
+//     title: 'Established',
+//     description: 'The IEEE NSAKCET Student Club was established on April 20, 2020, and the initiative to do so was taken by Mohammed Khalid.',
+//     image: ''
+//   },
+//   {
+//     date: 'Sept 1st, 2020',
+//     title: 'Student branch reaches 25 members',
+//     description: 'Today, the IEEE student branch achieved the milestones of reaching a total of 25 members, with 3 of them being professional members, and conducting around 10-15 events in total.',
+//     image: ''
+//   },
+//   {
+//     date: 'Oct 4th, 2021',
+//     title: 'Applauded for support of virtual congress',
+//     description: 'The IEEE student branch was recognized for their contribution to the IEEE Region 10 Students Young Professionals Women in Engineering Life Members (SYWL) Virtual Congress 2020, which took place earlier this year.',
+//     image: ''
+//   },
+//   {
+//     date: 'Jan 1st, 2021',
+//     title: 'Honored with cash award for SAC Buddy Program',
+//     description: 'The IEEE student branch received a cash award for their participation in the SAC Buddy Program, which was recognized for its outstanding work and contributions to the field.',
+//     image: ''
+//   },
+//   {
+//     date: 'Jan 4th, 2021',
+//     title: 'IEEE student branch establishes WIE and RAS',
+//     description: 'The IEEE student branch has formed the IEEE Women in Engineering and Affinity Group, as well as the IEEE Robotics and Automation Society, in order to foster collaboration and support within these fields.',
+//     image: ''
+//   },
+//   {
+//     date: 'Jan 6th, 2021',
+//     title: 'IEEE student branch forms Computer Society',
+//     description: 'The IEEE student branch has formed the IEEE Computer Society, which aims to support and promote research and development in the field of computer science.',
+//     image: ''
+//   },
+//   {
+//     date: 'Nov 1st, 2021',
+//     title: 'IEEE student branch grows to 50 members',
+//     description: 'The IEEE student branch has achieved a milestone of 50 members, with a diverse range of backgrounds and expertise within the field of engineering. This is a significant accomplishment for the branch, and it demonstrates its continued growth and success.',
+//     image: ''
+//   },
+//   {
+//     date: 'Dec 4th, 2021',
+//     title: 'Honored with Exemplary Student Branch Award',
+//     description: 'The IEEE student branch was awarded the Exemplary Student Branch Award in 2021, which recognizes their outstanding work and contributions to the field of engineering.',
+//     image: ''
+//   },
+//   {
+//     date: 'Jan 4th, 2022',
+//     title: 'Student branch expands with Signal Processing and Circuits and Systems Societies',
+//     description: 'The IEEE student branch has formed the IEEE Signal Processing Society and the IEEE Circuits and Systems Society, which aim to support and promote research and development in these fields of engineering.',
+//     image: ''
+//   },
+
+// ]
