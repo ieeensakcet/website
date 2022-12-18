@@ -1,12 +1,23 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 import "./joinUs.css"
 
 
 function JoinUs() {
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // for smoothly scrolling
+        });
+    };
+
     const formRef = useRef(null)
-    const scriptUrl = "https://script.google.com/macros/s/AKfycbwlAk6y2T5UwESVXFh1SVnv29gYOZyABA-WlNGQNhTGgVisMwk8xIYyDBBmQcITSaMs4A/exec"
+    const scriptUrl = "https://script.google.com/macros/s/AKfycbzRvNGqCoEq9rqO6Ehy_etrXr3Uf6v4jJ9HS4XS7l1J-P8UIcvOSqaHgnVng7tIfjKUhQ/exec"
     const navigate = useNavigate();
     
 
@@ -274,7 +285,7 @@ function JoinUs() {
                     </div>
                 </div>
             </section>  
-            <a href="javascript:" id="return-to-top"><i class="icofont icofont-arrow-up"></i></a>
+            <p onClick={scrollToTop} id="return-to-top"><i class="icofont icofont-arrow-up pointer"></i></p>
         </section>
   )
 }

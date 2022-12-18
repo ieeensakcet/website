@@ -1,20 +1,26 @@
 import React,{useState, useEffect} from 'react'
 import CasLogo from "../../../assets/img/logos/CAS-logo.png"
 import { casOffers } from "../../../utils/membershipOffers";
-import LandingScreen from '../../../components/chaptersCustomCom/LandingScreen/landingScreen';
-import MemberShipOfferCard from '../../../components/chaptersCustomCom/memberShipofferCard/MemberShipofferCard';
-import { doc, getDoc, collection } from 'firebase/firestore'
+import LandingScreen from '../../../components/chaptersComponents/LandingScreen/landingScreen';
+import MemberShipOfferCard from '../../../components/chaptersComponents/memberShipofferCard/MemberShipofferCard';
+import { doc, getDoc } from 'firebase/firestore'
 import { db } from '../../../utils/firebase/firebase'
-import Team from '../../../components/chaptersCustomCom/team';
-import MessageCom from '../../../components/chaptersCustomCom/advisorsMessageComponent/messageCom';
+import Team from '../../../components/chaptersComponents/team';
+import MessageCom from '../../../components/chaptersComponents/advisorsMessageComponent/messageCom';
 const CAS = () => {
     const [userData, setData] = useState([])
-
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // for smoothly scrolling
+        });
+    };
     useEffect(() => {
+        window.scrollTo(0, 0);
         const getData = async () => {
             const docRef = doc(db, "positionsInfo", "cas");
-            const CsPositions = await (await getDoc(docRef)).data().positions;
-            setData(CsPositions)
+            const CasPositions = await (await getDoc(docRef)).data().positions;
+            setData(CasPositions)
         }
         getData();
     }, [])
@@ -70,7 +76,7 @@ const CAS = () => {
                 Message={"Joining IEEE is due to the fact that,you can have the smartest people in the world around you,but without collaboration the technology is not going to evolve. As a member of CAS, I find the membership invaluable source of information and conduit for growth. I believe for lasting contribution to a discipline, you really need to have an organization like IEEE behind you."}
                 Designation={"CASS & SPS Advisor"}
             />
-            <a href="javascript:" id="return-to-top"><i class="icofont icofont-arrow-up"></i></a>
+            <p onClick={scrollToTop} id="return-to-top"><i class="icofont icofont-arrow-up pointer"></i></p>
         </div>
     )
 }

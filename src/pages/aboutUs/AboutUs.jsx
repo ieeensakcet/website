@@ -1,10 +1,22 @@
-import React,{useState,useEffect} from 'react'
+import React,{useEffect} from 'react'
 import "./AboutUs.css"
 import collegeLogo from "../../assets/img/logos/college_logo.png"
 import Accordion from '../../components/Accordions/accordions'
 import Testimonials from '../../components/Testimonials/testimonials'
 
 const AboutUs = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // for smoothly scrolling
+    });
+  };
+
   const faqs = [
     {
       heading: "What is IEEE",
@@ -223,7 +235,6 @@ const AboutUs = () => {
               fontSize: "1.5rem",
               fontWeight: "400",
               color: "#fff",
-              lineHeight: "1.3",
               padding: "4rem",
               fontFamily: "Poppins",
               paddingBottom: "30px",
@@ -347,7 +358,7 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-        <a href="javascript:" id="return-to-top"><i class="icofont icofont-arrow-up"></i></a>
+      <p onClick={scrollToTop} id="return-to-top"><i class="icofont icofont-arrow-up pointer"></i></p>
     </div>
   )
 }

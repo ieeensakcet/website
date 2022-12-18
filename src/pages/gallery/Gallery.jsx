@@ -5,6 +5,12 @@ import Loader from "../../components/loader/Loader"
 
 
 function Gallery() {
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // for smoothly scrolling
+        });
+    };
     let data = [
         {
             id: 1,
@@ -62,6 +68,7 @@ function Gallery() {
     const [tempingSrc, setTempingSrc] = useState(true);
     const [loading, setLoading] = useState(true)
     useEffect(() => {
+        window.scrollTo(0, 0);
         setTimeout(() => {
             setLoading(false)
         }, 2000)
@@ -80,9 +87,10 @@ function Gallery() {
                         backgroundImage: `url(https://ik.imagekit.io/ieeensakcet/ieeeCarousel1_2fpv07wqk.JPG)`,
                         backgroundSize: "cover",
                         backgroundRepeat: "no-repeat",
-                        backgroundPosition: "center",
+                                backgroundPosition: "center",
+                        scrollBehavior: "smooth",
                     }}>
-                        <div className=""></div>
+                        <div className="overlay-bg"></div>
                         <div className="container-fluid view-height-100vh relative md-height-600px sm-height-700px xs-height-450px">
                             <div className="simple-content-slider text-center">
                                 <div className="simple-content-slider-text">
@@ -90,6 +98,7 @@ function Gallery() {
                                         <div className="row">
                                             <div className="col-md-8 centerize-col col-xs-12">
                                                 <div className="text-center all-padding-40">
+                                                    <h1 className="font-700 font-80px line-height-100 white-color xs-font-30px xs-line-height-30">Gallery</h1>
                                                 </div>
                                             </div>
                                         </div>
@@ -118,6 +127,7 @@ function Gallery() {
                                             width: "100%",
                                             marginTop: 0,
                                         }}
+                                        alt="landingScreen"
                                     />
                                
                                 </div>
@@ -125,9 +135,11 @@ function Gallery() {
 
                         </div>
                     </div>
-                    <div >
-                        <div className="col-sm-8 section-heading hii mt-20">
-                            <h5 className="mt-0 text-uppercase primary-h5 play-font pt-20 pb-20 mb-0" style={{
+                    <div className='mt-10' style={{
+                        scrollBehavior: "smooth",
+                    }}>
+                        <div className="col-sm-8 section-heading hii mt-20 xl-display-none">
+                            <h5 className="mt-0 text-uppercase primary-h5 play-font pt-0 pb-20 mb-0" style={{
                                 fontSize: 40
                             }}>Gallery</h5>
                         </div>
@@ -156,6 +168,7 @@ function Gallery() {
                 </section>
                 </div> : <Loader/>
             }
+            <p onClick={scrollToTop} id="return-to-top"><i class="icofont icofont-arrow-up pointer"></i></p>
         </div>
     )
 }

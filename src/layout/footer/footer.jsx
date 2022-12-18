@@ -41,7 +41,7 @@ const footer = () => {
                                   <h5 className="widget-title">Our Chapters</h5>
                                   <ul>
                                       <li><a href="/cs">Computer Society</a></li>
-                                      <li><a href="/ras"></a>Robotics and Automation Society</li>
+                                      <li><a href="/ras">Robotics and Automation Society</a></li>
                                       <li><a href="/wie">Women in Engineering</a></li>
                                       <li><a href="/cas">Circuits and Systems Society</a></li>
                                       <li><a href="/sps">Signal Processing Society</a></li>
@@ -59,24 +59,6 @@ const footer = () => {
                       </div>
                   </div>
               </div>
-              {/* <div className="footer-copyright">
-                  <div className="container">
-                      <div className="row">
-                          <div className="col-md-6 col-xs-12">
-                              <div className="copy-right text-left">© 2022 <span className="gradient-color">IEEE NSAKCET</span> All rights reserved</div>
-                          </div>
-                          <div className="col-md-6 col-xs-12">
-                              <ul className="social-media">
-                                  <li><a href="#" className="icofont icofont-social-facebook"></a></li>
-                                  <li><a href="#" className="icofont icofont-social-twitter"></a></li>
-                                  <li><a href="#" className="icofont icofont-social-behance"></a></li>
-                                  <li><a href="#" className="icofont icofont-social-dribble"></a></li>
-                                  <li><a href="#" className="icofont icofont-social-linkedin"></a></li>
-                              </ul>
-                          </div>
-                      </div>
-                  </div>
-              </div> */}
           </footer>
     </div>
   )

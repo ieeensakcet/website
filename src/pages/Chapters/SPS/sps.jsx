@@ -1,21 +1,30 @@
 import React,{useEffect, useState} from 'react'
 import SpsLogo from "../../../assets/img/logos/SPS-logo.png"
 import { spsOffers } from "../../../utils/membershipOffers";
-import LandingScreen from '../../../components/chaptersCustomCom/LandingScreen/landingScreen';
-import MemberShipOfferCard from '../../../components/chaptersCustomCom/memberShipofferCard/MemberShipofferCard';
-import Team from '../../../components/chaptersCustomCom/team';
+import LandingScreen from '../../../components/chaptersComponents/LandingScreen/landingScreen';
+import MemberShipOfferCard from '../../../components/chaptersComponents/memberShipofferCard/MemberShipofferCard';
+import Team from '../../../components/chaptersComponents/team';
 import { db } from '../../../utils/firebase/firebase'
 import { doc, getDoc } from 'firebase/firestore'
-import MessageCom from '../../../components/chaptersCustomCom/advisorsMessageComponent/messageCom';
+import MessageCom from '../../../components/chaptersComponents/advisorsMessageComponent/messageCom';
 
 const SPS = () => {
     const [userData, setData] = useState([])
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // for smoothly scrolling
+        });
+    };
+
+
     useEffect(() => {
+        window.scrollTo(0, 0);
         const getData = async () => {
             const docRef = doc(db, "positionsInfo", "sps");
-            const CsPositions = await (await getDoc(docRef)).data().positions;
-            setData(CsPositions)
+            const SpsPositions = await (await getDoc(docRef)).data().positions;
+            setData(SpsPositions)
         }
         getData();
     }, [])
@@ -35,7 +44,7 @@ const SPS = () => {
         <div className='wrapper' >
 
             <LandingScreen chaptersGroupPhoto={"https://ik.imagekit.io/invincible/tr:w-1200,h-600/SPS-Group.JPG"} chapterName={"IEEE Signal Processing Society"} chapterLogo={SpsLogo} Description={desc} themeColor="#76bf17" />
-            <MemberShipOfferCard data={spsOffers} society={"SPS"} style={"feature-box text-left mb-50 feature-box-square-cs center-feature"} />
+            <MemberShipOfferCard data={spsOffers} society={"SPS"} />
 
             {/* <!--== Our Team Start ==--> */}
             <section className="white-bg" style={{
@@ -70,7 +79,7 @@ const SPS = () => {
                 Message={"Joining IEEE is due to the fact that,you can have the smartest people in the world around you,but without collaboration the technology is not going to evolve. As a member of SPS, I find the membership invaluable source of information and conduit for growth. I believe for lasting contribution to a discipline, you really need to have an organization like IEEE behind you."}
                 Designation={"CASS & SPS Advisor"}
             />
-            <a href="javascript:" id="return-to-top"><i class="icofont icofont-arrow-up"></i></a>
+            <p onClick={scrollToTop} id="return-to-top"><i class="icofont icofont-arrow-up pointer"></i></p>
         </div>
     )
 }

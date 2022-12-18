@@ -1,27 +1,39 @@
 import React, { useState, useEffect } from 'react'
-import { db } from '../../utils/firebase/firebase'
-import { doc, getDocs, collection } from 'firebase/firestore'
-import EventsCard from '../../components/eventsCard/eventsCard'
-import "./competitions.css"
-import Loader from '../../components/loader/Loader'
+import { db } from '../../../utils/firebase/firebase'
+import {getDocs, collection } from 'firebase/firestore'
+import EventsCard from '../../../components/eventsCard/eventsCard'
+import "./webinars.css"
+import Loader from '../../../components/loader/Loader'
 
-const Competitions = () => {
-    const [competitionsData, setCompetitionsData] = useState([])
+const Webinars = () => {
+    const [webinarsData, setWebinarsData] = useState([]);
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // for smoothly scrolling
+        });
+    };
+
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         const getData = async () => {
-            const csCompetitions = (await getDocs(collection(db, "eventsInfo/csevents/competitions")))
-            const casCompetitions = (await getDocs(collection(db, "eventsInfo/casevents/competitions")))
-            const rasCompetitions = (await getDocs(collection(db, "eventsInfo/rasevents/competitions")))
-            const spsCompetitions = (await getDocs(collection(db, "eventsInfo/spsevents/competitions")))
-            const wieCompetitions = (await getDocs(collection(db, "eventsInfo/wievents/competitions")))
+            const csWebinars = (await getDocs(collection(db, "eventsInfo/csevents/webinars")))
+            // const casWebinars = (await getDocs(collection(db, "eventsInfo/casevents/webinars")))
+            const rasWebinars = (await getDocs(collection(db, "eventsInfo/rasevents/webinars")))
+            // const spsWebinars = (await getDocs(collection(db, "eventsInfo/spsevents/webinars")))
+            const wieWebinars = (await getDocs(collection(db, "eventsInfo/wievents/webinars")))
+            
 
-
-            csCompetitions.docs.map((doc) => {
-                setCompetitionsData((prev) => [...prev, doc.data()])
+            csWebinars.docs.map((doc) => {
+               return setWebinarsData((prev) => [...prev, doc.data()])
             })
-            wieCompetitions.docs.map((doc) => {
-                setCompetitionsData((prev) => [...prev, doc.data()])
+            wieWebinars.docs.map((doc) => {
+               return setWebinarsData((prev) => [...prev, doc.data()])
+            })
+            rasWebinars.docs.map((doc) => {
+               return setWebinarsData((prev) => [...prev, doc.data()])
             })
         }
         getData();
@@ -31,14 +43,14 @@ const Competitions = () => {
     return (
         <section class="white-bg">
             {
-                competitionsData.length > 0 ? (
+                webinarsData.length > 0 ? (
                     <div class="container">
                         <div className="row xl-display">
                             <div class="col-md-6 col-sm-2 col-xs-12 blog-style-01">
                                 {
-
-
-                                    competitionsData.sort(((a, b) => {
+                    
+                       
+                                    webinarsData.sort(((a, b) => {
                                         return new Date(b.date) - new Date(a.date)
                                     }
                                     )).map((webinar) => {
@@ -61,7 +73,7 @@ const Competitions = () => {
 
                         }}>
                             {
-                                competitionsData.map((webinar) => {
+                                webinarsData.map((webinar) => {
                                     // console.log("webinar", webinar)
                                     return (
                                         <EventsCard
@@ -75,9 +87,9 @@ const Competitions = () => {
                     </div>
                 ) : <Loader />
             }
-            <a href="javascript:" id="return-to-top"><i class="icofont icofont-arrow-up"></i></a>   
+            <p onClick={scrollToTop} id="return-to-top"><i class="icofont icofont-arrow-up pointer"></i></p>
         </section>
-    )
+  )
 }
 
-export default Competitions
+export default Webinars

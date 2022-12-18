@@ -15,7 +15,10 @@ const EventsCard = ({Data}) => {
                       <h5 style={{
                           color: "#c31434"
                       }}>{new Date(Data.date).toLocaleDateString()}</h5>
-                      <h3><a>{Data.title}</a></h3>
+                      <h3><p style={{
+                          color: "#000",
+                            fontSize: "20px"
+                      }}>{Data.title}</p></h3>
                       <div className="speakerDetails">
                           <h2 >
                               {Data.speakerName}
@@ -38,7 +41,10 @@ const EventsCard = ({Data}) => {
                       <h5 style={{
                           color:"#c31434"
                       }}>{new Date(Data.date).toLocaleDateString()}</h5>
-                      <h3><a>{Data.title}</a></h3>
+                      <h3><p style={{
+                          color: "#000",
+                            fontSize: "20px"
+                      }} >{Data.title}</p></h3>
                       <div className="speakerDetails">
                           <h2 >
                               {Data.speakerName}
