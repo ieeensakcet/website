@@ -1,21 +1,27 @@
 import React, { useState, useEffect } from 'react'
 import WieLogo from "../../../assets/img/logos/WIE-logo.png"
 import { wieOffers } from "../../../utils/membershipOffers";
-import LandingScreen from '../../../components/chaptersCustomCom/LandingScreen/landingScreen';
-import MemberShipOfferCard from '../../../components/chaptersCustomCom/memberShipofferCard/MemberShipofferCard';
-import Team from '../../../components/chaptersCustomCom/team';
+import LandingScreen from '../../../components/chaptersComponents/LandingScreen/landingScreen';
+import MemberShipOfferCard from '../../../components/chaptersComponents/memberShipofferCard/MemberShipofferCard';
+import Team from '../../../components/chaptersComponents/team';
 import { doc, getDoc } from 'firebase/firestore'
 import { db } from '../../../utils/firebase/firebase'
-import MessageCom from '../../../components/chaptersCustomCom/advisorsMessageComponent/messageCom';
+import MessageCom from '../../../components/chaptersComponents/advisorsMessageComponent/messageCom';
 
 const WIE = () => {
     const [userData, setData] = useState([])
-
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // for smoothly scrolling
+        });
+    };
     useEffect(() => {
+        window.scrollTo(0, 0);
         const getData = async () => {
             const docRef = doc(db, "positionsInfo", "wie");
-            const CsPositions = await (await getDoc(docRef)).data().positions;
-            setData(CsPositions)
+            const WiePositions = await (await getDoc(docRef)).data().positions;
+            setData(WiePositions)
         }
         getData();
     }, [])
@@ -36,7 +42,7 @@ const WIE = () => {
         <div className='wrapper' >
 
             <LandingScreen chaptersGroupPhoto={"https://ik.imagekit.io/invincible/tr:w-1200,h-600/WIE-Group.JPG"} chapterName={"IEEE Women and Engineering Society"} chapterLogo={WieLogo} Description={desc} themeColor="#712e87" />
-            <MemberShipOfferCard data={wieOffers} society={"WIE"} style={"feature-box text-left mb-50 feature-box-square-cs center-feature"} />
+            <MemberShipOfferCard data={wieOffers} society={"WIE"}/>
 
             {/* <!--== Our Team Start ==--> */}
             <section className="white-bg" style={{
@@ -66,7 +72,7 @@ const WIE = () => {
                 Message={"Joining IEEE is due to the fact that,you can have the smartest people in the world around you,but without collaboration the technology is not going to evolve. As a member of WIE, I find the membership invaluable source of information and conduit for growth. I believe for lasting contribution to a discipline, you really need to have an organization like IEEE behind you."}
                 Designation={"Wie Advisor"}
             />
-            <a href="javascript:" id="return-to-top"><i class="icofont icofont-arrow-up"></i></a>   
+            <p onClick={scrollToTop} id="return-to-top"><i class="icofont icofont-arrow-up pointer"></i></p>  
         </div>
     )
 }

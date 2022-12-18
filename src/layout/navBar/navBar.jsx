@@ -1,16 +1,15 @@
-import React, { useRef, useEffect, useState } from "react";
+import React from "react";
 // import './navBar.css'
 import SBlogo from '../../assets/img/SB-logo.png'
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import '../../styles/css/icofonts.min.css'
 
 const NavBar = () => {
-  const location = useLocation()
   return (
     <div >
       <nav className={
-       `navbar navbar-default navbar-fixed bootsnav on no-full no-border` 
+        `navbar navbar-default navbar-fixed bootsnav on no-full no-border`
       }>
         <div className="attr-nav hidden-xs sm-display-none">
           <ul className="social-media-dark social-top">
@@ -18,17 +17,17 @@ const NavBar = () => {
               color: "#14649b",
               fontSize: "20px",
               textDecoration: "none"
-            }}></a></li>
+            }}> </a></li>
             <li><a href="https://www.instagram.com/ieeensakcet/" className="icofont icofont-social-instagram" style={{
               color: "#14649b",
               fontSize: "20px",
               textDecoration: "none"
-            }}></a></li>
+            }}> </a></li>
             <li><a href="https://www.linkedin.com/company/ieeensakcet/" className="icofont icofont-social-linkedin" style={{
               color: "#14649b",
               fontSize: "20px",
               textDecoration: "none"
-            }}></a></li>
+            }}> </a></li>
           </ul>
         </div>
         <div className="navbar-header">
@@ -51,7 +50,7 @@ const NavBar = () => {
               <li className="toggleDropdown">
                 <Link to="/galleria">Galleria</Link>
               </li>
-              <li className="dropdown"><a href="#" className="dropdown-toggle" data-toggle="dropdown">Events</a>
+              <li className="dropdown"><a href="#events" className="dropdown-toggle" data-toggle="dropdown">Events</a>
                 <ul className="dropdown-menu">
                   <li><Link to="/webinars">Webinars</Link></li>
                   <li><Link to="/seminars">Seminars</Link></li>
@@ -59,7 +58,7 @@ const NavBar = () => {
                   <li><Link to="/competitions">Competitions</Link></li>
                 </ul>
               </li>
-              <li className="dropdown"><a href="#" className="dropdown-toggle" data-toggle="dropdown">Chapters</a>
+              <li className="dropdown"><a href="#chapters" className="dropdown-toggle" data-toggle="dropdown">Chapters</a>
                 <ul className="dropdown-menu">
                   <li><Link to={"/cs"} >Computer Society</Link></li>
                   <li><Link to={"/ras"}>Robotics and Automation Society</Link></li>

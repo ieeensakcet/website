@@ -15,11 +15,19 @@ import WIE from '../../assets/img/logos/WIE-logo.png'
 import RAS from '../../assets/img/logos/RAS-logo.png'
 import CAS from '../../assets/img/logos/CAS-logo.png'
 import SPS from '../../assets/img/logos/SPS-logo.png'
-import OurMotive from '../../components/chaptersCustomCom/ourMotiveCard/ourMotive'
+import OurMotive from '../../components/chaptersComponents/ourMotiveCard/ourMotive'
 const Home = () => {
-  //Loader till component successfully rendered
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // for smoothly scrolling
+    });
+  };
+
   useEffect(() => {
+    window.scrollTo(0, 0);
     setTimeout(() => {
       setLoading(false)
     }, 3000)
@@ -129,7 +137,7 @@ const Home = () => {
             }}>
             <div class="tr-collection-type-1">
              
-              <div class="container">
+              <div class="container" id="events">
                 <div class="row">
                   <div className="col-md-8 section-heading">
                     <h5 className="mt-0 text-uppercase primary-h5 font-italic play-font">EVENTS</h5>
@@ -180,7 +188,7 @@ const Home = () => {
           <section className="white-bg" style={{
             marginTop: "-150px",
           }}>
-            <div className="container">
+            <div className="container" id='chapters'>
               <div className="row">
                 <div className="col-md-8 section-heading">
                   <h5 className="mt-0 text-uppercase primary-h5 font-italic play-font">Our Chapters</h5>
@@ -210,7 +218,7 @@ const Home = () => {
             </div>
           </section>
         </div>
-        <a href="javascript:" id="return-to-top"><i class="icofont icofont-arrow-up"></i></a>
+        <p onClick={scrollToTop} id="return-to-top"><i class="icofont icofont-arrow-up pointer"></i></p>
       </div>
     )
   }

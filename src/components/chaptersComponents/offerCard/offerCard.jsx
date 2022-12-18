@@ -10,7 +10,7 @@ const OfferCard = ({ data, customStyle}) => {
       }} >
         <i className="font-40px default-color"><img src={data.icon} style={{
           width: "50px",
-        }} /></i>
+        }} alt="icon" /></i>
         <h4 className="mt-0 font-600">{data.title}</h4>
         <p className="font-400 mt-20 mobilecard desc">{data.description}</p>
       </div>

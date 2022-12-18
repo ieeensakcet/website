@@ -66,6 +66,7 @@ const landingScreen = ({ chaptersGroupPhoto, chapterName, chapterLogo, Descripti
                                   backgroundRepeat: "no-repeat",
                                   width: "100%",
                               }}
+                                alt="img"
                           />
                               <img src={chapterLogo} alt="img-01"
                               style={{

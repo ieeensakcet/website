@@ -1,18 +1,24 @@
 import React, { useState, useEffect } from 'react'
 import CsLogo from "../../../assets/img/logos/CS-logo.png"
 import { csOffers } from "../../../utils/membershipOffers";
-import LandingScreen from '../../../components/chaptersCustomCom/LandingScreen/landingScreen';
-import MemberShipOfferCard from '../../../components/chaptersCustomCom/memberShipofferCard/MemberShipofferCard';
+import LandingScreen from '../../../components/chaptersComponents/LandingScreen/landingScreen';
+import MemberShipOfferCard from '../../../components/chaptersComponents/memberShipofferCard/MemberShipofferCard';
 import { doc, getDoc } from 'firebase/firestore'
 import { db } from '../../../utils/firebase/firebase'
-import Team from '../../../components/chaptersCustomCom/team';
-import "./cs.css"
-import MessageCom from '../../../components/chaptersCustomCom/advisorsMessageComponent/messageCom';
+import Team from '../../../components/chaptersComponents/team';
+import MessageCom from '../../../components/chaptersComponents/advisorsMessageComponent/messageCom';
 
 const CS = () => {
-    const [userData, setData] = useState([])
+    const [userData, setData] = useState([]);
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // for smoothly scrolling
+        });
+    };
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         const getData = async () => {
             const docRef = doc(db, "positionsInfo", "cs");
             const CsPositions = await (await getDoc(docRef)).data().positions;
@@ -37,7 +43,7 @@ const CS = () => {
       <div className='wrapper' >
          
           <LandingScreen chaptersGroupPhoto={"https://ik.imagekit.io/invincible/tr:w-1200,h-600/CS-Group.JPG"} chapterName={"IEEE Computer Society"} chapterLogo={CsLogo} Description={desc} themeColor="#FFA300" />
-          <MemberShipOfferCard data={csOffers} society={"CS"} style={"feature-box text-left mb-50 feature-box-square-cs center-feature"} />
+          <MemberShipOfferCard data={csOffers} society={"CS"} />
 
           {/* <!--== Our Team Start ==--> */}
           <section className="white-bg" style={{
@@ -72,7 +78,7 @@ const CS = () => {
               Message={"Joining IEEE is due to the fact that,you can have the smartest people in the world around you,but without collaboration the technology is not going to evolve. As a member of CS, I find the membership invaluable source of information and conduit for growth. I believe for lasting contribution to a discipline, you really need to have an organization like IEEE behind you."}
               Designation={"CSE, Hod"}
           />
-          <a href="javascript:" id="return-to-top"><i class="icofont icofont-arrow-up"></i></a>
+          <p onClick={scrollToTop} id="return-to-top"><i class="icofont icofont-arrow-up pointer"></i></p>
     </div>
   )
 }

@@ -9,7 +9,7 @@ import publication from "../assets/img/icons/membershipOffers/Publications.svg"
 import resources from "../assets/img/icons/membershipOffers/resources.svg"
 import communities from "../assets/img/icons/membershipOffers/community.svg"
 import library from "../assets/img/icons/membershipOffers/library.svg"
-import scholarship from "../assets/img/icons/membershipOffers/scholarship.svg"
+// import scholarship from "../assets/img/icons/membershipOffers/scholarship.svg"
 import data from "../assets/img/icons/membershipOffers/data.svg"
 
 

@@ -1,15 +1,23 @@
 import React,{useState, useEffect} from 'react'
 import { db } from '../../utils/firebase/firebase'
-import { doc, getDocs, collection } from 'firebase/firestore'
-import Team from '../../components/chaptersCustomCom/team'
+import { getDocs, collection } from 'firebase/firestore'
+import Team from '../../components/chaptersComponents/team'
 import Loader from '../../components/loader/Loader'
 
 
 const OurTeam = () => {
 
-  const [userData, setData] = useState([[]])
+  const [userData, setData] = useState([[]]);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // for smoothly scrolling
+    });
+  };
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const getData = async () => {
       const docRef = await getDocs(collection(db, "positionsInfo"));
       setData(docRef.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
@@ -178,7 +186,7 @@ const OurTeam = () => {
           </section>
         ) : <Loader />
       }
-      <a href="javascript:" id="return-to-top"><i class="icofont icofont-arrow-up"></i></a>
+      <p onClick={scrollToTop} id="return-to-top"><i class="icofont icofont-arrow-up pointer"></i></p>
      </div> 
   )
 }
