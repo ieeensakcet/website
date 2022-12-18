@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
-import './Gallery.css'
-import Loader from "../../components/loader/Loader"
+import './Gallery.css';
+import Loader from "../../components/loader/Loader";
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 
 function Gallery() {
@@ -65,7 +66,7 @@ function Gallery() {
         
     ]
     const [modal, setModal] = useState(false);
-    const [tempingSrc, setTempingSrc] = useState(true);
+    const [tempingSrc, setTempingSrc] = useState();
     const [loading, setLoading] = useState(true)
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -82,7 +83,7 @@ function Gallery() {
             {
                 !loading ?
                 <div>
-                <section class="white-bg pt-0">
+                <section className="white-bg pt-0">
                     <section className="fixed-bg sm-display-none" style={{
                         backgroundImage: `url(https://ik.imagekit.io/ieeensakcet/ieeeCarousel1_2fpv07wqk.JPG)`,
                         backgroundSize: "cover",
@@ -107,12 +108,12 @@ function Gallery() {
                             </div>
                         </div>
                     </section>
-                    <div class="xl-display">
+                    <div className="xl-display">
                         <div style={{
                             width: "100%",
                             marginBottom: "0",
                         }}>
-                            <div class="row">
+                            <div className="row">
                                 <div style={{
                                     justifyContent: "center",
                                     alignItems: "center",
@@ -168,7 +169,7 @@ function Gallery() {
                 </section>
                 </div> : <Loader/>
             }
-            <p onClick={scrollToTop} id="return-to-top"><i class="icofont icofont-arrow-up pointer"></i></p>
+            <p onClick={scrollToTop} id="return-to-top"><i className="icofont icofont-arrow-up pointer"><ArrowUpwardIcon /></i></p>
         </div>
     )
 }

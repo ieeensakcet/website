@@ -28,18 +28,18 @@ const landingScreen = ({ chaptersGroupPhoto, chapterName, chapterLogo, Descripti
               </div>
           </section>
          
-          <section class="white-bg pb-70 sm-display-none mt-0" style={{
+          <section className="white-bg pb-70 sm-display-none mt-0" style={{
                 paddingTop: "0px",
           }}>
-              <div class="container">
-                  <div class="row">
-                      <div class="col-md-5">
-                          <div class="design-studio-img">
-                              <img src={chapterLogo} alt="img-01" class="img-responsive" />
+              <div className="container">
+                  <div className="row">
+                      <div className="col-md-5">
+                          <div className="design-studio-img">
+                              <img src={chapterLogo} alt="img-01" className="img-responsive" />
                           </div>
                       </div>
-                      <div class="col-md-7">
-                          <div class="design-studio-text">
+                      <div className="col-md-7">
+                          <div className="design-studio-text">
                              {Description}
                           </div>
                       </div>
@@ -47,12 +47,12 @@ const landingScreen = ({ chaptersGroupPhoto, chapterName, chapterLogo, Descripti
 
               </div>
           </section> 
-          <section class="xl-display white-bg">
+          <section className="xl-display white-bg">
               <div style={{
                   width: "100%",
                   marginTop: "-50px",
               }}>
-                  <div class="row">
+                  <div className="row">
                           <div style={{
                               justifyContent: "center",
                               alignItems: "center",

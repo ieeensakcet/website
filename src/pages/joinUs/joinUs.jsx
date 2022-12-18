@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import "./joinUs.css"
 
 
@@ -71,13 +72,13 @@ function JoinUs() {
                     </div>
                 </div>
             </section>
-            <div class="xl-display white-bg" style={{
+            <div className="xl-display white-bg" style={{
                 marginTop: "-60px",
             }} >
                 <div style={{
                     width: "100%",
                 }}>
-                    <div class="row">
+                    <div className="row">
                         <div style={{
                             justifyContent: "center",
                             alignItems: "center",
@@ -104,11 +105,11 @@ function JoinUs() {
 
                 </div>
             </div>  
-            <section class="white-bg" style={{
+            <section className="white-bg" style={{
                 marginTop: "-60px",
                 marginBottom: "-140px",
             }}>
-                <div class="container white-bg">
+                <div className="container white-bg">
                     <div className="col-md-12 col-sm-8 section-heading" style={{
                         marginTop:"-50px",
                     }}>
@@ -117,56 +118,57 @@ function JoinUs() {
                             fontSize: "30px",
                         }}>Join Us</h5>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
+                    <div className="row">
+                        <div className="col-md-12">
                             <form className="contact-form-style-01" id='formsData' ref={formRef} onSubmit={(e) => handleSubmit(e)} name="google-sheet">
-                                <div class="messages"></div>
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-6">
-                                        <div class="form-group">
-                                            <label class="sr-only" for="First name">First name</label>
-                                            <input type="text" name="First name" class="md-input" id="name" placeholder="First Name *" required data-error="Your Name is Required"/>
-                                                <div class="help-block with-errors"></div>
+                                <div className="messages"></div>
+                                <div className="row">
+                                    <div className="col-md-6 col-sm-6">
+                                        <div className="form-group">
+                                            <label className="sr-only" htmlFor="First name">First name</label>
+                                            <input type="text" name="First name" className="md-input" id="name" placeholder="First Name *" required data-error="Your Name is Required"/>
+                                                <div className="help-block with-errors"></div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-sm-6">
-                                        <div class="form-group">
-                                            <label class="sr-only" for="First name">Last name</label>
-                                            <input type="text" name="Last name" class="md-input" id="name" placeholder="Last name *" required data-error="Your Name is Required"/>
-                                                <div class="help-block with-errors"></div>
+                                    <div className="col-md-6 col-sm-6">
+                                        <div className="form-group">
+                                            <label className="sr-only" htmlFor="First name">Last name</label>
+                                            <input type="text" name="Last name" className="md-input" id="name" placeholder="Last name *" required data-error="Your Name is Required"/>
+                                                <div className="help-block with-errors"></div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-sm-6">
-                                        <div class="form-group">
-                                            <label class="sr-only" for="Date of Birth">Date of Birth</label>
-                                            <input type="date" name="Date of Birth" class="md-input" id="subject-2" placeholder="Date of Birth *"required />
+                                    <div className="col-md-6 col-sm-6">
+                                        <div className="form-group">
+                                            <label className="sr-only" htmlFor="Date of Birth">Date of Birth</label>
+                                            <input type="date" name="Date of Birth" className="md-input" id="subject-2" placeholder="Date of Birth "required />
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-sm-6">
-                                        <div class="form-group">
-                                            <label class="sr-only" for="Email Address">Email</label>
-                                            <input type="email" name="Email Address" class="md-input" id="email" placeholder="Email*" required data-error="Please Enter Valid Email"/>
-                                                <div class="help-block with-errors"></div>
+                                    <div className="col-md-6 col-sm-6">
+                                        <div className="form-group">
+                                            <label className="sr-only" htmlFor="Email Address">Email</label>
+                                            <input type="email" name="Email Address" className="md-input" id="email" placeholder="Email*" required data-error="Please Enter Valid Email"/>
+                                                <div className="help-block with-errors"></div>
                                         </div>
                                     </div>
-                                    <div class="col-md-12 col-sm-12">
-                                        <div class="form-group">
-                                            <label class="sr-only" for="College/University Name">College/University Name</label>
-                                            <select name="College/University Name" class="md-input" required>
-                                                <option value="Nawab Shah Alam Khan College of Engineering and Technology" selected="selected">Nawab Shah Alam Khan College of Engineering and Technology</option>
+                                    <div className="col-md-12 col-sm-12">
+                                        <div className="form-group">
+                                            <label className="sr-only" htmlFor="College/University Name">College/University Name</label>
+                                            <select name="College/University Name" className="md-input" required>
+                                                <option value="Nawab Shah Alam Khan College of Engineering and Technology" defaultValue="Nawab Shah Alam Khan College of Engineering and Technology">Nawab Shah Alam Khan College of Engineering and Technology</option>
                                             </select> 
                                         </div>
                                     </div>
                                     
-                                    <div class="col-md-6 col-sm-6 form-group">
-                                        <select name="Degree Being Pursued" class="md-input" required>
-                                            <option value="Bachelor of Engineering(B.E)" selected="selected">Bachelor of Engineering(B.E)</option>
+                                    <div className="col-md-6 col-sm-6 form-group">
+                                        <select name="Degree Being Pursued" className="md-input" required>
+                                            <option disabled={true} value="" selected >Select Degree</option>
+                                            <option value="Bachelor of Engineering(B.E)" >Bachelor of Engineering(B.E)</option>
                                             <option value="Diploma">Diploma</option>
                                         </select> 
                                     </div>
-                                    <div class="col-md-6 col-sm-6">
-                                        <select name="Branch" class="md-input" required >
-                                            <option value="none" disabled selected >Course</option>
+                                    <div className="col-md-6 col-sm-6">
+                                        <select name="Branch" className="md-input" required >
+                                            <option disabled={true} value="" selected >Select Course</option>
                                             <option value="Computer Science and Engineering">Computer Science and Engineering</option>
                                             <option value="Computer Science and Engineering AI/ML">Computer Science and Engineering AI/ML</option>
                                             <option value="Computer Science and Engineering DS">Computer Science and Engineering DS</option>
@@ -177,10 +179,10 @@ function JoinUs() {
                                             <option value="Mechanical Engineering">Mechanical Engineering</option>
                                         </select> 
                                     </div>
-                                    <div class="col-md-6 col-sm-6">
+                                    <div className="col-md-6 col-sm-6">
                                         <div className='form-group' >
-                                            <select class="md-input" name="Year" >
-                                            <option value="none" disabled selected >Select your studying year</option>
+                                            <select className="md-input" name="Year" required >
+                                            <option disabled={true} value="" selected >Select your studying year</option>
                                             <option value="I">I</option>
                                             <option value="II">II</option>
                                             <option value="II">II</option>
@@ -188,32 +190,32 @@ function JoinUs() {
                                         </select>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-sm-6">
-                                        <div class="form-group">
-                                            <label class="sr-only" for="College Roll no.">College Roll Number</label>
-                                            <input type="text" name="College Roll no." class="md-input" id="name" placeholder="College Roll number*" required data-error="Your College Roll no. is Required" />
-                                            <div class="help-block with-errors"></div>
+                                    <div className="col-md-6 col-sm-6">
+                                        <div className="form-group">
+                                            <label className="sr-only" htmlFor="College Roll no.">College Roll Number</label>
+                                            <input type="text" name="College Roll no." className="md-input" id="name" placeholder="College Roll number*" required data-error="Your College Roll no. is Required" />
+                                            <div className="help-block with-errors"></div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-sm-6">
-                                        <div class="form-group">
-                                            <label class="sr-only" for="Expected Graduation Year">Expected Graduation Year</label>
-                                            <input type="text" name="Expected Graduation Year" class="md-input" id="name" placeholder="Expected Graduation Year *" required data-error="Your College Roll no. is Required" />
-                                            <div class="help-block with-errors"></div>
+                                    <div className="col-md-6 col-sm-6">
+                                        <div className="form-group">
+                                            <label className="sr-only" htmlFor="Expected Graduation Year">Expected Graduation Year</label>
+                                            <input type="number" name="Expected Graduation Year" className="md-input" id="name" placeholder="Expected Graduation Year *" required data-error="Your College Roll no. is Required" />
+                                            <div className="help-block with-errors"></div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-sm-6">
-                                        <div class="form-group">
-                                            <label class="sr-only" for="Mobile number">Mobile number</label>
-                                            <input type="number" name="Mobile number" class="md-input" id="name" placeholder="Mobile number *" required data-error="Your Mobile number is Required" />
-                                            <div class="help-block with-errors"></div>
+                                    <div className="col-md-6 col-sm-6">
+                                        <div className="form-group">
+                                            <label className="sr-only" htmlFor="Mobile number">Mobile number</label>
+                                            <input type="number" name="Mobile number" className="md-input" id="name" placeholder="Mobile number *" required data-error="Your Mobile number is Required" />
+                                            <div className="help-block with-errors"></div>
                                     </div>
                                     </div>
-                                    <div class="col-md-6 col-sm-6">
+                                    <div className="col-md-6 col-sm-6">
                                         <div className='form-group' >
-                                            <label class="sr-only" for="Which Society/Affinity group do you want to join?">Which Society/Affinity group do you want to join?</label>
-                                            <select class="md-input" name="Which Society/Affinity group do you want to join?" required>
-                                                <option value="none" disabled selected >Which Society/Affinity group do you want to join?</option>
+                                            <label className="sr-only" htmlFor="Which Society/Affinity group do you want to join?">Which Society/Affinity group do you want to join?</label>
+                                            <select className="md-input" name="Which Society/Affinity group do you want to join?" required>
+                                                <option disabled={true} value="" selected >Which Society/Affinity group do you want to join?</option>
                                                 <option value="Computer Society">Computer Society</option>
                                                 <option value="Robotics and Automation Society">Robotics and Automation Society</option>
                                                 <option value="Women in Engineering Affinity Group (Recommended to Girls)">Women in Engineering Affinity Group (Recommended to Girls)</option>
@@ -222,18 +224,18 @@ function JoinUs() {
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-sm-6">
+                                    <div className="col-md-6 col-sm-6">
                                         <div className='form-group' >
-                                            <label class="sr-only" for="Which Operating Team do you think is best for you to join?">Which Operating Team do you think is best for you to join?</label>
-                                            <select class="md-input" name="Which Operating Team do you think is best for you to join?" required>
-                                                <option value="Publicity Team">Which Operating Team do you think is best for you to join?</option>
+                                            <label className="sr-only" htmlFor="Which Operating Team do you think is best for you to join?">Which Operating Team do you think is best for you to join?</label>
+                                            <select className="md-input" name="Which Operating Team do you think is best for you to join?" required>
+                                                <option disabled={true} value="" selected >Which Operating Team do you think is best for you to join?</option>
                                                 <option value="Publicity Team">Publicity Team</option>
                                                 <option value="Tech Team">Tech Team</option>
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-md-12 col-sm-12">
-                                        <div class="form-group">
+                                    <div className="col-md-12 col-sm-12">
+                                        <div className="form-group">
                                             <label style={{
                                                 color: "black",
                                                 fontSize: "1.50rem",
@@ -243,29 +245,30 @@ function JoinUs() {
                                                 paddingBottom: "1.0rem",
                                                 paddingLeft: "2.5rem",
 
-                                            }} for="Why do you feel this Team fits you the best and how can you volunteer for it?">Why do you feel this Team fits you the best and how can you volunteer for it?</label>
-                                            <textarea name="Why do you feel this Team fits you the best and how can you volunteer for it?" class="md-textarea" id="message" rows="7" placeholder="Answer" required data-error="Please, Leave us a message"></textarea>
-                                            <div class="help-block with-errors"></div>
+                                            }} htmlFor="Why do you feel this Team fits you the best and how can you volunteer for it?">Why do you feel this Team fits you the best and how can you volunteer for it?</label>
+                                            <textarea name="Why do you feel this Team fits you the best and how can you volunteer for it?" className="md-textarea" id="message" rows="7" placeholder="Answer" required data-error="Please, write a reason"></textarea>
+                                            <div className="help-block with-errors"></div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-sm-6">
-                                        <div class="form-group">
-                                            <label class="sr-only" for="LinkedIn account link">LinkedIn account link</label>
-                                            <input type="url" name="LinkedIn account link" class="md-input" id="name" placeholder="LinkedIn account link *" />
-                                            <div class="help-block with-errors"></div>
+                                    <div className="col-md-4 col-sm-6">
+                                        <div className="form-group">
+                                            <label className="sr-only" htmlFor="LinkedIn account link">LinkedIn account link</label>
+                                            <input type="url" name="LinkedIn account link" className="md-input" id="name" placeholder="LinkedIn account link" />
+                                            <div className="help-block with-errors"></div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-sm-6">
-                                        <div class="form-group">
-                                            <label class="sr-only" for="Instagram account link">Instagram account link</label>
-                                            <input type="url" name="Instagram account link" class="md-input" id="name" placeholder="Instagram account link *"  />
-                                            <div class="help-block with-errors"></div>
+                                    <div className="col-md-4 col-sm-6">
+                                        <div className="form-group">
+                                            <label className="sr-only" htmlFor="Instagram account link">Instagram account link</label>
+                                            <input type="url" name="Instagram account link" className="md-input" id="name" placeholder="Instagram account link"  />
+                                            <div className="help-block with-errors"></div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-sm-6">
+                                    <div className="col-md-4 col-sm-6">
                                         <div className='form-group' >
-                                            <label class="sr-only" for="Mode of Payment Transaction ">Mode of Payment Transaction</label>
-                                            <select class="md-input" name="Mode of Payment Transaction " required>
+                                            <label className="sr-only" htmlFor="Mode of Payment Transaction ">Mode of Payment Transaction</label>
+                                            <select className="md-input" name="Mode of Payment Transaction " required>
+                                                <option disabled={true} value="" selected >Mode of Payment Transaction</option>
                                                 <option value="Cash">Cash</option>
                                                 <option value="GooglePay">GooglePay</option>
                                                 <option value="PhonePe">PhonePe</option>
@@ -274,9 +277,9 @@ function JoinUs() {
                                         </div>
                                     </div>
                                     <input type="hidden" name="Timestamp" value={new Date()} />
-                                            <div class="col-md-12 col-sm-12">
-                                                <div class="text-left mt-20">
-                                            <button type="submit" class="submitBtn">Submit</button>
+                                            <div className="col-md-12 col-sm-12">
+                                                <div className="text-left mt-20">
+                                            <button type="submit" className="submitBtn">Submit</button>
                                                 </div>
                                             </div>
                                     </div>
@@ -285,7 +288,7 @@ function JoinUs() {
                     </div>
                 </div>
             </section>  
-            <p onClick={scrollToTop} id="return-to-top"><i class="icofont icofont-arrow-up pointer"></i></p>
+            <p onClick={scrollToTop} id="return-to-top"><i className="icofont icofont-arrow-up pointer"> <ArrowUpwardIcon/> </i></p>
         </section>
   )
 }

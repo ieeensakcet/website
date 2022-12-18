@@ -7,6 +7,7 @@ import Team from '../../../components/chaptersComponents/team';
 import { db } from '../../../utils/firebase/firebase'
 import { doc, getDoc } from 'firebase/firestore'
 import MessageCom from '../../../components/chaptersComponents/advisorsMessageComponent/messageCom';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 const SPS = () => {
     const [userData, setData] = useState([])
@@ -79,7 +80,7 @@ const SPS = () => {
                 Message={"Joining IEEE is due to the fact that,you can have the smartest people in the world around you,but without collaboration the technology is not going to evolve. As a member of SPS, I find the membership invaluable source of information and conduit for growth. I believe for lasting contribution to a discipline, you really need to have an organization like IEEE behind you."}
                 Designation={"CASS & SPS Advisor"}
             />
-            <p onClick={scrollToTop} id="return-to-top"><i class="icofont icofont-arrow-up pointer"></i></p>
+            <p onClick={scrollToTop} id="return-to-top"><i className="icofont icofont-arrow-up pointer"><ArrowUpwardIcon /></i></p>
         </div>
     )
 }

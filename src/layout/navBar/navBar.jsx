@@ -3,8 +3,6 @@ import React from "react";
 import SBlogo from '../../assets/img/SB-logo.png'
 import { Link } from "react-router-dom";
 
-import '../../styles/css/icofonts.min.css'
-
 const NavBar = () => {
   return (
     <div >
@@ -31,7 +29,7 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i class="tr-icon ion-android-menu"></i> </button>
+          <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i className="tr-icon ion-android-menu"></i> </button>
           <div className="logo" > <a href="/"> <img className="logo logo-display" src={SBlogo} alt="" /> <img className="logo logo-scrolled" src={SBlogo} alt="" /> </a> </div>
         </div>
         <div className="container-fluid" style={{

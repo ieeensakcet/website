@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { db } from '../../../utils/firebase/firebase'
 import {getDocs, collection } from 'firebase/firestore'
 import EventsCard from '../../../components/eventsCard/eventsCard'
-import "./seminars.css"
 import Loader from '../../../components/loader/Loader'
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 const Seminars = () => {
     const [seminarsData, setSeminarsData] = useState([])
@@ -48,12 +48,12 @@ const Seminars = () => {
     // console.log(webinarsData)
 
     return (
-        <section class="white-bg">
+        <section className="white-bg">
             {
                 seminarsData.length > 0 ? (
-                    <div class="container">
-                        <div className="row xl-display">
-                            <div class="col-md-6 col-sm-2 col-xs-12 blog-style-01">
+                    <div className="container">
+                        <div className="row xl-display-none">
+                            <div className="col-md-6 col-sm-2 col-xs-12 blog-style-01">
                                 {
 
 
@@ -94,7 +94,7 @@ const Seminars = () => {
                     </div>
                 ) : <Loader />
             }
-            <p onClick={scrollToTop} id="return-to-top"><i class="icofont icofont-arrow-up pointer"></i></p>
+            <p onClick={scrollToTop} id="return-to-top"><i className="icofont icofont-arrow-up pointer"><ArrowUpwardIcon /></i></p>
         </section>
     )
 }

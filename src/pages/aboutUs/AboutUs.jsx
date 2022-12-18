@@ -3,6 +3,7 @@ import "./AboutUs.css"
 import collegeLogo from "../../assets/img/logos/college_logo.png"
 import Accordion from '../../components/Accordions/accordions'
 import Testimonials from '../../components/Testimonials/testimonials'
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 const AboutUs = () => {
 
@@ -255,36 +256,36 @@ const AboutUs = () => {
             fontSize: "2.5rem"
           }}>Teams We Have</h5>
         </div>
-        <div class="container">
-          <div class="col-md-12 feature-box  text-left col-sm-12 feature-box-square teamsCard">
-            <div class="cardContainer">
-              <h4 class="mt-0 font-600 teamsHeading">Executive Committee (ExCom)</h4>
-              <p class="font-400 teamsDetails">Comprises of faculty advisors and core student members who hold officer positions and maintain the workflow.</p>
+        <div className="container">
+          <div className="col-md-12 feature-box  text-left col-sm-12 feature-box-square teamsCard">
+            <div className="cardContainer">
+              <h4 className="mt-0 font-600 teamsHeading">Executive Committee (ExCom)</h4>
+              <p className="font-400 teamsDetails">Comprises of faculty advisors and core student members who hold officer positions and maintain the workflow.</p>
             </div>
           </div>
-          <div class="col-md-12 feature-box  text-left col-sm-12 feature-box-square teamsCard">
-            <div class="cardContainer">
-              <h4 class="mt-0 font-600 teamsHeading">LeaderShip Team</h4>
-              <p class="font-400 teamsDetails">It acts as the HR of an organization and oversees the complete function of the Student Branch.</p>
+          <div className="col-md-12 feature-box  text-left col-sm-12 feature-box-square teamsCard">
+            <div className="cardContainer">
+              <h4 className="mt-0 font-600 teamsHeading">LeaderShip Team</h4>
+              <p className="font-400 teamsDetails">It acts as the HR of an organization and oversees the complete function of the Student Branch.</p>
             </div>
           </div>
-          <div class="col-md-12 feature-box  text-left col-sm-12 feature-box-square teamsCard">
-            <div class="cardContainer">
-              <h4 class="mt-0 font-600 teamsHeading">Publicity Team</h4>
-              <p class="font-400 teamsDetails">This team is responsible for managing social media, promotion of events and providing support to the existing societies. It is internally divided into 2 teams:<br></br>
+          <div className="col-md-12 feature-box  text-left col-sm-12 feature-box-square teamsCard">
+            <div className="cardContainer">
+              <h4 className="mt-0 font-600 teamsHeading">Publicity Team</h4>
+              <p className="font-400 teamsDetails">This team is responsible for managing social media, promotion of events and providing support to the existing societies. It is internally divided into 2 teams:<br></br>
                 1. Content Team - Responsible for generating content and deciding what goes up on our social media accounts and posters.<br></br>
                 2. Design Team - Responsible for designing the posters, flyers and social media posts</p>
             </div>
           </div>
-          <div class="col-md-12 feature-box  text-left col-sm-12 feature-box-square teamsCard">
-            <div class="cardContainer">
-              <h4 class=" font-600 teamsHeading">Tech Team</h4>
-              <p class="font-400 teamsDetails">This team is responsible for managing the website and other technical aspects of the Student Branch.</p>
+          <div className="col-md-12 feature-box  text-left col-sm-12 feature-box-square teamsCard">
+            <div className="cardContainer">
+              <h4 className=" font-600 teamsHeading">Tech Team</h4>
+              <p className="font-400 teamsDetails">This team is responsible for managing the website and other technical aspects of the Student Branch.</p>
             </div>
           </div>
         </div>
       </section>
-      <section class="white-bg">
+      <section className="white-bg">
         <h1 style={{
           fontSize: "3rem",
           fontWeight: "700",
@@ -293,9 +294,9 @@ const AboutUs = () => {
           textDecorationLine: "underline",
           marginTop: "-60px"
         }} >Testimonials</h1>
-        <div class="container">
-          <div class="row">
-            <div class="slick testimonial">
+        <div className="container">
+          <div className="row">
+            <div className="slick testimonial">
               {
                 testimonials.map((testimonial, index) => {
                   return (
@@ -314,7 +315,7 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      <section class="grey-bg">
+      <section className="grey-bg">
           <h1 style={{
             fontSize: "3rem",
             fontWeight: "700",
@@ -322,19 +323,19 @@ const AboutUs = () => {
           textAlign: "center",
             textDecorationLine:"underline"
           }} >FAQs</h1>
-        <div class="container mt-80">
-          <div class="row" style={{
+        <div className="container mt-80">
+          <div className="row" style={{
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
 
           }}>
-            <div class="col-sm-6 col-md-5">
-              <div class="panel-group accordion-style-03" id="accordion-style-3">
+            <div className="col-sm-6 col-md-5">
+              <div className="panel-group accordion-style-03" id="accordion-style-3">
                 {
                   faqs.map((faq, index) => {
                     return (
-                      <Accordion Question={faq.heading} Answer={faq.content} styles={"1"} key={Math.random} />
+                      <Accordion Question={faq.heading} Answer={faq.content} styles={"1"} key={index} />
                     )
                   }
                   )
@@ -342,12 +343,12 @@ const AboutUs = () => {
               </div>
             </div>
 
-            <div class="col-sm-6 col-md-5">
-              <div class="panel-group accordion-style-04" id="accordion-style-4">
+            <div className="col-sm-6 col-md-5">
+              <div className="panel-group accordion-style-04" id="accordion-style-4">
                 {
                   faqs2.map((faq, index) => {
                     return (
-                      <Accordion Question={faq.heading} Answer={faq.content} styles ={"2"} key = {Math.random} />
+                      <Accordion Question={faq.heading} Answer={faq.content} styles ={"2"} key = {index} />
                     )
                   }
                   )
@@ -358,7 +359,7 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-      <p onClick={scrollToTop} id="return-to-top"><i class="icofont icofont-arrow-up pointer"></i></p>
+      <p onClick={scrollToTop} id="return-to-top"><i className="icofont icofont-arrow-up pointer"><ArrowUpwardIcon/></i></p>
     </div>
   )
 }
