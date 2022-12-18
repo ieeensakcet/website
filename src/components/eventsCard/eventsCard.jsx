@@ -4,10 +4,10 @@ import "./eventsCard.css"
 const EventsCard = ({Data}) => {
   return (
       <div>
-          <div class="col-md-12 col-sm-2 col-xs-12 blog-style-01 xl-display">
-              <div class="post animation-move-top mb-20">
-                  <div class="post-img"> <img class="img-responsive" src={Data.imgUrl} alt="" /> </div>
-                  <div class="post-info" style={{
+          <div className="col-md-12 col-sm-2 col-xs-12 blog-style-01 xl-display">
+              <div className="post animation-move-top mb-20">
+                  <div className="post-img"> <img className="img-responsive" src={Data.imgUrl} alt="" /> </div>
+                  <div className="post-info" style={{
                       height: "200px",
                       paddingTop: "20px",
                       paddingLeft: "20px",
@@ -30,10 +30,10 @@ const EventsCard = ({Data}) => {
                   </div>
               </div>
           </div>
-          <div class="col-md-12 col-sm-2 col-xs-12 sm-display-none blog-style-01">
-              <div class="post animation-move-top mb-20">
-                  <div class="post-img"> <img class="img-responsive" src={Data.imgUrl} alt="" /> </div>
-                  <div class="post-info" style={{
+          <div className="col-md-12 col-sm-2 col-xs-12 sm-display-none blog-style-01">
+              <div className="post animation-move-top mb-20">
+                  <div className="post-img"> <img className="img-responsive" src={Data.imgUrl} alt="" /> </div>
+                  <div className="post-info" style={{
                       height: "200px",
                       paddingTop: "20px",
                       paddingLeft: "20px",

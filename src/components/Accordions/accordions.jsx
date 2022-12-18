@@ -24,10 +24,10 @@ const Accordion = ({Question, Answer, styles}) => {
                         fontWeight: "bold",
                         fontFamily: "inherit",
                     }}>{Question}</p>
-                    <span class="pull-right">{isActive ? <i class="ion-chevron-up"></i> : <i class="ion-chevron-down"></i>}</span>
+                    <span className="pull-right">{isActive ? <i className="ion-chevron-up"></i> : <i className="ion-chevron-down"></i>}</span>
                 </div>
             </div>
-            {isActive && <div className="panel-collapse"> <div class="panel-body" style={{
+            {isActive && <div className="panel-collapse"> <div className="panel-body" style={{
                 color: "black"
             }}><p style={{
                     color:"#000",

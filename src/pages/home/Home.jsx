@@ -16,6 +16,8 @@ import RAS from '../../assets/img/logos/RAS-logo.png'
 import CAS from '../../assets/img/logos/CAS-logo.png'
 import SPS from '../../assets/img/logos/SPS-logo.png'
 import OurMotive from '../../components/chaptersComponents/ourMotiveCard/ourMotive'
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+
 const Home = () => {
   const [loading, setLoading] = useState(true);
 
@@ -66,8 +68,6 @@ const Home = () => {
   else {
     return (
       <div >
-        {/* <Loader/> */}
-        {/* <NavBar /> */}
         <div className="wrapper pt-30">
           <section className="pt-0 pb-0 sm-display-none">
             <div className="hero-half-slider slick">
@@ -77,11 +77,11 @@ const Home = () => {
               <Carousel image={"https://ik.imagekit.io/ieeensakcet/tr:w-1000,h-500/IEEE_SB_grp_km0hszYpp.webp"} />
             </div>
           </section>
-          <div class="xl-display white-bg">
+          <div className="xl-display white-bg">
             <div style={{
               width: "100%",
             }}>
-              <div class="row">
+              <div className="row">
                 <div style={{
                   justifyContent: "center",
                   alignItems: "center",
@@ -122,57 +122,57 @@ const Home = () => {
                   <h2 className="mt-0 font-700"><span className="gradient-color">"</span> IEEE Student Branch of NSAKCET <span className="gradient-color1">is a student community that strives to inform, learn, entertain, and inspire action through the events and experiences we create.</span><span className="gradient-color">"</span> </h2>
                 </div>
               </div>
-              <div class="row service-box-style-04 margin-Top">
+              <div className="row service-box-style-04 margin-Top">
                 {
-                  ourMotives.map((motive) => (
-                    <OurMotive Data={motive} />
+                  ourMotives.map((motive, index) => (
+                    <OurMotive Data={motive} key={index} />
                   ))
                 }
               </div>
             </div>
           </section>
-          <section class="white-bg"
+          <section className="white-bg"
             style={{
               marginTop: "-160px",
             }}>
-            <div class="tr-collection-type-1">
+            <div className="tr-collection-type-1">
              
-              <div class="container" id="events">
-                <div class="row">
+              <div className="container" id="events">
+                <div className="row">
                   <div className="col-md-8 section-heading">
                     <h5 className="mt-0 text-uppercase primary-h5 font-italic play-font">EVENTS</h5>
                   </div>
-                  <div class="col-md-12 col-sm-6 col-xs-12 banner-left">
-                    <div class="row">
-                      <div class="col-xs-12 col-md-6 col-sm-6 shop-banner">
-                        <div class="tr-collection">
+                  <div className="col-md-12 col-sm-6 col-xs-12 banner-left">
+                    <div className="row">
+                      <div className="col-xs-12 col-md-6 col-sm-6 shop-banner">
+                        <div className="tr-collection">
                           <a href="/seminars">
                             <img src={"https://ik.imagekit.io/invincible/tr:w-500,h-300/Seminar_1.jpg"} alt="torner-shop-banner" />
-                            <span class="tr-collection-btn">Seminars</span>
+                            <span className="tr-collection-btn">Seminars</span>
                           </a>
                         </div>
                       </div>
-                      <div class="col-xs-12 col-md-6 col-sm-6 shop-banner">
-                        <div class="tr-collection">
+                      <div className="col-xs-12 col-md-6 col-sm-6 shop-banner">
+                        <div className="tr-collection">
                           <a href="/webinars">
                             <img src={"https://ik.imagekit.io/invincible/tr:w-500,h-300/Webinar3.jpg"} alt="torner-shop-banner" />
-                            <span class="tr-collection-btn">Webinars</span>
+                            <span className="tr-collection-btn">Webinars</span>
                           </a>
                         </div>
                       </div>
-                      <div class="col-xs-12 col-md-6 col-sm-6 shop-banner">
-                        <div class="tr-collection">
+                      <div className="col-xs-12 col-md-6 col-sm-6 shop-banner">
+                        <div className="tr-collection">
                           <a href="/workshops">
                             <img src={"https://ik.imagekit.io/invincible/tr:w-500,h-300/Workshop2.jpg"} alt="torner-shop-banner" />
-                            <span class="tr-collection-btn">Workshops</span>
+                            <span className="tr-collection-btn">Workshops</span>
                           </a>
                         </div>
                       </div>
-                      <div class="col-xs-12 col-md-6 col-sm-6 shop-banner">
-                        <div class="tr-collection">
+                      <div className="col-xs-12 col-md-6 col-sm-6 shop-banner">
+                        <div className="tr-collection">
                           <a href="/competitions">
                             <img src={"https://ik.imagekit.io/invincible/tr:w-500,h-300/Workshop1.jpg"} alt="torner-shop-banner" />
-                            <span class="tr-collection-btn">Competitions</span>
+                            <span className="tr-collection-btn">Competitions</span>
                           </a>
                         </div>
                       </div>
@@ -204,13 +204,13 @@ const Home = () => {
             </div>
           </section>
           <Counter />
-          <section class="gradient-bg-6">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-10 col-md-8 col-sm-10 col-xs-12 centerize-col text-center">
-                  {/* <h5 class="font-40px font-700 white-color">Let’s talk about your next project</h5> */}
-                  <h5 class="mb-30 font-30px white-color font-700">Become an <span className="play-font font-italic italic-p"> IEEE Member </span>to join the first student community of Nawab Shah Alam Khan college of Engineering and Technology.</h5>
-                  <a class="btn btn-xl btn-light btn-circle" href='/joinUs' style={{
+          <section className="gradient-bg-6">
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-10 col-md-8 col-sm-10 col-xs-12 centerize-col text-center">
+                  {/* <h5 className="font-40px font-700 white-color">Let’s talk about your next project</h5> */}
+                  <h5 className="mb-30 font-30px white-color font-700">Become an <span className="play-font font-italic italic-p"> IEEE Member </span>to join the first student community of Nawab Shah Alam Khan college of Engineering and Technology.</h5>
+                  <a className="btn btn-xl btn-light btn-circle" href='/joinUs' style={{
                     borderRadius: "50px",
                   }} >Join Us</a>
                 </div>
@@ -218,7 +218,7 @@ const Home = () => {
             </div>
           </section>
         </div>
-        <p onClick={scrollToTop} id="return-to-top"><i class="icofont icofont-arrow-up pointer"></i></p>
+        <p onClick={scrollToTop} id="return-to-top"><i className="icofont icofont-arrow-up pointer"><ArrowUpwardIcon /></i></p>
       </div>
     )
   }

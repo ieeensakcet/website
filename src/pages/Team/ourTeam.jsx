@@ -3,7 +3,7 @@ import { db } from '../../utils/firebase/firebase'
 import { getDocs, collection } from 'firebase/firestore'
 import Team from '../../components/chaptersComponents/team'
 import Loader from '../../components/loader/Loader'
-
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 const OurTeam = () => {
 
@@ -25,16 +25,13 @@ const OurTeam = () => {
     getData();
   }, [])
 
-  console.log(userData)
-
-
   return (
     <div>
       {
         userData.length > 1 ? (
-        <section class="white-bg">
-          <div class="container">
-              <div class="container">
+        <section className="white-bg">
+          <div className="container">
+              <div className="container">
                 <div>
                 <div>
                   <div className="col-md-12 col-sm-8 section-heading">
@@ -45,29 +42,29 @@ const OurTeam = () => {
                   </div>
                 </div>
               </div>
-                <div class="cbp-l-filters-alignCenter text-sm-center mb-100">
-                  <div class="cbp-filter-item">
+                <div className="cbp-l-filters-alignCenter text-sm-center mb-100">
+                  <div className="cbp-filter-item">
                     <a href="#execom" className='cbp-filter-item' style={{
                       color: "#14649b",
                   }}>
                     Execom
                   </a>
                   </div>
-                  <div class="cbp-filter-item">
+                  <div className="cbp-filter-item">
                     <a href="#leadership" className='cbp-filter-item' style={{
                       color: "#14649b",
                     }}>
                     Leadership Team
                   </a>
                   </div>
-                  <div class="cbp-filter-item">
+                  <div className="cbp-filter-item">
                     <a href="#publicity" className='cbp-filter-item' style={{
                       color: "#14649b",
                     }}>
                     Publicity Team
                   </a>
                   </div>
-                  <div class="cbp-filter-item" >
+                  <div className="cbp-filter-item" >
                     <a href="#tech" className='cbp-filter-item' style={{
                       color: "#14649b",
                     }}>
@@ -186,7 +183,7 @@ const OurTeam = () => {
           </section>
         ) : <Loader />
       }
-      <p onClick={scrollToTop} id="return-to-top"><i class="icofont icofont-arrow-up pointer"></i></p>
+      <p onClick={scrollToTop} id="return-to-top"><i className="icofont icofont-arrow-up pointer"><ArrowUpwardIcon /></i></p>
      </div> 
   )
 }
