@@ -35,7 +35,8 @@ const WIE = () => {
                 lineHeight: "2.3rem"
           }}>is a global network of IEEE members and volunteers dedicated to promoting women engineers and scientists, and inspiring girls around the world to follow their academic interests in a career in engineering and science.</h5>
             <p className="mt-50"><a className="btn btn-lg animation-move-top-sm btnColor" href="https://wie.ieee.org/" style={{
-                color:"#ffffff"
+                color: "#ffffff",
+                backgroundColor: "#14649b",
             }}>Read More</a> </p>
         </div>
     )

@@ -33,7 +33,6 @@ const index = () => {
         <Route path="/workshops" element={<Workshops />} />
         <Route path="/joinUs" element={<JoinUs />} />
         <Route path="/galleria" element={<Gallery />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </div>
   )

@@ -36,7 +36,8 @@ const CAS = () => {
                 lineHeight: "2.3rem"
             }}>is a professional society of the IEEE that supports the development and the exchange of scientific knowledge in the fields of robotics and automation, including applied and theoretical issues.</h5>
             <p className="mt-50"><a className="btn btn-lg animation-move-top-sm btnColor" style={{
-                color: "white",
+                color: "#ffffff",
+                backgroundColor: "#14649b",
             }} href="https://www.ieee-ras.org/">Read More</a> </p>
         </div>
     )

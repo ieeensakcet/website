@@ -10,7 +10,11 @@ function ourMotive({Data}) {
                         backgroundColor: "#14649b",
                     }}>
                         <div className="content-wrap white-color">
-                            <div className="icon-wrap white-bg">
+                            <div className="icon-wrap white-bg" style={{
+                                justifyContent: "center",
+                                alignItems: "center",
+                                display: "flex",
+                            }}>
                                 <i className="icofont font-40px white-color">
                                     <img src={Data.img} style={{
                                         width: "50px",
@@ -24,7 +28,11 @@ function ourMotive({Data}) {
                     </div>
                     <div className="box-back height-500px gradient-bg-6">
                         <div className="content-wrap white-color">
-                            <div className="icon-wrap white-bg">
+                            <div className="icon-wrap white-bg" style={{
+                                justifyContent: "center",
+                                alignItems: "center",
+                                display: "flex",
+                            }} >
                                 <i className="icofont font-40px gradient-color-4">
                                     <img src={Data.img2} style={{
                                         width: "50px",

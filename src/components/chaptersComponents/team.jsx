@@ -1,4 +1,6 @@
 import React from 'react'
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import EmailIcon from '@mui/icons-material/Email';
 
 const Team = ({ item }) => {
     return (
@@ -13,8 +15,14 @@ const Team = ({ item }) => {
                         <h4 className="mb-0 mt-10 dark-color">{item.name}</h4>
                         <h5 className="gradient-color mt-0 mb-0 montserrat-font">{item.designation}</h5>
                         <ul className="social-default-no-border mt-20 mb-20">
-                            <li><a href={`https://www.linkedin.com/in/${item.linkedin}`} className="facebook"><i className="icofont icofont-social-linkedin"></i></a></li>
-                            <li><a href={`mailto:${item.email}`} className="twitter"><i className="icofont icofont-email"></i></a></li>
+                            <li><a href={`https://www.linkedin.com/in/${item.linkedin}`} className="facebook"><LinkedInIcon style={{
+                                color: "#0077b5",
+                                fontSize: "30px"
+                            }} /></a></li>
+                            <li><a target="_target" rel="follow" href={`mailTo:${item.email}` }><EmailIcon style={{
+                                color: "#0077b5",
+                                fontSize: "30px"
+                            }} /></a></li>
                         </ul>
                     </div>
                 </div>

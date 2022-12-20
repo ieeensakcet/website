@@ -1,11 +1,15 @@
-import React,{useEffect} from 'react'
+import React,{useEffect, useState} from 'react'
 import "./AboutUs.css"
 import collegeLogo from "../../assets/img/logos/college_logo.png"
 import Accordion from '../../components/Accordions/accordions'
 import Testimonials from '../../components/Testimonials/testimonials'
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import Loader from '../../components/loader/Loader'
 
 const AboutUs = () => {
+
+  const [loading, setLoading] = useState(true);
+
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -69,11 +73,13 @@ const AboutUs = () => {
       },
   ]
   return (
-    <div className='aboutUscontainer white-bg pt-40' >
-      <div className="aboutUs" id="about">
+    <div className='aboutUscontainer white-bg' >
+      {loading ? <Loader /> : null}
+      <div className="aboutUs pt-40" id="about">
         <img
           className='white-bg'
           src={collegeLogo}
+          onLoad={() => setLoading(false)}
           style={{
             width: "100%",
             height: "100%",

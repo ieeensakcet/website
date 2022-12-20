@@ -70,18 +70,26 @@ function Gallery() {
     const [loading, setLoading] = useState(true)
     useEffect(() => {
         window.scrollTo(0, 0);
-        setTimeout(() => {
-            setLoading(false)
-        }, 2000)
-    }, [])
+    }, []);
+    useEffect(() => {
+        const handleEsc = (event) => {
+            if (event.keyCode === 27) {
+                setModal(false);
+            }
+        };
+        window.addEventListener('keydown', handleEsc);
+
+        return () => {
+            window.removeEventListener('keydown', handleEsc);
+        };
+    }, []);
     const getImg = (imgSrc) => {
         setTempingSrc(imgSrc);
         setModal(true);
     }
     return (
         <div>
-            {
-                !loading ?
+            {loading ? <Loader /> : null}
                 <div>
                 <section className="white-bg pt-0">
                     <section className="fixed-bg sm-display-none" style={{
@@ -154,9 +162,16 @@ function Gallery() {
                             <div className='gallery' >
                                 {
                                     data.map((item, index) => {
+
+                                        const removeLoader = () => {
+                                            if (index === data.length - 1) {
+                                                setLoading(false)
+                                            }
+                                        }
+
                                         return (
                                             <div className='pics' key={index} onClick={() => getImg(item.imgSrc)} >
-                                                <img src={item.imgSrc} style={{ width: '100%' }} alt="" />
+                                                <img src={item.imgSrc} style={{ width: '100%' }} alt="" onLoad={()=> removeLoader()} />
                                             </div>
                                         )
                                     }
@@ -167,8 +182,7 @@ function Gallery() {
                         </div>
                     </div>
                 </section>
-                </div> : <Loader/>
-            }
+                </div> 
             <p onClick={scrollToTop} id="return-to-top"><i className="icofont icofont-arrow-up pointer"><ArrowUpwardIcon /></i></p>
         </div>
     )

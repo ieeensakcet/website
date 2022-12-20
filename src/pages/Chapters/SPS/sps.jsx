@@ -37,7 +37,8 @@ const SPS = () => {
                 lineHeight: "2.3rem"
           }}> is a dynamic organization that is the preeminent source of signal processing information and resources to a global community by providing a one-stop source of signal processing resources.</h5>
             <p className="mt-50"><a className="btn btn-lg animation-move-top-sm btnColor" href="https://signalprocessingsociety.org/" style={{
-                color:"#ffffff"
+                color: "#ffffff",
+                backgroundColor: "#14649b",
             }}>Read More</a> </p>
         </div>
     )
