@@ -36,7 +36,8 @@ const CS = () => {
                 lineHeight: "2.3rem"
           }}>is a professional society of IEEE its purpose and scope is “To advance the theory, practice, and application of computer and information processing science and technology” and the “professional standing of its members.”</h5>
             <p className="mt-50"><a className="btn btn-lg animation-move-top-sm btnColor" href='https://www.computer.org/' style={{
-                color:"#ffffff"
+                color: "#ffffff",
+                backgroundColor: "#14649b",
             }}>Read More</a> </p>
         </div>
     )

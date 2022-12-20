@@ -61,11 +61,13 @@ const Seminars = () => {
                                         return new Date(b.date) - new Date(a.date)
                                     }
                                     )).map((webinar) => {
+                                        const dataLength = seminarsData.length
                                         // console.log("webinar", webinar)
                                         return (
                                             <EventsCard
                                                 Data={webinar}
                                                 key={Math.random()}
+                                                dataLength={dataLength}
                                             />
                                         )
                                     }

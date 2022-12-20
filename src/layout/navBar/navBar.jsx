@@ -2,7 +2,9 @@ import React from "react";
 // import './navBar.css'
 import SBlogo from '../../assets/img/SB-logo.png'
 import { Link } from "react-router-dom";
-
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TwitterIcon from '@mui/icons-material/Twitter';
 const NavBar = () => {
   return (
     <div >
@@ -11,21 +13,27 @@ const NavBar = () => {
       }>
         <div className="attr-nav hidden-xs sm-display-none">
           <ul className="social-media-dark social-top">
-            <li><a href="https://twitter.com/ieeensakcet" className="icofont icofont-social-twitter" style={{
+            <li><a href="https://www.instagram.com/ieeensakcet/"> <InstagramIcon style={{
               color: "#14649b",
               fontSize: "20px",
-              textDecoration: "none"
-            }}> </a></li>
-            <li><a href="https://www.instagram.com/ieeensakcet/" className="icofont icofont-social-instagram" style={{
+              textDecoration: "none",
+              justifyContent: "center",
+
+            }} /></a></li>
+            <li><a href="https://www.linkedin.com/company/ieeensakcet/"> <LinkedInIcon style={{
               color: "#14649b",
               fontSize: "20px",
-              textDecoration: "none"
-            }}> </a></li>
-            <li><a href="https://www.linkedin.com/company/ieeensakcet/" className="icofont icofont-social-linkedin" style={{
+              textDecoration: "none",
+              justifyContent: "center",
+
+            }} /></a></li>
+            <li><a href="https://twitter.com/ieeensakcet"> <TwitterIcon style={{
               color: "#14649b",
               fontSize: "20px",
-              textDecoration: "none"
-            }}> </a></li>
+              textDecoration: "none",
+              justifyContent: "center",
+
+            }} /></a></li>
           </ul>
         </div>
         <div className="navbar-header">

@@ -35,7 +35,8 @@ const CAS = () => {
                 lineHeight: "2.3rem"
             }}>is the leading organization that promotes the advancement of the theory, analysis, design, tools, and implementation of circuits and systems. The field spans their theoretical foundations, applications, and architectures for signal and information processing.</h5>
             <p className="mt-50"><a className="btn btn-lg animation-move-top-sm btnColor" style={{
-                color: "white",
+                color: "#ffffff",
+                backgroundColor: "#14649b",
             }} href="https://ieee-cas.org/">Read More</a> </p>
         </div>
     )

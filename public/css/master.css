@@ -3135,3 +3135,8 @@ border-radius: 3px;height: 10px;width: -webkit-calc(100% - 50px);width: calc(100
 .pointer{
    cursor: pointer;
 }
+
+.btnColor{
+   color: #fff;
+   background-color: #14649b;
+}

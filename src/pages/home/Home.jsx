@@ -62,12 +62,13 @@ const Home = () => {
       img2: networking,
     }
   ]
-  if (loading) {
-    return <Loader />
-  }
-  else {
+  // if (loading) {
+  //   return <Loader />
+  // }
+  // else {
     return (
       <div >
+        {loading? <Loader />:null}
         <div className="wrapper pt-30">
           <section className="pt-0 pb-0 sm-display-none">
             <div className="hero-half-slider slick">
@@ -90,6 +91,7 @@ const Home = () => {
                   <img
                     className='xl-display mb-20 mt-20'
                     src={"https://ik.imagekit.io/invincible/tr:w-1000,h-500/ieee_group_photo_ut6ryLhep"}
+                    onLoad={() => setLoading(false)}
                     style={{
                       backgroundSize: "contain",
                       backgroundRepeat: "no-repeat",
@@ -222,6 +224,6 @@ const Home = () => {
       </div>
     )
   }
-}
+// }
 
 export default Home

@@ -1,4 +1,7 @@
 import React from 'react'
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 const footer = () => {
   return (
@@ -51,9 +54,29 @@ const footer = () => {
                           <div className="col-sm-6 col-md-3">
                               <div className="widget widget-links">
                                   <h5 className="widget-title">Reach Us At</h5>
-                                  <p><a href="https://twitter.com/ieeensakcet" className="icofont icofont-social-twitter">  Twitter</a></p>
-                                  <p><a href="https://www.instagram.com/ieeensakcet/" className="icofont icofont-social-instagram">  Instagram</a></p>
-                                  <p><a href="https://www.linkedin.com/company/ieeensakcet/" className="icofont icofont-social-linkedin">  LinkedIn</a></p>
+                                  <p><a href="https://twitter.com/ieeensakcet"> <TwitterIcon style={{
+                                      color: "#ffffff",
+                                      fontSize: "22px",
+                                      textDecoration: "none",
+                                      justifyContent: "center",
+                                      paddingRight:"5px"
+
+                                  }} /> Twitter</a></p>
+                                  <p><a href="https://www.instagram.com/ieeensakcet/" ><InstagramIcon style={{
+                                      color: "#ffffff",
+                                      fontSize: "22px",
+                                      textDecoration: "none",
+                                      justifyContent: "center",
+                                      paddingRight: "5px"
+                                  }} />  Instagram</a></p>
+
+                                  <p><a href="https://www.linkedin.com/company/ieeensakcet/"><LinkedInIcon style={{
+                                      color: "#ffffff",
+                                      fontSize: "22px",
+                                      textDecoration: "none",
+                                      justifyContent: "center",
+                                      paddingRight: "5px"
+                                  }} />  LinkedIn</a></p>
                               </div>
                           </div>
                       </div>
