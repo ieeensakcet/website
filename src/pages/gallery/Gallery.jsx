@@ -15,10 +15,14 @@ function Gallery() {
     let data = [
         {
             id: 1,
-            imgSrc: "https://ik.imagekit.io/invincible/gallery/gp_zxHu3kC9e"
+            imgSrc: "https://ik.imagekit.io/ieeensakcet/Galleria/tr:w-1536/IMG_20221219_105505_eCSzTYk8B.jpg"
         },
         {
             id: 2,
+            imgSrc: "https://ik.imagekit.io/invincible/gallery/gp_zxHu3kC9e"
+        },
+        {
+            id: 16,
             imgSrc: "https://ik.imagekit.io/invincible/gallery/IMG_0711.JPG"
         },
         {
@@ -44,12 +48,12 @@ function Gallery() {
         },
         {
             id: 5,
-            imgSrc: "https://ik.imagekit.io/invincible/gallery/IMG_0804.png"
+            imgSrc: "https://ik.imagekit.io/ieeensakcet/Galleria/tr:w-1512/IMG_0697_xQ0EBxnU8.jpg"
         },
 
         {
             id: 12,
-            imgSrc: "https://ik.imagekit.io/invincible/gallery/IMG_0857.png"
+            imgSrc: "https://ik.imagekit.io/ieeensakcet/Galleria/tr:w-1512/IMG_1187_J8QveIBZHb.jpg"
         },
         {
             id: 11,
@@ -57,13 +61,28 @@ function Gallery() {
         },
         {
             id: 8,
-            imgSrc: "https://ik.imagekit.io/invincible/gallery/IMG_0487.JPG?"
+            imgSrc: "https://ik.imagekit.io/ieeensakcet/Galleria/tr:w-1728/IMG_0563_VHzI_eXR4y.JPG"
         },
         {
             id: 9,
             imgSrc: "https://ik.imagekit.io/invincible/gallery/IMG_9218.JPG"
         },
-        
+         {
+            id: 13,
+            imgSrc: "https://ik.imagekit.io/ieeensakcet/Galleria/tr:w-1728/IMG_0805_cZda9J4U7n.JPG"
+        },
+        {
+            id: 14,
+            imgSrc: "https://ik.imagekit.io/ieeensakcet/Galleria/tr:w-1512/IMG_0779_YnPLCgXOa.jpg"
+        },
+        {
+            id: 15,
+            imgSrc: "https://ik.imagekit.io/ieeensakcet/Galleria/tr:w-1344/IMG_0703_2_QjIoRMN8u.jpg"
+        },
+        {
+            id: 17,
+            imgSrc: "https://ik.imagekit.io/ieeensakcet/Galleria/tr:w-2000/20221216_152139_iY3PL07t1.jpg"
+        }
     ]
     const [modal, setModal] = useState(false);
     const [tempingSrc, setTempingSrc] = useState();
@@ -129,7 +148,7 @@ function Gallery() {
                                 }}>
                                     <img
                                         className='xl-display'
-                                        src={"https://ik.imagekit.io/ieeensakcet/ieeeCarousel1_2fpv07wqk.JPG"}
+                                        src={"https://ik.imagekit.io/ieeensakce`t/ieeeCarousel1_2fpv07wqk.JPG"}
                                         style={{
                                             backgroundSize: "contain",
                                             backgroundRepeat: "no-repeat",
