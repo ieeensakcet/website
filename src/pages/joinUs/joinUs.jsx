@@ -28,7 +28,8 @@ function JoinUs() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setModal(true)
+        setModal(true);
+        scrollToTop();
         fetch(scriptUrl, {
             method: 'POST',
             body: new FormData(document.getElementById("formsData"))
