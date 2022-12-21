@@ -34,19 +34,20 @@ function JoinUs() {
             body: new FormData(document.getElementById("formsData"))
         })
             .then(response => {
+                scrollToTop();
                 setTimeout(() => {
                     setModal(false);
                     navigate('/')
                 }
-                , 300000);
+                    , 300000);
                 
             }
             )
-            .catch(error => (
-                seterrMsg(true),
-                scrollToTop()
+            .catch(error => {
+                seterrMsg(true);
+                scrollToTop();
+            }
             )
-                )
     }
 
     return (
