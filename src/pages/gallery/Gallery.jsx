@@ -14,37 +14,41 @@ function Gallery() {
     };
     let data = [
         {
+            id: 0,
+            imgSrc: "https://ik.imagekit.io/ieeensakcet/Galleria/tr:w-1344/20221219_144131_hM-tQm_dqO.jpg"
+        },
+        {
             id: 1,
-            imgSrc: "https://ik.imagekit.io/ieeensakcet/Galleria/tr:w-1536/IMG_20221219_105505_eCSzTYk8B.jpg"
+            imgSrc: "https://ik.imagekit.io/ieeensakcet/Galleria/tr:w-1748/IMG_883643_dgpNmzf-U"
         },
         {
             id: 2,
-            imgSrc: "https://ik.imagekit.io/invincible/gallery/gp_zxHu3kC9e"
+            imgSrc: "https://ik.imagekit.io/ieeensakcet/Galleria/tr:w-1369/gp_zxHu3kC9e_zEotmeVQF.jpg"
         },
         {
             id: 16,
-            imgSrc: "https://ik.imagekit.io/invincible/gallery/IMG_0711.JPG"
+            imgSrc: "https://ik.imagekit.io/ieeensakcet/Galleria/tr:w-1728/IMG_0711_T-WuRuFp-_.jpg"
         },
         {
             id: 4,
-            imgSrc: "https://ik.imagekit.io/invincible/gallery/IMG_20221018_121247.jpg"
+            imgSrc: "https://ik.imagekit.io/ieeensakcet/Galleria/tr:w-1546/IMG_20221018_HQ0uBLLoLt.jpg"
         },
 
         {
             id: 10,
-            imgSrc: "https://ik.imagekit.io/invincible/gallery/IMG_9201.JPG"
+            imgSrc: "https://ik.imagekit.io/ieeensakcet/Galleria/tr:w-1728/IMG_9201_bIyqE_os81.jpg"
         },
         {
             id: 3,
-            imgSrc: "https://ik.imagekit.io/invincible/gallery/IMG_0764.png"
+            imgSrc: "https://ik.imagekit.io/ieeensakcet/Galleria/tr:w-1344/IMG_0764_q6r988AHa.jpg"
         },
         {
             id: 6,
-            imgSrc: "https://ik.imagekit.io/invincible/gallery/IMG-20220404-WA0070.jpg"
+            imgSrc: "https://ik.imagekit.io/ieeensakcet/Galleria/IMG-20220404_nkeXlVvNp1.jpg"
         },
         {
             id: 7,
-            imgSrc: "https://ik.imagekit.io/invincible/gallery/PHOTO-2022-06-15-11-40-00.jpg"
+            imgSrc: "https://ik.imagekit.io/ieeensakcet/Galleria/IMG_6534_zHcAwKuAM.jpg"
         },
         {
             id: 5,
@@ -57,7 +61,7 @@ function Gallery() {
         },
         {
             id: 11,
-            imgSrc: "https://ik.imagekit.io/invincible/Seminar_1.jpg"
+            imgSrc: "https://ik.imagekit.io/ieeensakcet/Galleria/Seminar_1_6lJqoA5OM.webp"
         },
         {
             id: 8,
@@ -65,7 +69,7 @@ function Gallery() {
         },
         {
             id: 9,
-            imgSrc: "https://ik.imagekit.io/invincible/gallery/IMG_9218.JPG"
+            imgSrc: "https://ik.imagekit.io/ieeensakcet/Galleria/tr:w-1728/IMG_9218_m4yVmNcb_.webp"
         },
          {
             id: 13,
@@ -126,7 +130,7 @@ function Gallery() {
                                         <div className="row">
                                             <div className="col-md-8 centerize-col col-xs-12">
                                                 <div className="text-center all-padding-40">
-                                                    <h1 className="font-700 font-80px line-height-100 white-color xs-font-30px xs-line-height-30">Gallery</h1>
+                                                    <h1 className="font-700 font-80px line-height-100 white-color xs-font-30px xs-line-height-30">Galleria</h1>
                                                 </div>
                                             </div>
                                         </div>
@@ -148,7 +152,7 @@ function Gallery() {
                                 }}>
                                     <img
                                         className='xl-display'
-                                        src={"https://ik.imagekit.io/ieeensakce`t/ieeeCarousel1_2fpv07wqk.JPG"}
+                                        src={"https://ik.imagekit.io/ieeensakcet/ieeeCarousel1_2fpv07wqk.JPG"}
                                         style={{
                                             backgroundSize: "contain",
                                             backgroundRepeat: "no-repeat",
@@ -169,7 +173,7 @@ function Gallery() {
                         <div className="col-sm-8 section-heading hii mt-20 xl-display-none">
                             <h5 className="mt-0 text-uppercase primary-h5 play-font pt-0 pb-20 mb-0" style={{
                                 fontSize: 40
-                            }}>Gallery</h5>
+                            }}>Galleria</h5>
                         </div>
                         <div>
                             <div className='sm-display-none' >

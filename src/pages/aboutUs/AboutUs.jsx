@@ -55,19 +55,19 @@ const AboutUs = () => {
   const testimonials = [
     {
       name: "Syeda Kaunain Fatima",
-      Image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/kaunain.jpg",
+      Image: "https://ik.imagekit.io/ieeensakcet/profiles/testimonials/tr:w-860/kounain_lNiD7zuBt",
       position: "EX SB CHAIR",
       views: "IEEE has given me the chance to improve my management skills. Being exposed to multitudinous scenarios, I learned valuable wisdom about effectively managing my time, developing new work processes, voicing opinions while being open to feedback and above all, networking with a relevant group of professionals. IEEE members are uniquely positioned to provide the innovative solutions needed in the technical industries going forward. In addition to the human networks that can be tapped for advice or assistance, there are many web resources with special access just for members."
     },
     {
       name: "Hafsa Taruj",
-      Image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/hafsa_EFuQsDexX.jpeg",
+      Image: "https://ik.imagekit.io/ieeensakcet/profiles/testimonials/tr:w-640/hafsa_vMctSv4Xo",
       position: "Ex Design Lead",
       views: "Our IEEE Student Branch provides networking opportunities among various entrepreneurs and students so that the members achieve problem-solving and leadership skills, this will help students to come up with new ideas and to determine what they are willing to achieve. The Student Branch teaches the students about the professional environment of the corporate world and also provides technical and fun activities to keep the students active and engaged throughout their campus life."
     },
     {
       name: "Syeda Kaunain alvi",
-      Image: "https://ik.imagekit.io/ieeensakcet/profiles/tr:w-150/kounain.JPG",
+      Image: "https://ik.imagekit.io/ieeensakcet/profiles/testimonials/kounain_3OXZcaYlo",
       position: "SB Secretary",
       views: "Joining IEEE has provided me with professional exposure. It also exposed me to various new opportunities and gave me a chance to organize technical events, seminars, webinars and to network with people all over the world."
       },
@@ -194,7 +194,7 @@ const AboutUs = () => {
         <div className="aboutUs" id="about">
           <img
             className='white-bg'
-          src="https://ik.imagekit.io/invincible/50232fa1-d509-447b-a829-62a6f8da620e.jfif"
+          src="https://ik.imagekit.io/ieeensakcet/About/IMG_64873_TBku5HmXn"
             style={{
               width: "100%",
               height: "100%",
@@ -235,8 +235,7 @@ const AboutUs = () => {
                 paddingBottom: "30px",
                 textAlign: "left",
               }}>
-                is a student community that strives to inform, learn, entertain, and
-                inspire action through the events and experiences we create.
+                To put stars in the sky of our Student Branch, we have been achieving prestigious awards every year, them being:
             </h5>
             <h5 style={{
               fontSize: "1.5rem",
