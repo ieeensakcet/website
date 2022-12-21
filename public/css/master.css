@@ -3140,3 +3140,28 @@ border-radius: 3px;height: 10px;width: -webkit-calc(100% - 50px);width: calc(100
    color: #fff;
    background-color: #14649b;
 }
+
+.developer{
+   color: #fff;
+   font-size: 1.4rem;
+   font-weight: 300;
+   padding: 10px 20px;
+}
+
+.developerName{
+   color: #00aced;
+   font-size: 1.6rem;
+   font-weight: bolder;
+   text-decoration: underline;
+}
+
+.developerName:hover{
+   font-size: 1.9rem;
+}
+
+.creditSection{
+   border-top: 1px solid white;
+   width: 100%;
+   background-color: #212121;
+   padding-left: 10%;
+}

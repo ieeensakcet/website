@@ -1,5 +1,4 @@
 import React from 'react'
-import "./Carousel.css"
 
 const Carousel = ({image}) => {
     return (
