@@ -152,7 +152,7 @@ function Gallery() {
                                 }}>
                                     <img
                                         className='xl-display'
-                                        src={"https://ik.imagekit.io/ieeensakcet/tr-w:1482/ieeeCarousel1_2fpv07wqk.JPG"}
+                                        src={"https://ik.imagekit.io/ieeensakcet/tr:w-1428/ieeeCarousel1_2fpv07wqk.JPG"}
                                         style={{
                                             backgroundSize: "contain",
                                             backgroundRepeat: "no-repeat",
