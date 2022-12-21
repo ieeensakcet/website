@@ -116,7 +116,7 @@ function Gallery() {
                 <div>
                 <section className="white-bg pt-0">
                     <section className="fixed-bg sm-display-none" style={{
-                        backgroundImage: `url(https://ik.imagekit.io/ieeensakcet/ieeeCarousel1_2fpv07wqk.JPG)`,
+                        backgroundImage: `url(https://ik.imagekit.io/ieeensakcet/tr:w-1728/ieeeCarousel1_2fpv07wqk.JPG)`,
                         backgroundSize: "cover",
                         backgroundRepeat: "no-repeat",
                                 backgroundPosition: "center",
@@ -152,7 +152,7 @@ function Gallery() {
                                 }}>
                                     <img
                                         className='xl-display'
-                                        src={"https://ik.imagekit.io/ieeensakcet/ieeeCarousel1_2fpv07wqk.JPG"}
+                                        src={"https://ik.imagekit.io/ieeensakcet/tr-w:1482/ieeeCarousel1_2fpv07wqk.JPG"}
                                         style={{
                                             backgroundSize: "contain",
                                             backgroundRepeat: "no-repeat",
