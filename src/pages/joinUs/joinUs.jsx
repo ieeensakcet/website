@@ -263,6 +263,7 @@ function JoinUs() {
                                                         <option value="Computer Science and Engineering (IOT, CS and BCT)">Computer Science and Engineering (IOT, CS and BCT)</option>
                                                         <option value="Information Technology">Information Technology</option>
                                                         <option value="Electronics and Communications Engineering">Electronics and Communications Engineering</option>
+                                                        <option value="Electrical and Electronics Engineering">Electrical and Electronics Engineering</option>
                                                         <option value="Civil Engineering">Civil Engineering</option>
                                                         <option value="Mechanical Engineering">Mechanical Engineering</option>
                                                     </select>
@@ -317,6 +318,7 @@ function JoinUs() {
                                                         <label className="sr-only" htmlFor="Which Operating Team do you think is best for you to join?">Which Operating Team do you think is best for you to join?</label>
                                                         <select className="md-input" name="Which Operating Team do you think is best for you to join?" required>
                                                             <option disabled={true} value="" selected >Which Operating Team do you think is best for you to join?</option>
+                                                            <option value="Membership Team">Membership Team</option>
                                                             <option value="Publicity Team">Publicity Team</option>
                                                             <option value="Tech Team">Tech Team</option>
                                                         </select>
