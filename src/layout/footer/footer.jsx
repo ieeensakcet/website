@@ -83,7 +83,7 @@ const footer = () => {
                   </div>
               </div>
               <div className='creditSection dark' >
-                  <h1 className=' font-italic developer' >Designed and developed by <a href='https://www.linkedin.com/in/syed-affan/' className='developerName' > Syed Affan </a><span style={{
+                  <h1 className=' font-italic developer' >Designed and developed by <a href='https://affan880.github.io/' className='developerName' > Syed Affan </a><span style={{
                       textAlign: "center",
                       float:"right",
                       paddingRight:"10%"
