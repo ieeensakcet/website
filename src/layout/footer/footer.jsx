@@ -87,7 +87,7 @@ const footer = () => {
                       textAlign: "center",
                       float:"right",
                       paddingRight:"10%"
-                  }}>© 2021 IEEE NSAKCET. All Rights Reserved.</span>  </h1>
+                  }}>© 2023 IEEE NSAKCET. All Rights Reserved.</span>  </h1>
               </div>
                                   
                                   
