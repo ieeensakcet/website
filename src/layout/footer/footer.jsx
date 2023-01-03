@@ -82,11 +82,12 @@ const footer = () => {
                       </div>
                   </div>
               </div>
-              <div className='creditSection dark' mb-20>
+              <div className='creditSection dark' mb-20 pb-0>
                   <h1 className=' font-italic developer' >Designed and developed by <a href='https://affan880.github.io/' className='developerName' > Syed Affan </a><span style={{
                       textAlign: "center",
                       float:"right",
-                      paddingRight:"10%"
+                      paddingRight: "10%",
+                      marginBottom:"30%"
                   }}>© 2023 IEEE NSAKCET. All Rights Reserved.</span>  </h1>
               </div>
                                   
