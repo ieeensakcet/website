@@ -23,7 +23,7 @@ function JoinUs() {
     };
 
     const formRef = useRef(null)
-    const scriptUrl = "https://script.google.com/macros/s/AKfycbzRvNGqCoEq9rqO6Ehy_etrXr3Uf6v4jJ9HS4XS7l1J-P8UIcvOSqaHgnVng7tIfjKUhQ/exec"
+    const scriptUrl = "https://script.google.com/macros/s/AKfycbxlzJ_OIXfnTGuU9cXdscBtoPqRivclxUhNlZb24juoFXpfC9W9vlxNo7QcKczges7J/exec"
     const navigate = useNavigate();
 
     const handleSubmit = (e) => {
